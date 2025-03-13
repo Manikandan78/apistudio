@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-./setup_nix.sh
+./setup_nix.sh.save
 ./setup_package.sh
 ./setup_project.sh
 ./setup_service.sh
