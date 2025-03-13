@@ -1,0 +1,69 @@
+echo "🔹 Checking Nix installation..."
+if ! command -v nix &> /dev/null; then
+    echo "❌ Nix is not installed. Installing Nix..."
+    curl -L https://nixos.org/nix/install | sh
+    . "$HOME/.nix-profile/etc/profile.d/nix.sh"
+fi
+echo " Nix is installed!"
+
+echo " Ensuring Flakes & Nix Commands are enabled..."
+mkdir -p ~/.config/nix
+echo "experimental-features = nix-command flakes" | sudo tee -a ~/.config/nix/nix.conf > /dev/null
+echo " Flakes & Nix Commands enabled!"
+
+echo " Restarting Nix daemon..."
+sudo systemctl restart nix-daemon || true
+
+echo " Checking Home Manager installation..."
+if ! command -v home-manager &> /dev/null; then
+    echo " Home Manager not found. Installing..."
+    nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
+    nix-channel --update
+    nix run home-manager/master -- init --switch
+fi
+echo " Home Manager is installed!"
+
+echo " Cloning or updating Home Manager configuration from GitHub..."
+CONFIG_DIR="$HOME/.config/home-manager"
+if [ ! -d "$CONFIG_DIR" ]; then
+    git clone https://github.com/Manikandan78/home-manager-config.git "$CONFIG_DIR"
+else
+    echo " Updating existing Home Manager configuration..."
+    cd "$CONFIG_DIR"
+    git pull origin main || echo "Could not pull latest config, using existing files."
+fi
+cd "$CONFIG_DIR"
+
+echo " Running Home Manager switch..."
+if home-manager switch --flake . 2>&1 | tee /tmp/home-manager.log | grep -q "cannot find flake"; then
+    echo " Flake not found, reinitializing..."
+    nix flake update
+    nix build .#homeConfigurations.$USER.activationPackage
+    ./result/activate
+else
+    echo " Home Manager activated successfully!"
+fi
+
+echo " Ensuring home-configuration.nix is applied..."
+if [ ! -f "$CONFIG_DIR/home-configuration.nix" ]; then
+    echo " home-configuration.nix is missing! Creating a basic one..."
+    cat > "$CONFIG_DIR/home-configuration.nix" <<EOF
+{ config, pkgs, ... }:
+{
+  home.username = "$USER";
+  home.homeDirectory = "/home/$USER";
+  programs.git.enable = true;
+  home.stateVersion = "23.11";
+}
+EOF
+    echo " Created a default home-configuration.nix!"
+fi
+
+echo " Validating Home Manager configuration..."
+home-manager build 2>/tmp/hm-errors.log || (echo "⚠️ Home Manager build failed, check /tmp/hm-errors.log" && exit 1)
+
+echo " Applying Home Manager configuration..."
+home-manager switch --flake .
+
+echo " Setup completed successfully! 🚀"
+
