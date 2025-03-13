@@ -1,82 +1,72 @@
 #!/bin/bash
-set -e
+set -e  # Exit script on any error
 
-echo "🔹 Checking if Nix is installed..."
+echo "🔹 Checking Nix installation..."
 if ! command -v nix &> /dev/null; then
-    echo "⚠️ Installing Nix..."
+    echo "❌ Nix is not installed. Installing Nix..."
     curl -L https://nixos.org/nix/install | sh
     . "$HOME/.nix-profile/etc/profile.d/nix.sh"
-else
-    echo "✅ Nix is already installed."
 fi
+echo " Nix is installed!"
 
-echo "🔹 Enabling Nix Flakes..."
+echo " Ensuring Flakes & Nix Commands are enabled..."
 mkdir -p ~/.config/nix
-echo 'experimental-features = nix-command flakes' | tee -a ~/.config/nix/nix.conf
-nix-channel --update
+echo "experimental-features = nix-command flakes" | sudo tee -a ~/.config/nix/nix.conf > /dev/null
+echo " Flakes & Nix Commands enabled!"
 
-echo "🔹 Installing Home Manager..."
+echo " Restarting Nix daemon..."
+sudo systemctl restart nix-daemon || true
+
+echo " Checking Home Manager installation..."
 if ! command -v home-manager &> /dev/null; then
-    nix run github:nix-community/home-manager -- init --switch
+    echo " Home Manager not found. Installing..."
+    nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
+    nix-channel --update
+    nix run home-manager/master -- init --switch
+fi
+echo " Home Manager is installed!"
+
+echo " Cloning or updating Home Manager configuration from GitHub..."
+CONFIG_DIR="$HOME/.config/home-manager"
+if [ ! -d "$CONFIG_DIR" ]; then
+    git clone https://github.com/Manikandan78/home-manager-config.git "$CONFIG_DIR"
 else
-    echo "✅ Home Manager is already installed."
+    echo " Updating existing Home Manager configuration..."
+    cd "$CONFIG_DIR"
+    git pull origin main || echo "Could not pull latest config, using existing files."
+fi
+cd "$CONFIG_DIR"
+
+echo " Running Home Manager switch..."
+if home-manager switch --flake . 2>&1 | tee /tmp/home-manager.log | grep -q "cannot find flake"; then
+    echo " Flake not found, reinitializing..."
+    nix flake update
+    nix build .#homeConfigurations.$USER.activationPackage
+    ./result/activate
+else
+    echo " Home Manager activated successfully!"
 fi
 
-echo "🔹 Setting up Home Manager Flake..."
-mkdir -p ~/.config/home-manager
-cd ~/.config/home-manager
-
-cat > flake.nix <<EOF
-{
-  description = "Home Manager Configuration";
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
-  };
-  outputs = { nixpkgs, home-manager, ... }:
-    let
-      system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.\${system};
-    in {
-      homeConfigurations.mani = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        modules = [ ./home.nix ];
-      };
-    };
-}
-EOF
-
-cat > home.nix <<EOF
+echo " Ensuring home-configuration.nix is applied..."
+if [ ! -f "$CONFIG_DIR/home-configuration.nix" ]; then
+    echo " home-configuration.nix is missing! Creating a basic one..."
+    cat > "$CONFIG_DIR/home-configuration.nix" <<EOF
 { config, pkgs, ... }:
 {
-  home.username = "mani";
-  home.homeDirectory = "/home/mani";
-  home.stateVersion = "23.11";
-
-  programs.bash.enable = true;
+  home.username = "$USER";
+  home.homeDirectory = "/home/$USER";
   programs.git.enable = true;
-  programs.starship.enable = true;
-
-  home.file.".bashrc".text = ''
-    export PATH=\$HOME/.local/bin:\$PATH
-    eval "\$(starship init bash)"
-  '';
-
-  home.sessionVariables = {
-    EDITOR = "nano";
-  };
-
-  home.enable = true;
+  home.stateVersion = "23.11";
 }
 EOF
+    echo " Created a default home-configuration.nix!"
+fi
 
-echo "🔹 Activating Home Manager Configuration..."
-nix run  -- switch --flake ~/.config/home-manager#mani
+echo " Validating Home Manager configuration..."
+home-manager build 2>/tmp/hm-errors.log || (echo "⚠️ Home Manager build failed, check /tmp/hm-errors.log" && exit 1)
 
-echo "🔹 Applying Shell Changes..."
-exec bash
-source ~/.bashrc
+echo " Applying Home Manager configuration..."
+home-manager switch --flake .
 
-echo "✅ Home Manager Setup Completed! Restart your terminal if needed."
+echo " Setup completed successfully! 🚀"
 
