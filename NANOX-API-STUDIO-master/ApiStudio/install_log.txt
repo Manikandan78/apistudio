@@ -1,0 +1,141 @@
+2025-01-27T12:37:21,386 Using pip 25.0 from C:\B2E\NANOX-API-STUDIO-master\ApiStudio\venv\Lib\site-packages\pip (python 3.11)
+2025-01-27T12:37:21,386 Non-user install because user site-packages disabled
+2025-01-27T12:37:22,186 Created temporary directory: C:\Users\manik\AppData\Local\Temp\pip-build-tracker-baqeo0c5
+2025-01-27T12:37:22,186 Initialized build tracking at C:\Users\manik\AppData\Local\Temp\pip-build-tracker-baqeo0c5
+2025-01-27T12:37:22,186 Created build tracker: C:\Users\manik\AppData\Local\Temp\pip-build-tracker-baqeo0c5
+2025-01-27T12:37:22,186 Entered build tracker: C:\Users\manik\AppData\Local\Temp\pip-build-tracker-baqeo0c5
+2025-01-27T12:37:22,219 Created temporary directory: C:\Users\manik\AppData\Local\Temp\pip-install-35p4uiyo
+2025-01-27T12:37:22,219 Created temporary directory: C:\Users\manik\AppData\Local\Temp\pip-ephem-wheel-cache-_z_hp86v
+2025-01-27T12:37:22,252 1 location(s) to search for versions of pysqlite3:
+2025-01-27T12:37:22,252 * https://pypi.org/simple/pysqlite3/
+2025-01-27T12:37:22,252 Fetching project page and analyzing links: https://pypi.org/simple/pysqlite3/
+2025-01-27T12:37:22,252 Getting page https://pypi.org/simple/pysqlite3/
+2025-01-27T12:37:22,252 Found index url https://pypi.org/simple/
+2025-01-27T12:37:22,393 Fetched page https://pypi.org/simple/pysqlite3/ as application/vnd.pypi.simple.v1+json
+2025-01-27T12:37:22,395   Found link https://files.pythonhosted.org/packages/0a/5d/e5c0b27142c554dbbefd7bac061cb26a57297794762089759852bc23b76c/pysqlite3-0.1.0.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.1.0
+2025-01-27T12:37:22,395   Found link https://files.pythonhosted.org/packages/33/82/30bdff56bcf5c3a0eb075cf135912e31e1591d419c9fb5e6c935c85cb02a/pysqlite3-0.1.1.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.1.1
+2025-01-27T12:37:22,397   Found link https://files.pythonhosted.org/packages/65/4f/135d71ef8d7d75bac8ab2e7e75d6a040e938d9c9987a0f73d9ad774d2a44/pysqlite3-0.1.2.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.1.2
+2025-01-27T12:37:22,397   Found link https://files.pythonhosted.org/packages/69/d7/bc3b0f82579799ce498bdbfd16c916fdf334d8ec6135ee3fd4c887cf3c2c/pysqlite3-0.1.3.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.1.3
+2025-01-27T12:37:22,397   Found link https://files.pythonhosted.org/packages/42/87/b0267539d12a6ebd6c2229ff7fc1667d278a5ef14a9c68d6d7be4653e650/pysqlite3-0.1.4.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.1.4
+2025-01-27T12:37:22,397   Found link https://files.pythonhosted.org/packages/96/6b/da6cd7f0706052ffd8e06910983ab47e42cd8312cee54face9af0d2cbd65/pysqlite3-0.2.0.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.2.0
+2025-01-27T12:37:22,399   Found link https://files.pythonhosted.org/packages/83/31/42af47b96c435d956e8eef5d65f0a2cc21205ae67cd8d4319d467314aef7/pysqlite3-0.2.1.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.2.1
+2025-01-27T12:37:22,399   Found link https://files.pythonhosted.org/packages/57/28/1877a2f6542fc3ff71933e2e142d383ede7ed8cb0341b1aa230d83c82d56/pysqlite3-0.2.2.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.2.2
+2025-01-27T12:37:22,399   Found link https://files.pythonhosted.org/packages/d5/a7/d5f6e2021cc92b1d82f89d29d830dce74d4a1ff6706eca439482bfa906c9/pysqlite3-0.3.0.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.3.0
+2025-01-27T12:37:22,402   Found link https://files.pythonhosted.org/packages/cd/17/ae3813940ccb93f5277bfc52af98290f4d8c9b328e334c9d6bc2df635b85/pysqlite3-0.4.0.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.4.0
+2025-01-27T12:37:22,403   Found link https://files.pythonhosted.org/packages/63/f9/d768ba1522852672b49f4ea3cf8c9f21743cc3a0c966fd4809add6133e67/pysqlite3-0.4.1.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.4.1
+2025-01-27T12:37:22,403   Found link https://files.pythonhosted.org/packages/06/1f/b806d2c35c9a587e11a4ec73a5314167761083397f3b47c6886a75c30dfc/pysqlite3-0.4.2.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.4.2
+2025-01-27T12:37:22,403   Found link https://files.pythonhosted.org/packages/ca/e4/38f120cb2277b7931503ad5fe371a66fe780508f79b3793e3775f7fd819e/pysqlite3-0.4.3.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.4.3
+2025-01-27T12:37:22,403   Found link https://files.pythonhosted.org/packages/df/50/3ea8b9987db1d2f6e41fd1d576cdbc8a23ced23e531481036d3541b4e0bb/pysqlite3-0.4.4.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.4.4
+2025-01-27T12:37:22,403   Found link https://files.pythonhosted.org/packages/eb/73/b6b99b96ab2e29094c26692c2a9c958cac0b87de9fcd02dcb59bcdb36b84/pysqlite3-0.4.5.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.4.5
+2025-01-27T12:37:22,403   Found link https://files.pythonhosted.org/packages/76/36/c8c574a525868999f7f61bd74bb0065736804d341a913f8207880850e559/pysqlite3-0.4.6.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.4.6
+2025-01-27T12:37:22,403   Found link https://files.pythonhosted.org/packages/15/a1/396fd493b2c0cce6b61bed2ead4f1d0e254e3dbea9ea723e2c042900499f/pysqlite3-0.4.7.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.4.7
+2025-01-27T12:37:22,403   Found link https://files.pythonhosted.org/packages/88/63/e0c735ec77cb6ed47068278f61bc06eda1425cec8dd66045d8605309a3ca/pysqlite3-0.4.8.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.4.8
+2025-01-27T12:37:22,403   Found link https://files.pythonhosted.org/packages/78/82/5d10f838744c698a008098353591542dd4f9cb9abf9b46eb939f633bc665/pysqlite3-0.5.0.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.5.0
+2025-01-27T12:37:22,403   Found link https://files.pythonhosted.org/packages/de/c2/34341d97acec471e26964811230209f3e604fdcd68587f314607ff1a2753/pysqlite3-0.5.1.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.5.1
+2025-01-27T12:37:22,403   Found link https://files.pythonhosted.org/packages/0e/37/33f0c3a77b0b8e34f09ddc3b997f18d5c7c7f5d8b86d2d555ad04ca2abb7/pysqlite3-0.5.2.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.5.2
+2025-01-27T12:37:22,403   Found link https://files.pythonhosted.org/packages/89/07/b9eb4647864581dcfe71c9d662c4067dc24970ab63f58ac7cef13dfd42e5/pysqlite3-0.5.3.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.5.3
+2025-01-27T12:37:22,403   Found link https://files.pythonhosted.org/packages/33/cb/ef7d041dbecfbf47f9241d7cb6328311fd80fe15bd61a6253d9ab36e9d6d/pysqlite3-0.5.4.tar.gz (from https://pypi.org/simple/pysqlite3/), version: 0.5.4
+2025-01-27T12:37:22,410 Skipping link: not a file: https://pypi.org/simple/pysqlite3/
+2025-01-27T12:37:22,410 Given no hashes to check 23 links for project 'pysqlite3': discarding no candidates
+2025-01-27T12:37:22,412 Collecting pysqlite3
+2025-01-27T12:37:22,416   Created temporary directory: C:\Users\manik\AppData\Local\Temp\pip-unpack-ul1c4tl3
+2025-01-27T12:37:22,419   Using cached pysqlite3-0.5.4.tar.gz (40 kB)
+2025-01-27T12:37:22,569   Added pysqlite3 from https://files.pythonhosted.org/packages/33/cb/ef7d041dbecfbf47f9241d7cb6328311fd80fe15bd61a6253d9ab36e9d6d/pysqlite3-0.5.4.tar.gz to build tracker 'C:\\Users\\manik\\AppData\\Local\\Temp\\pip-build-tracker-baqeo0c5'
+2025-01-27T12:37:22,569   Running setup.py (path:C:\Users\manik\AppData\Local\Temp\pip-install-35p4uiyo\pysqlite3_6667712904e4493ab00ad8390ab56732\setup.py) egg_info for package pysqlite3
+2025-01-27T12:37:22,569   Created temporary directory: C:\Users\manik\AppData\Local\Temp\pip-pip-egg-info-fmnvpukb
+2025-01-27T12:37:22,569   Running command python setup.py egg_info
+2025-01-27T12:37:23,137   running egg_info
+2025-01-27T12:37:23,152   creating C:\Users\manik\AppData\Local\Temp\pip-pip-egg-info-fmnvpukb\pysqlite3.egg-info
+2025-01-27T12:37:23,152   writing C:\Users\manik\AppData\Local\Temp\pip-pip-egg-info-fmnvpukb\pysqlite3.egg-info\PKG-INFO
+2025-01-27T12:37:23,152   writing dependency_links to C:\Users\manik\AppData\Local\Temp\pip-pip-egg-info-fmnvpukb\pysqlite3.egg-info\dependency_links.txt
+2025-01-27T12:37:23,152   writing top-level names to C:\Users\manik\AppData\Local\Temp\pip-pip-egg-info-fmnvpukb\pysqlite3.egg-info\top_level.txt
+2025-01-27T12:37:23,169   writing manifest file 'C:\Users\manik\AppData\Local\Temp\pip-pip-egg-info-fmnvpukb\pysqlite3.egg-info\SOURCES.txt'
+2025-01-27T12:37:23,186   reading manifest file 'C:\Users\manik\AppData\Local\Temp\pip-pip-egg-info-fmnvpukb\pysqlite3.egg-info\SOURCES.txt'
+2025-01-27T12:37:23,201   reading manifest template 'MANIFEST.in'
+2025-01-27T12:37:23,203   warning: no previously-included files matching '*~' found anywhere in distribution
+2025-01-27T12:37:23,203   warning: no previously-included files matching '*.pyc' found anywhere in distribution
+2025-01-27T12:37:23,203   adding license file 'LICENSE'
+2025-01-27T12:37:23,213   writing manifest file 'C:\Users\manik\AppData\Local\Temp\pip-pip-egg-info-fmnvpukb\pysqlite3.egg-info\SOURCES.txt'
+2025-01-27T12:37:23,253   Source in c:\users\manik\appdata\local\temp\pip-install-35p4uiyo\pysqlite3_6667712904e4493ab00ad8390ab56732 has version 0.5.4, which satisfies requirement pysqlite3 from https://files.pythonhosted.org/packages/33/cb/ef7d041dbecfbf47f9241d7cb6328311fd80fe15bd61a6253d9ab36e9d6d/pysqlite3-0.5.4.tar.gz
+2025-01-27T12:37:23,259   Removed pysqlite3 from https://files.pythonhosted.org/packages/33/cb/ef7d041dbecfbf47f9241d7cb6328311fd80fe15bd61a6253d9ab36e9d6d/pysqlite3-0.5.4.tar.gz from build tracker 'C:\\Users\\manik\\AppData\\Local\\Temp\\pip-build-tracker-baqeo0c5'
+2025-01-27T12:37:23,261 Created temporary directory: C:\Users\manik\AppData\Local\Temp\pip-unpack-evgyy2j3
+2025-01-27T12:37:23,263 Building wheels for collected packages: pysqlite3
+2025-01-27T12:37:23,263   Created temporary directory: C:\Users\manik\AppData\Local\Temp\pip-wheel-9c_xofmc
+2025-01-27T12:37:23,263   Destination directory: C:\Users\manik\AppData\Local\Temp\pip-wheel-9c_xofmc
+2025-01-27T12:37:23,263   Running command python setup.py bdist_wheel
+2025-01-27T12:37:23,853   running bdist_wheel
+2025-01-27T12:37:23,886   running build
+2025-01-27T12:37:23,886   running build_py
+2025-01-27T12:37:23,886   creating build\lib.win-amd64-cpython-311\pysqlite3
+2025-01-27T12:37:23,902   copying pysqlite3\dbapi2.py -> build\lib.win-amd64-cpython-311\pysqlite3
+2025-01-27T12:37:23,902   copying pysqlite3\__init__.py -> build\lib.win-amd64-cpython-311\pysqlite3
+2025-01-27T12:37:23,902   running build_ext
+2025-01-27T12:37:23,986   Builds a C extension linking against libsqlite3 library
+2025-01-27T12:37:23,986   building 'pysqlite3._sqlite3' extension
+2025-01-27T12:37:24,102   error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+2025-01-27T12:37:24,163   ERROR: python setup.py bdist_wheel exited with 1
+2025-01-27T12:37:24,169   [bold magenta]full command[/]: [blue]'C:\B2E\NANOX-API-STUDIO-master\ApiStudio\venv\Scripts\python.exe' -u -c '
+2025-01-27T12:37:24,169   exec(compile('"'"''"'"''"'"'
+2025-01-27T12:37:24,169   # This is <pip-setuptools-caller> -- a caller that pip uses to run setup.py
+2025-01-27T12:37:24,169   #
+2025-01-27T12:37:24,169   # - It imports setuptools before invoking setup.py, to enable projects that directly
+2025-01-27T12:37:24,169   #   import from `distutils.core` to work with newer packaging standards.
+2025-01-27T12:37:24,169   # - It provides a clear error message when setuptools is not installed.
+2025-01-27T12:37:24,169   # - It sets `sys.argv[0]` to the underlying `setup.py`, when invoking `setup.py` so
+2025-01-27T12:37:24,169   #   setuptools doesn'"'"'t think the script is `-c`. This avoids the following warning:
+2025-01-27T12:37:24,169   #     manifest_maker: standard file '"'"'-c'"'"' not found".
+2025-01-27T12:37:24,169   # - It generates a shim setup.py, for handling setup.cfg-only projects.
+2025-01-27T12:37:24,169   import os, sys, tokenize
+2025-01-27T12:37:24,169   
+2025-01-27T12:37:24,169   try:
+2025-01-27T12:37:24,169       import setuptools
+2025-01-27T12:37:24,169   except ImportError as error:
+2025-01-27T12:37:24,169       print(
+2025-01-27T12:37:24,169           "ERROR: Can not execute `setup.py` since setuptools is not available in "
+2025-01-27T12:37:24,169           "the build environment.",
+2025-01-27T12:37:24,169           file=sys.stderr,
+2025-01-27T12:37:24,169       )
+2025-01-27T12:37:24,169       sys.exit(1)
+2025-01-27T12:37:24,169   
+2025-01-27T12:37:24,169   __file__ = %r
+2025-01-27T12:37:24,169   sys.argv[0] = __file__
+2025-01-27T12:37:24,169   
+2025-01-27T12:37:24,169   if os.path.exists(__file__):
+2025-01-27T12:37:24,169       filename = __file__
+2025-01-27T12:37:24,169       with tokenize.open(__file__) as f:
+2025-01-27T12:37:24,169           setup_py_code = f.read()
+2025-01-27T12:37:24,169   else:
+2025-01-27T12:37:24,169       filename = "<auto-generated setuptools caller>"
+2025-01-27T12:37:24,169       setup_py_code = "from setuptools import setup; setup()"
+2025-01-27T12:37:24,169   
+2025-01-27T12:37:24,169   exec(compile(setup_py_code, filename, "exec"))
+2025-01-27T12:37:24,169   '"'"''"'"''"'"' % ('"'"'C:\\Users\\manik\\AppData\\Local\\Temp\\pip-install-35p4uiyo\\pysqlite3_6667712904e4493ab00ad8390ab56732\\setup.py'"'"',), "<pip-setuptools-caller>", "exec"))' bdist_wheel -d 'C:\Users\manik\AppData\Local\Temp\pip-wheel-9c_xofmc'[/]
+2025-01-27T12:37:24,169   [bold magenta]cwd[/]: C:\Users\manik\AppData\Local\Temp\pip-install-35p4uiyo\pysqlite3_6667712904e4493ab00ad8390ab56732\\
+2025-01-27T12:37:24,169   ERROR: Failed building wheel for pysqlite3
+2025-01-27T12:37:24,169   Running setup.py clean for pysqlite3
+2025-01-27T12:37:24,169   Running command python setup.py clean
+2025-01-27T12:37:24,734   running clean
+2025-01-27T12:37:24,736   removing 'build\lib.win-amd64-cpython-311' (and everything under it)
+2025-01-27T12:37:24,752   'build\bdist.win-amd64' does not exist -- can't clean it
+2025-01-27T12:37:24,752   'build\scripts-3.11' does not exist -- can't clean it
+2025-01-27T12:37:24,752   removing 'build'
+2025-01-27T12:37:24,786 Failed to build pysqlite3
+2025-01-27T12:37:25,452 Remote version of pip: 25.0
+2025-01-27T12:37:25,452 Local version of pip:  25.0
+2025-01-27T12:37:25,469 Was pip installed by pip? True
+2025-01-27T12:37:25,473 ERROR: Failed to build installable wheels for some pyproject.toml based projects (pysqlite3)
+2025-01-27T12:37:25,473 Exception information:
+2025-01-27T12:37:25,473 Traceback (most recent call last):
+2025-01-27T12:37:25,473   File "C:\B2E\NANOX-API-STUDIO-master\ApiStudio\venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 106, in _run_wrapper
+2025-01-27T12:37:25,473     status = _inner_run()
+2025-01-27T12:37:25,473              ^^^^^^^^^^^^
+2025-01-27T12:37:25,473   File "C:\B2E\NANOX-API-STUDIO-master\ApiStudio\venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 97, in _inner_run
+2025-01-27T12:37:25,473     return self.run(options, args)
+2025-01-27T12:37:25,473            ^^^^^^^^^^^^^^^^^^^^^^^
+2025-01-27T12:37:25,473   File "C:\B2E\NANOX-API-STUDIO-master\ApiStudio\venv\Lib\site-packages\pip\_internal\cli\req_command.py", line 67, in wrapper
+2025-01-27T12:37:25,473     return func(self, options, args)
+2025-01-27T12:37:25,473            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-01-27T12:37:25,473   File "C:\B2E\NANOX-API-STUDIO-master\ApiStudio\venv\Lib\site-packages\pip\_internal\commands\install.py", line 435, in run
+2025-01-27T12:37:25,473     raise InstallationError(
+2025-01-27T12:37:25,473 pip._internal.exceptions.InstallationError: Failed to build installable wheels for some pyproject.toml based projects (pysqlite3)
+2025-01-27T12:37:25,476 Removed build tracker: 'C:\\Users\\manik\\AppData\\Local\\Temp\\pip-build-tracker-baqeo0c5'
