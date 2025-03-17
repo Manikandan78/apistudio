@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 
-./setup_nix.sh.save
-./setup_package.sh
+./setup_nix.sh
+./setup_postgres.sh
 ./setup_project.sh
-./setup_service.sh
-./upload_to_git.sh
+./setup_nginx.sh
+
 
 echo "✅ All steps completed successfully!"

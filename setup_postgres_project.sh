@@ -37,7 +37,7 @@ if [ ! -d "$REPO_DIR" ]; then
         cd "$REPO_DIR"
         git init
         touch home.nix
-        echo "{ config, pkgs, ... }: { home.username = \"$USER\"; }" > home.nix
+        echo "{ config, pkgs, ... }: { home.username = builtins.getEnv \"USER\"; home.homeDirectory = builtins.getEnv \"HOME\"; home.stateVersion = \"23.11\"; programs.bash.enable = true; programs.git.enable = true; }" > home.nix
         git add home.nix
         git commit -m "Initial Home Manager config"
     }
@@ -59,12 +59,21 @@ fi
 # Ensure home.nix exists
 if [ ! -f "$REPO_DIR/home.nix" ]; then
     echo "🔹 Creating default home.nix..."
-    echo "{ config, pkgs, ... }: { home.username = \"$USER\"; }" > "$REPO_DIR/home.nix"
+    echo "{ config, pkgs, ... }: { home.username = builtins.getEnv \"USER\"; home.homeDirectory = builtins.getEnv \"HOME\"; home.stateVersion = \"23.11\"; programs.bash.enable = true; programs.git.enable = true; }" > "$REPO_DIR/home.nix"
 fi
 
+# Fix potential conflicts
+echo "🔹 Removing conflicting packages..."
+nix-env -e home-manager || true
+nix-collect-garbage -d
+nix-store --verify --repair
+nix-channel --update
+nix-env -iA nixpkgs.home-manager
+
+# Configure Home Manager
 echo "🔹 Configuring Home Manager..."
-home-manager switch || {
-    echo "❌ Home Manager setup failed. Check your configuration."
+home-manager switch --show-trace || {
+    echo "❌ Home Manager setup failed. Check configuration and logs."
     exit 1
 }
 
