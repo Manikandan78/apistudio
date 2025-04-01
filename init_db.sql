@@ -1,0 +1,11 @@
+CREATE DATABASE apicloud;
+CREATE USER microapi WITH ENCRYPTED PASSWORD 'M!cr0ap!*C$E*';
+GRANT ALL PRIVILEGES ON DATABASE apicloud TO microapi;
+
+\c apicloud
+
+CREATE SCHEMA apicloud;
+CREATE SCHEMA public;
+
+GRANT USAGE, CREATE ON SCHEMA apicloud TO microapi;
+GRANT USAGE, CREATE ON SCHEMA public TO microapi;
