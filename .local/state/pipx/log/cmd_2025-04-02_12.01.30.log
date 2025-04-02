@@ -1,0 +1,56 @@
+   242.9ms (setup:858): 2025-04-02 12:01:30
+   243.0ms (setup:859): /usr/bin/pipx install git-filter-repo
+   243.1ms (setup:860): pipx version is 1.4.3
+   243.2ms (setup:861): Default python interpreter is '/usr/bin/python3'
+   243.2ms (mkdir:74): creating directory /home/mani/.local/share/pipx/venvs
+   244.1ms (mkdir:74): creating directory /home/mani/.local/bin
+   244.5ms (mkdir:74): creating directory /home/mani/.local/share/man
+   245.1ms (mkdir:74): creating directory /home/mani/.cache/pipx
+   245.7ms (setup:870): Adding CACHEDIR.TAG to cache directory
+   247.1ms (package_name_from_spec:370): Determined package name: git-filter-repo
+   247.2ms (package_name_from_spec:371): Package name determined in 0.0s
+   248.4ms (run_subprocess:168): running /usr/bin/python3 -m venv --without-pip /home/mani/.local/share/pipx/venvs/git-filter-repo
+   327.6ms (run_subprocess:190): stdout:
+   327.7ms (run_subprocess:192): stderr:
+   327.8ms (run_subprocess:193): returncode: 0
+   329.2ms (run_subprocess:168): running /usr/bin/python3 -m venv --clear /home/mani/.local/share/pipx/shared
+  6217.8ms (run_subprocess:190): stdout:
+  6217.9ms (run_subprocess:192): stderr:
+  6218.0ms (run_subprocess:193): returncode: 0
+  6218.5ms (run_subprocess:168): running <checking pip's availability>
+  6251.5ms (run_subprocess:190): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x7f7e20dc19d0>, origin='/home/mani/.local/share/pipx/shared/lib/python3.12/site-packages/pip/__init__.py', submodule_search_locations=['/home/mani/.local/share/pipx/shared/lib/python3.12/site-packages/pip'])
+  6251.6ms (run_subprocess:193): returncode: 0
+  6251.8ms (upgrade:98): Upgrading shared libraries in /home/mani/.local/share/pipx/shared
+  6252.8ms (run_subprocess:168): running /home/mani/.local/share/pipx/shared/bin/python -m pip --no-input --disable-pip-version-check install --force-reinstall -q --upgrade pip >= 23.1
+  9307.2ms (run_subprocess:190): stdout:
+  9307.3ms (run_subprocess:192): stderr:
+  9307.3ms (run_subprocess:193): returncode: 0
+  9307.9ms (run_subprocess:168): running /home/mani/.local/share/pipx/venvs/git-filter-repo/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+  9341.2ms (run_subprocess:190): stdout: /home/mani/.local/share/pipx/venvs/git-filter-repo/lib/python3.12/site-packages
+  9341.3ms (run_subprocess:193): returncode: 0
+  9341.6ms (run_subprocess:168): running /home/mani/.local/share/pipx/shared/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+  9373.9ms (run_subprocess:190): stdout: /home/mani/.local/share/pipx/shared/lib/python3.12/site-packages
+  9374.0ms (run_subprocess:193): returncode: 0
+  9374.5ms (run_subprocess:168): running /home/mani/.local/share/pipx/venvs/git-filter-repo/bin/python --version
+  9377.4ms (run_subprocess:190): stdout: Python 3.12.3
+  9377.5ms (run_subprocess:192): stderr:
+  9377.6ms (run_subprocess:193): returncode: 0
+  9378.1ms (_parsed_package_to_package_or_url:137): cleaned package spec: git-filter-repo
+  9378.7ms (run_subprocess:168): running /home/mani/.local/share/pipx/venvs/git-filter-repo/bin/python -m pip --no-input install git-filter-repo
+ 10576.9ms (run_subprocess:193): returncode: 0
+ 10577.9ms (run_subprocess:168): running <fetch_info_in_venv commands>
+ 10617.6ms (run_subprocess:190): stdout: {"sys_path": ["/usr/lib/python312.zip", "/usr/lib/python3.12", "/usr/lib/python3.12/lib-dynload", "/home/mani/.local/share/pipx/venvs/git-filter-repo/lib/python3.12/site-packages", "/home/mani/.local/share/pipx/shared/lib/python3.12/site-packages"], "python_version": "3.12.3", "environment": {"implementation_name": "cpython", "implementation_version": "3.12.3", "os_name": "posix", "platform_machine": "x86_64", "platform_release": "5.15.167.4-microsoft-standard-WSL2", "platform_system": "Linux", "platform_version": "#1 SMP Tue Nov 5 00:21:55 UTC 2024", "python_full_version": "3.12.3", "platform_python_implementation": "CPython", "python_version": "3.12", "sys_platform": "linux"}}
+ 10617.7ms (run_subprocess:193): returncode: 0
+ 10623.7ms (get_venv_metadata_for_package:339): get_venv_metadata_for_package: 46ms
+ 10623.9ms (_parsed_package_to_package_or_url:137): cleaned package spec: git-filter-repo
+ 10625.6ms (_symlink_package_resource:168): ⚠️  Note: git-filter-repo was already on your PATH at /home/mani/myenv/bin/git-filter-repo
+ 10627.2ms (run_subprocess:168): running <checking pip's availability>
+ 10659.3ms (run_subprocess:190): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x7fa726c999d0>, origin='/home/mani/.local/share/pipx/shared/lib/python3.12/site-packages/pip/__init__.py', submodule_search_locations=['/home/mani/.local/share/pipx/shared/lib/python3.12/site-packages/pip'])
+ 10659.4ms (run_subprocess:193): returncode: 0
+ 10659.8ms (run_subprocess:168): running <checking pip's availability>
+ 10691.4ms (run_subprocess:190): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x7f65f9827f80>, origin='/home/mani/.local/share/pipx/shared/lib/python3.12/site-packages/pip/__init__.py', submodule_search_locations=['/home/mani/.local/share/pipx/shared/lib/python3.12/site-packages/pip'])
+ 10691.5ms (run_subprocess:193): returncode: 0
+ 11016.2ms (warn_if_not_on_path:466): ⚠️  Note: '/home/mani/.local/bin' is not on your PATH environment variable. These apps will not be globally accessible
+    until your PATH is updated. Run `pipx ensurepath` to automatically add it, or manually modify your PATH in your
+    shell's config file (i.e. ~/.bashrc).
+ 11016.5ms (cli:932): pipx finished.
