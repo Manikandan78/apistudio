@@ -2,7 +2,7 @@
 
 set -e  # Exit on error
 
-PROJECT_DIR="$HOME/nix_project/NANOX-API-STUDIO-master/Sqlviews"
+PROJECT_DIR="$HOME/API-STUDIO/Sqlviews"
 REQ_FILE="req.txt"
 VENV_DIR="venv"
 

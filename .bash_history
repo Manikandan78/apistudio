@@ -1,140 +1,316 @@
-wsl status
 ls
-nix
-nix --version
-git 
-clear
-ls -al ~/.ssh
-git --version
-git config --global user.name "Your Name"
-git config --global user.email "your-email@example.com"
-git config --global user.email "manikandanperumal00@gmail.com"
-git config --global user.name "Manikandan78"
-ssh-keygen -t rsa -b 4096 -C "manikandanperumal00@gmail.com"
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/gitkey
-ls -al ~/.ssh
-cd
-ls -al ~/.ssh
-mkdir -p /home/mani/.ssh
-chmod 700 /home/mani/.ssh
-ssh-keygen -t rsa -b 4096 -C "manikandanperumal00@gmail.com"
-eval "$(ssh-agent -s)"
-ssh-add /home/mani/.ssh/id_rsa
-cat /home/mani/.ssh/id_rsa.pub
-ssh -T git@github.com
-git init
-git remote add origin git@github.com:Manikandan78/nix_project.git
-git pull origin main
-cd /home/mani/nix_project
-git clone git@github.com:Manikandan78/nix_project.git /home/mani/nix_project
-cd /home/mani/nix_project
-ls
-./run_all.sh
-./setup.sh
-nano setup.sh
-chmod +x setup.sh
-./setup.sh
-nano setup.sh
-chmod +x setup.sh
-./setup.sh
-./run_all.sh
-chown -R mani /nix
-ls
-nana setup_nix.sh
-nano setup_nix.sh
-./setup_nix.sh
-nano setup.sh
-chmod +x setup.sh
-./setup.sh
-nano setup.sh
-chmod +x setup.sh
-./setup.sh
-nano setup.sh
-chmod +x setup.sh
-./setup.sh
-nano flake.nix
-touch flake.nix
+nano setup_pgadmin.sh
+chmod +x setup_pgadmin.sh
+./setup_pgadmin.sh
+nano setup_depend.sh
+chmod +x setup_depend.sh
+./setup_depend.sh
+sudo apt update && sudo apt upgrade -y
 nano configuration.nix
-touch configuration.nix
-nano home.nix
-touch home.nix
-nano init_db.sql
-touch init_db.sql
+./setup_depend.sh
+command -v apt dnf pacman yum zypper
+sudo apt update && sudo apt upgrade -y
+apt-cache search python3. | grep 3.11
+python --version
+python3 --version
+sudo systemctl stop apache2
+sudo systemctl stop pgadmin4
+sudo systemctl stop apache2
+sudo systemctl stop pgadmin4
+sudo apt remove --purge pgadmin4 pgadmin4-desktop -y
+sudo apt autoremove -y
+sudo apt clean
+sudo rm -rf /var/lib/pgadmin4
+sudo rm -rf /etc/pgadmin
+sudo rm -rf ~/.pgadmin
+sudo rm -rf /var/lib/pgadmin4
+realpath pgadmin4
+sudo rm -rf /home/mani/pgadmin4
+realpath pgadmin4
+sudo rm -rf /home/mani/pgadmin4
+sudo rm -rf ~/.pgadmin
+sudo rm -rf /var/lib/dpkg/info/pgadmin4*
+sudo rm -rf /var/lib/dpkg/info/pgadmin4*
+sudo apt update --fix-missing
+sudo apt install -f
+sudo dpkg --configure -a
+dpkg -l | grep pgadmin
+systemctl list-units --type=service | grep pgadmin
+\sudo systemctl stop apache2
+sudo systemctl stop pgadmin4
+ps aux | grep pgadmin
+sudo kill -9 4616 11505 11604 11605 11675 11691 11730 11777
+ps aux | grep pgadmin
+nano setup_depend.sh
+chmod +x setup_depend.sh
+./setup_depend.sh
+./setup_depend.sh
+nano setup_depend.sh
+nano setup_postgres.sh
+nano setup_postgres.sh
+./setup_postgres.sh
+/snap/pgadmin4/16/meta/snap.yaml
+mount | grep snap
+sudo systemctl restart snapd
+sudo snap refresh
 ls
-nano setup.sh
-chmod +x setup.sh
+ls
 ./setup.sh
-sudo cp /etc/bash.bashrc /etc/bash.bashrc.backup-$(date +%Y%m%d-%H%M%S)
-sudo cp /etc/bash.bashrc.backup-before-nix /etc/bash.bashrc.backup-before-nix-$(date +%Y%m%d-%H%M%S)
-sudo cp /etc/bash.bashrc /etc/bash.bashrc.backup-$(date +%Y%m%d-%H%M%S)
-sudo cp /etc/bash.bashrc.backup-before-nix /etc/bash.bashrc.backup-before-nix-$(date +%Y%m%d-%H%M%S)
-grep nix /etc/bash.bashrc.backup-before-nix
-sudo rm /etc/bash.bashrc.backup-before-nix
-nix --version
+./setup_depend.sh
+./setup_postgres.sh
+snap version
+sudo apt update && sudo apt install --reinstall snapd
+snap version
+sudo systemctl restart snapd
+sudo umount /snap/pgadmin4/16
+sudo systemctl restart snapd
+sudo umount /snap/pgadmin4/16
+systemctl is-active snapd
+ls /snap/pgadmin4/
+sudo snap install pgadmin4
+snap help refresh
+pgadmin4
+nano setup_postgres.sh
+chmod _x setup_postgres.sh
+chmod +x setup_postgres.sh
+./setup_postgres.sh
+sudo dpkg --configure -a
+sudo apt-get install -f
+sudo apt-get install -y pgadmin4-desktop
+sudo apt-get install -y pgadmin4
+sudo apt-get remove --purge pgadmin4 pgadmin4-desktop
+sudo apt-get autoremove -y
+sudo apt-get autoclean
+sudo apt-get remove --purge pgadmin4 pgadmin4-desktop
+sudo apt-get autoremove -y
+sudo apt-get autoclean
+sudo apt update
+sudo apt install -y pgadmin4
+sudo apt install -f
+nano setup_postgres.sh
+chmod +x setup_postgres.sh
+./setup_postgres.sh
+nano setup_pgadmin.sh
+chmod +x setup_pgadmin.sh
+./setup_pgadmin.sh
+nano setup_pgadmin.sh
+chmod +x setup_pgadmin.sh
+./setup_pgadmin.sh
+pgadmin4
+pgadmin4
+snap list
+sudo snap remove pgadmin4 --purge
+systemctl status snapd
+snap list
+sudo snap install pgadmin4
+pgrep -laf pgadmin
+sudo systemctl status postgresql
+sudo snap remove pgadmin4
+sudo rm -rf /var/lib/snapd/snaps/pgadmin4_*
+sudo rm -rf ~/snap/pgadmin4
+# Add the pgAdmin repository key
+curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /usr/share/keyrings/packages-pgadmin-org.gpg
+# Add the repository
+sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list'
+# Update package list
+sudo apt update
+# Install both Desktop and Web versions
+sudo apt install -y pgadmin4
+pgadmin4
+./setup_pgadmin.sh
+pgadmin4 --debug
+sudo apt install
+sudo apt update
+sudo snap update
+sudo snap 
+ls
+./setup_postgres.sh
+nano setup_postgres.sh
+chmod +x setup_postgres.sh
+./setup_postgres.sh
+sudo-i -u postgres
+sudo -i -u postgres
+sudo -u postgres psql -d apicloud -c "\dn"   # Check schemas
+sudo -u postgres psql -d apicloud -c "\dt"   # Check tables
+pgadmin4
+./setup_postgres.sh
+ls -ld ~/snap/pgadmin4/16/.config/ibus/bus
+ls -ld ~/snap/pgadmin4/16/.config/ibus/bus
+nano setup_postgres.sh
+nano setup_postgres.sh
+rm ~/snap/pgadmin4/16/.config/ibus/bus
+mkdir -p ~/snap/pgadmin4/16/.config/ibus/bus
+sudo chown -R $USER:$USER ~/snap/pgadmin4
+./setup_postgres.sh
+pgadmin4
+ls
+nano setup_postgres.sh
+chmod +x setup_postgres.sh
+./setup_postgres.sh
+nano setup_postgres.sh
+chmod +x setup_postgres.sh
+./setup_postgres.sh
+find / -type f -name "servers.json" 2>/dev/null
+nano setup_postgres.sh
+chmod +x setup_postgres.sh
+./setup_postgres.sh
+nano setup_postgres.sh
+chmod +x setup_postgres.sh
+./setup_postgres.sh
+nano setup_postgres.sh
+chmod +x setup_postgres.sh
+./setup_postgres.sh
+pgadmin4
+sudo ./setup.sh
+sudo ./setup_postgres.sh
+nano setup_postgres.sh
+chmod +x setup_postgres.sh
+sudo ./setup_postgres.sh
+./setup_postgres.sh
+psql --version
+sudo -i -u postgres
+./setup_postgres.sh
+sudo systemctl restart snapd
+sudo systemctl status snapd
+nano setup_postgres.sh
+chmod +x  setup_postgres.sh
+./setup_postgres.sh
+nano setup_postgres.sh
+chmod +x  setup_postgres.sh
+./setup_postgres.sh
+sudo systemctl enable --now snapd
+sudo systemctl enable --now snapd
+shutdown /r /t 0
+wsl --shutdown
+wsl --shutdown
+sudo apt install wsl
+wsl --shutdown
+wsl
+wsl --terminate ubuntu
+xclean
+wsl xclean
+wsl -l -v
+Restart-Service LxssManager
+shutdown /r /t 0
+ls
+./setup_postgres.sh./setup_postgres.sh
+./setup_postgres.sh
+nano setup_postgres.sh
+chmod +x setup_postgres.shposdwxw
+./setup_postgres.sh
+nano setup_postgres.sh
+sudo -i -u postgres
+nano setup_postgres.sh
+nano setup_postgres.sh
+./setup_postgres.sh
+ls
+nano setup_postgres.sh
+chmod +x setup_postgres.sh
+./setup_postgres.sh
+./setup_postgres.sh
+./setup_postgres.sh
+nano setup_postgres.sh
+chmod +x setup_postgres.sh
+./setup_postgres.sh
+systemctl list-units --type=service | grep postgres
+systemctl list-units --type=service | grep postgres
+ps aux | grep postgres
+pg_lsclusters
+service --status-all | grep postgres
+pg_ctl status
+sudo nano /etc/postgresql/16/main/postgresql.conf
+sudo nano /etc/postgresql/16/main/pg_hba.conf
+sudo systemctl restart postgresql
+ip a | grep eth0
+sudo systemctl status postgresql
+pgadmin4
+ip a | grep eth0
+./setup_postgres.sh
+ls
+nano CmsPage.sh
+nano ApiStudio.sh
+nano CmsPage.sh
+cd API-STUDIO
+ls
+cd ApiStudio
+ls
+cdcd
 cd
 ls
-cd nix_project
+realpath ApiStudio
+nano ApiStudio.sh
+chmod +x ApiStudio.sh
+./ApiStudio.sh
+nano ApiStudio.sh
+chmod +x ApiStudio.sh
+./ApiStudio.sh
+nano ApiStudio.sh
+chmod +x ApiStudio.sh
+./ApiStudio.sh
+nano ApiStudio.sh
+chmod +x ApiStudio.sh
+./ApiStudio.sh
+cd API-STUDIO
+ls
+cd ApiStudio
+ls
+nano requirements.txt
+nano ApiStudio.sh
+cd
+nano ApiStudio.sh
+chmod +x ApiStudio.sh
+./ApiStudio.sh
+sudo dpkg --configure -a
+sudo apt install -f
+sudo apt install apparmor
+sudo systemctl enable apparmor
+sudo systemctl restart apparmor
+sudo apt install --reinstall pgadmin4
+sudo apt install --reinstall pgadmin
+sudo apt install --reinstall pgadmin4
+nano ApiStudio.sh
+chmod +x ApiStudio.sh
+./ApiStudio.sh
+ls
+Crudapp.sh
+./Crudapp.sh
+nano Crudapp.sh
+chmod  Crudapp.sh
+chmod +x Crudapp.sh
+./Crudapp.sh
+nano Sqlviews.sh
+chmod +x Sqlviews.sh
+ls
+nano ApiStudio.sh
+chmod +x ApiStudio.sh
+./ApiStudio.sh
+ls
+cd API-STUDIO
+ls
+cd ApiStudio
+ls
+nano ApiStudio.sh
+cd ApiStudiocd ApiStudio
+cd ApiStudio
 ls
 cd
-realpath nix_project
-ls /home/mani/nix_project
-sudo rm -r /home/mani/nix_project
+nano ApiStudio.sh
+chmod +x ApiStudio.sh
+./ApiStudio.sh
+sudo apt update
+./ApiStudio.sh
+nano ApiStudio.sh
+chmod +x ApiStudio.sh
+./ApiStudio.sh
+nano apistudio
+nano ApiStudio.sh
 ls
-nix --version
-nano ~/.config/nix/nix.conf
-nix --version
-nano configuration.nix
-touch configuration.nix
-nano flake.nix
-touch flake.nix
-nano home.nix
-touch home.nix
-nano init_db.sql
-touch init_db.sql
-ls
-nano setup.sh
-chmod +x setup.sh
-./setup.sh
-cd ./config
-ls
-nano setup.sh
-chmod +x setup.sh
-./setup.sh
-nano setup.sh
-nano ~/.config/nix/nix.conf
-chmod +x setup.sh
-./setup.sh
-git status
-git add .
-git commit -m "updated  directory"
-git commit -m "updated dir"
-git push
-git push origin main
-git branch
-git checkout -b main
-git branch
-git add .
-git commit -m "update data"
-git push -u origin main
-git branch
-git add .
-git log
-git rebase -i <commit-hash>^
-git rm <path-to-sensitive-file>
-git commit --amend --no-edit
-git status
-git remote -v
-git status
-git add .
-git commit -m "update message"
-git push origin main
-git rm --cached .ssh/id_rsa
-git commit -m "Remove SSH private key from repository"
-git rebase -i HEAD~n
-.ssh/id_rsa
-ls
-realpath 'e -i <commit-hash>^'
-rm /home/mani/e -i <commit-hash>^
-./setup.sh
-source ~/.bashrc
+nano setup_postgres
+nano setup_postgres.sh
+nano setup_postgres.sh
+chmod +x setup_postgres.sh
+./setup_postgres.sh
+nano setup_postgres.sh
+chmod +x setup_postgres.sh
+./setup_postgres.sh
+nano setup_postgres.sh

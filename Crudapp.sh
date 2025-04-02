@@ -2,7 +2,7 @@
 
 set -e  # Exit on error
 
-PROJECT_DIR="$HOME/nix_project/NANOX-API-STUDIO-master/CrudApp"
+PROJECT_DIR="$HOME/API-STUDIO/CrudApp"
 REQ_FILE="new_req.txt"
 VENV_DIR="venv"
 

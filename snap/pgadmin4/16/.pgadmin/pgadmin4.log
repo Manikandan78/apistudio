@@ -1,0 +1,64 @@
+2025-04-02 07:29:33,959: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 07:34:58,471: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 07:34:58,472: ERROR	pgadmin:	Error starting the app server: (<class 'BrokenPipeError'>, BrokenPipeError(32, 'Broken pipe'), <traceback object at 0x7fac33fbc900>)
+2025-04-02 08:22:40,193: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 08:22:40,198: ERROR	pgadmin:	Error starting the app server: (<class 'BrokenPipeError'>, BrokenPipeError(32, 'Broken pipe'), <traceback object at 0x7fdfeb29d800>)
+2025-04-02 08:23:31,719: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 08:23:31,719: ERROR	pgadmin:	Error starting the app server: (<class 'BrokenPipeError'>, BrokenPipeError(32, 'Broken pipe'), <traceback object at 0x7f15feb83140>)
+2025-04-02 08:24:16,677: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 08:24:16,678: ERROR	pgadmin:	Error starting the app server: (<class 'BrokenPipeError'>, BrokenPipeError(32, 'Broken pipe'), <traceback object at 0x7f1b91622980>)
+2025-04-02 08:27:07,358: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 08:27:07,359: ERROR	pgadmin:	Error starting the app server: (<class 'BrokenPipeError'>, BrokenPipeError(32, 'Broken pipe'), <traceback object at 0x7f1ef346e2c0>)
+2025-04-02 08:27:16,102: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 08:27:16,103: ERROR	pgadmin:	Error starting the app server: (<class 'BrokenPipeError'>, BrokenPipeError(32, 'Broken pipe'), <traceback object at 0x7fab1a411c00>)
+2025-04-02 08:39:48,129: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 08:49:18,010: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 09:13:01,511: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 09:13:01,512: ERROR	pgadmin:	Error starting the app server: (<class 'BrokenPipeError'>, BrokenPipeError(32, 'Broken pipe'), <traceback object at 0x7f64e4d1db40>)
+2025-04-02 09:13:25,357: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 09:15:50,752: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 09:17:23,267: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 09:31:39,761: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 09:33:00,954: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 10:22:48,830: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 10:37:31,101: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 10:37:34,718: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/16/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2365, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/16/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 249, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
+2025-04-02 10:37:34,740: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/16/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2365, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/16/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 249, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
+2025-04-02 10:37:35,034: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/16/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2365, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/16/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 249, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
+2025-04-02 10:37:35,048: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/16/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2365, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/16/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 249, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
+2025-04-02 10:38:24,147: ERROR	pgadmin:	Failed to execute query (execute_2darray) for the server #3 - DB:postgres (Query-id: 8610723):
+Error Message:role "micro_api" cannot be dropped because some objects depend on it
+owner of database apicloud
+2025-04-02 10:38:47,720: ERROR	pgadmin:	Failed to execute query (execute_2darray) for the server #3 - DB:postgres (Query-id: 6757464):
+Error Message:role "micro_api" cannot be dropped because some objects depend on it
+owner of database apicloud
+2025-04-02 10:40:28,305: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-04-02 10:40:28,305: ERROR	pgadmin:	Error starting the app server: (<class 'BrokenPipeError'>, BrokenPipeError(32, 'Broken pipe'), <traceback object at 0x7f2facc2d100>)

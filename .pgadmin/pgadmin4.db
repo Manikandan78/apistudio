@@ -1,0 +1,1 @@
+INSERT INTO user (email, password, active, role) VALUES ('admin@local.com', 'admin123', 1, 1);

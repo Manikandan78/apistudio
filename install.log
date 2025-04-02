@@ -1,0 +1,42 @@
+Starting setup...
+✅ PostgreSQL is running.
+🔹 Creating database 'apicloud' and user 'microapi'...
+DO
+DO
+✅ Database and user verified.
+🔹 Creating schemas 'schema1' and 'schema2' in database 'apicloud'...
+CREATE SCHEMA
+CREATE SCHEMA
+✅ Schemas created.
+🔹 Checking pgAdmin4 installation...
+✅ pgAdmin4 is already installed.
+✅ pgAdmin4 installed successfully.
+🔹 Opening pgAdmin4...
+✅ Setup complete. Database, schemas, and pgAdmin4 are ready.
+[12620:0402/103714.693464:ERROR:viz_main_impl.cc(181)] Exiting GPU process due to errors during initialization
+[12679:0402/103715.303010:ERROR:viz_main_impl.cc(181)] Exiting GPU process due to errors during initialization
+[12670:0402/103717.151435:ERROR:command_buffer_proxy_impl.cc(131)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+
+(pgadmin4:12489): IBUS-WARNING **: 10:37:31.574: Failed to mkdir /home/mani/snap/pgadmin4/16/.config/ibus/bus: Not a directory
+(node:12489) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 enable-disable-menu-items listeners added to [IpcMainImpl]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `pgadmin4 --trace-warnings ...` to show where the warning was created)
+Starting setup...
+✅ PostgreSQL is running.
+🔹 Creating database 'apicloud' and user 'microapi'...
+DO
+DO
+✅ Database and user verified.
+🔹 Creating schemas 'public' and 'apicloud' in database 'apicloud'...
+NOTICE:  schema "public" already exists, skipping
+CREATE SCHEMA
+NOTICE:  schema "apicloud" already exists, skipping
+CREATE SCHEMA
+✅ Schemas created.
+🔹 Checking pgAdmin4 installation...
+✅ pgAdmin4 is already installed.
+✅ pgAdmin4 installed successfully.
+🔹 Opening pgAdmin4...
+✅ Setup complete. Database, schemas, and pgAdmin4 are ready.
+
+(pgadmin4:13041): IBUS-WARNING **: 10:40:13.174: Failed to mkdir /home/mani/snap/pgadmin4/16/.config/ibus/bus: Not a directory
+[13175:0402/104013.221684:ERROR:viz_main_impl.cc(181)] Exiting GPU process due to errors during initialization
