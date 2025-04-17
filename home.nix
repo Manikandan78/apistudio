@@ -24,3 +24,12 @@
   home.stateVersion = "23.11";
 }
 
+home.file."bin/certbot-renew.sh" = {
+  executable = true;
+  text = ''
+    #!/bin/bash
+    certbot certonly --standalone --non-interactive --agree-tos \
+      --email your-email@example.com -d studio.colleges91.com \
+      && sudo systemctl reload nginx
+  '';
+};

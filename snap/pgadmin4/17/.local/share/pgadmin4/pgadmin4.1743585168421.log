@@ -1,0 +1,107 @@
+pgAdmin Runtime Environment
+--------------------------------------------------------
+Python Path: "/snap/pgadmin4/16/usr/pgadmin4/venv/bin/python3"
+Runtime Config File: "/home/mani/snap/pgadmin4/16/.config/pgadmin4/config.json"
+Webapp Path: "/snap/pgadmin4/16/usr/pgadmin4/web/pgAdmin4.py"
+pgAdmin Command: "/snap/pgadmin4/16/usr/pgadmin4/venv/bin/python3 -s /snap/pgadmin4/16/usr/pgadmin4/web/pgAdmin4.py"
+Environment: 
+  - SHELL: /bin/bash
+  - __EGL_EXTERNAL_PLATFORM_CONFIG_DIRS: /snap/pgadmin4/16/gpu-2404/usr/share/egl/egl_external_platform.d
+  - __EGL_VENDOR_LIBRARY_DIRS: /snap/pgadmin4/16/gpu-2404/usr/share/glvnd/egl_vendor.d
+  - SNAP_REVISION: 16
+  - __HM_SESS_VARS_SOURCED: 1
+  - XDG_CONFIG_DIRS: /snap/pgadmin4/16/gnome-platform/etc/xdg
+  - WSL2_GUI_APPS_ENABLED: 1
+  - WSL_DISTRO_NAME: Ubuntu
+  - SNAP_REAL_HOME: /home/mani
+  - VK_LAYER_PATH: /snap/pgadmin4/16/gpu-2404/usr/share/vulkan/implicit_layer.d/:/snap/pgadmin4/16/gpu-2404/usr/share/vulkan/explicit_layer.d/
+  - SNAP_USER_COMMON: /home/mani/snap/pgadmin4/common
+  - WT_SESSION: ed71eeb2-f26f-45c6-82ab-2bccf5412b6b
+  - FONTCONFIG_PATH: /snap/pgadmin4/16/gnome-platform/etc/fonts
+  - XDG_DATA_HOME: /home/mani/snap/pgadmin4/16/.local/share
+  - GNOTIFICATION_BACKEND: freedesktop
+  - PGPASSWORD: micro
+  - PIPEWIRE_MODULE_DIR: /snap/pgadmin4/16/gnome-platform/usr/lib/x86_64-linux-gnu/pipewire-0.3
+  - XDG_CONFIG_HOME: /home/mani/snap/pgadmin4/16/.config
+  - XCURSOR_PATH: /snap/pgadmin4/16/data-dir/icons:/snap/pgadmin4/16/gnome-platform/usr/share/icons
+  - SNAP_INSTANCE_KEY: 
+  - LOCALE_ARCHIVE_2_27: /nix/store/xm5ndd2gvn197cspw2gfj4z3vkyalrpq-glibc-locales-2.40-66/lib/locale/locale-archive
+  - GDK_PIXBUF_MODULE_FILE: /home/mani/snap/pgadmin4/common/.cache/gdk-pixbuf-loaders.cache
+  - NAME: MSI
+  - SNAP_EUID: 1000
+  - PWD: /home/mani
+  - NIX_PROFILES: /nix/var/nix/profiles/default /home/mani/.nix-profile
+  - LOGNAME: mani
+  - SPA_PLUGIN_DIR: /snap/pgadmin4/16/gnome-platform/usr/lib/x86_64-linux-gnu/spa-0.2
+  - TEMPDIR: /tmp
+  - SNAP_CONTEXT: F-QmWrwIcUpel-BPWE4nVdmNOjWdWXDu0DvionvTzCK-eB6x1agq
+  - GST_PLUGIN_SCANNER: /snap/pgadmin4/16/gnome-platform/usr/lib/x86_64-linux-gnu/gstreamer1.0/gstreamer-1.0/gst-plugin-scanner
+  - LD_PRELOAD: :/snap/pgadmin4/16/gnome-platform/$LIB/bindtextdomain.so
+  - GI_TYPELIB_PATH: /snap/pgadmin4/16/gnome-platform/usr/lib/girepository-1.0:/snap/pgadmin4/16/gnome-platform/usr/lib/x86_64-linux-gnu/girepository-1.0
+  - HOME: /home/mani/snap/pgadmin4/16
+  - LANG: C.UTF-8
+  - WSL_INTEROP: /run/WSL/1282_interop
+  - STARSHIP_SHELL: bash
+  - WAYLAND_DISPLAY: wayland-0
+  - NOTIFY_IGNORE_PORTAL: 1
+  - NIX_SSL_CERT_FILE: /etc/ssl/certs/ca-certificates.crt
+  - SNAP_ARCH: amd64
+  - SNAP_INSTANCE_NAME: pgadmin4
+  - SNAP_USER_DATA: /home/mani/snap/pgadmin4/16
+  - TMPDIR: /tmp
+  - DRIRC_CONFIGDIR: /snap/pgadmin4/16/gpu-2404/drirc.d
+  - SNAP_DESKTOP_RUNTIME: /snap/pgadmin4/16/gnome-platform
+  - SNAP_LAUNCHER_ARCH_TRIPLET: x86_64-linux-gnu
+  - SNAP_REEXEC: 
+  - SNAP_UID: 1000
+  - PIPEWIRE_CONFIG_DIR: /snap/pgadmin4/16/gnome-platform/usr/share/pipewire
+  - STARSHIP_SESSION_KEY: 5323273434317621
+  - XDG_CACHE_HOME: /home/mani/snap/pgadmin4/common/.cache
+  - LIBGWEATHER_LOCATIONS_PATH: /snap/pgadmin4/16/gnome-platform/usr/lib/x86_64-linux-gnu/libgweather-4/Locations.bin
+  - PYTHONPATH: /snap/pgadmin4/16/gnome-platform/usr/lib/python3/dist-packages
+  - TERM: xterm-256color
+  - GTK_PATH: /snap/pgadmin4/16/gnome-platform/usr/lib/x86_64-linux-gnu/gtk-2.0:/snap/pgadmin4/16/gnome-platform/usr/lib/x86_64-linux-gnu/gtk-3.0:/snap/pgadmin4/16/gnome-platform/usr/lib/gtk-3.0:/snap/pgadmin4/16/gnome-platform/usr/lib/x86_64-linux-gnu/gtk-4.0
+  - XLOCALEDIR: /snap/pgadmin4/16/gpu-2404/X11/locale
+  - LIBTHAI_DICTDIR: /snap/pgadmin4/16/gnome-platform/usr/share/libthai/
+  - USER: mani
+  - SNAP: /snap/pgadmin4/16
+  - SNAP_COMMON: /var/snap/pgadmin4/common
+  - SNAP_VERSION: 9.1
+  - DISPLAY: :0
+  - SHLVL: 1
+  - GDK_PIXBUF_MODULEDIR: /snap/pgadmin4/16/gnome-platform/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+  - LOCPATH: /snap/pgadmin4/16/gnome-platform/usr/lib/locale
+  - SNAP_LIBRARY_PATH: /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+  - SNAP_COOKIE: F-QmWrwIcUpel-BPWE4nVdmNOjWdWXDu0DvionvTzCK-eB6x1agq
+  - LIBGL_DRIVERS_PATH: /snap/pgadmin4/16/gpu-2404/usr/lib/x86_64-linux-gnu/dri/:/snap/pgadmin4/16/gpu-2404/usr/lib/i386-linux-gnu/dri/
+  - SNAP_DATA: /var/snap/pgadmin4/16
+  - GST_PLUGIN_PATH: /snap/pgadmin4/16/usr/lib/x86_64-linux-gnu/gstreamer-1.0
+  - LD_LIBRARY_PATH: /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void:/snap/pgadmin4/16/usr/lib:/snap/pgadmin4/16/usr/lib/x86_64-linux-gnu:/snap/pgadmin4/16/gpu-2404/usr/lib/x86_64-linux-gnu:/snap/pgadmin4/16/gpu-2404/usr/lib/x86_64-linux-gnu/vdpau:/snap/pgadmin4/16/gpu-2404/usr/lib/i386-linux-gnu:/snap/pgadmin4/16/gpu-2404/usr/lib/i386-linux-gnu/vdpau:/snap/pgadmin4/16/gnome-platform/lib/x86_64-linux-gnu:/snap/pgadmin4/16/gnome-platform/usr/lib/x86_64-linux-gnu:/snap/pgadmin4/16/gnome-platform/usr/lib:/snap/pgadmin4/16/gnome-platform/lib:/snap/pgadmin4/16/gnome-platform/usr/lib/x86_64-linux-gnu/libunity:/snap/pgadmin4/16/gnome-platform/usr/lib/x86_64-linux-gnu/pulseaudio:/snap/pgadmin4/16/gnome-platform/usr/lib/x86_64-linux-gnu/libproxy
+  - XDG_RUNTIME_DIR: /run/user/1000/snap.pgadmin4
+  - LIBVA_DRIVERS_PATH: /snap/pgadmin4/16/gpu-2404/usr/lib/x86_64-linux-gnu/dri/:/snap/pgadmin4/16/gpu-2404/usr/lib/i386-linux-gnu/dri/
+  - WSLENV: WT_SESSION:WT_PROFILE_ID:
+  - GST_PLUGIN_SYSTEM_PATH: /snap/pgadmin4/16/gnome-platform/usr/lib/x86_64-linux-gnu/gstreamer-1.0
+  - FONTCONFIG_FILE: /snap/pgadmin4/16/gnome-platform/etc/fonts/fonts.conf
+  - SNAP_NAME: pgadmin4
+  - GBM_BACKENDS_PATH: /snap/pgadmin4/16/gpu-2404/usr/lib/x86_64-linux-gnu/gbm:/snap/pgadmin4/16/gpu-2404/usr/lib/i386-linux-gnu/gbm
+  - XDG_DATA_DIRS: /home/mani/snap/pgadmin4/16/.local/share:/home/mani/snap/pgadmin4/16:/snap/pgadmin4/16/data-dir:/snap/pgadmin4/16/usr/share:/snap/pgadmin4/16/gnome-platform/usr/share:/usr/local/share:/usr/share:/home/mani/.nix-profile/share:/nix/var/nix/profiles/default/share:/var/lib/snapd/desktop:/snap/pgadmin4/16/gpu-2404/usr/share
+  - PATH: /snap/pgadmin4/16/usr/sbin:/snap/pgadmin4/16/usr/bin:/snap/pgadmin4/16/sbin:/snap/pgadmin4/16/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/pgadmin4/16/gnome-platform/usr/bin
+  - GTK_USE_PORTAL: 1
+  - GTK_IM_MODULE_FILE: /home/mani/snap/pgadmin4/common/.cache/immodules/immodules.cache
+  - DBUS_SESSION_BUS_ADDRESS: unix:path=/run/user/1000/bus
+  - HOSTTYPE: x86_64
+  - GIO_MODULE_DIR: /home/mani/snap/pgadmin4/common/.cache/gio-modules
+  - PULSE_SERVER: unix:/mnt/wslg/PulseServer
+  - WT_PROFILE_ID: {2556c0de-98fd-561c-a7a6-0b4cd6975264}
+  - XKB_CONFIG_ROOT: /snap/pgadmin4/16/gnome-platform/usr/share/X11/xkb
+  - CHROME_DESKTOP: pgadmin4.desktop
+  - ORIGINAL_XDG_CURRENT_DESKTOP: undefined
+  - ELECTRON_ENABLE_SECURITY_WARNINGS: false
+  - GDK_BACKEND: x11
+  - NO_AT_BRIDGE: 1
+  - PGADMIN_INT_PORT: 33057
+  - PGADMIN_INT_KEY: 57ba0da2-1c1b-42b1-b294-b10992a28f1a
+  - PGADMIN_SERVER_MODE: OFF
+--------------------------------------------------------
+
+Total spawn time to start the pgAdmin4 server: 0.013 Sec

@@ -40,3 +40,93 @@ CREATE SCHEMA
 
 (pgadmin4:13041): IBUS-WARNING **: 10:40:13.174: Failed to mkdir /home/mani/snap/pgadmin4/16/.config/ibus/bus: Not a directory
 [13175:0402/104013.221684:ERROR:viz_main_impl.cc(181)] Exiting GPU process due to errors during initialization
+Starting setup...
+ PostgreSQL is running.
+ Creating database 'apicloud' and user 'microapi'...
+DO
+DO
+ Database and user verified.
+ Creating schemas 'public' and 'apicloud' in database 'apicloud'...
+NOTICE:  schema "public" already exists, skipping
+CREATE SCHEMA
+NOTICE:  schema "apicloud" already exists, skipping
+CREATE SCHEMA
+ Schemas created.
+ Checking pgAdmin4 installation...
+ pgAdmin4 is already installed.
+ pgAdmin4 installed successfully.
+Opening pgAdmin4...
+ Setup complete. Database, schemas, and pgAdmin4 are ready.
+[1423:0403/081359.480184:ERROR:viz_main_impl.cc(181)] Exiting GPU process due to errors during initialization
+[1486:0403/081400.514718:ERROR:viz_main_impl.cc(181)] Exiting GPU process due to errors during initialization
+[1479:0403/081402.686446:ERROR:command_buffer_proxy_impl.cc(131)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+
+(pgadmin4:1257): IBUS-WARNING **: 08:14:23.669: Failed to mkdir /home/mani/snap/pgadmin4/16/.config/ibus/bus: Not a directory
+(node:1257) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 enable-disable-menu-items listeners added to [IpcMainImpl]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `pgadmin4 --trace-warnings ...` to show where the warning was created)
+Starting setup...
+ PostgreSQL is running.
+ Creating database 'apicloud' and user 'microapi'...
+DO
+DO
+ Database and user verified.
+ Creating schemas 'public' and 'apicloud' in database 'apicloud'...
+NOTICE:  schema "public" already exists, skipping
+CREATE SCHEMA
+NOTICE:  schema "apicloud" already exists, skipping
+CREATE SCHEMA
+ Schemas created.
+ Checking pgAdmin4 installation...
+ pgAdmin4 is already installed.
+ pgAdmin4 installed successfully.
+Opening pgAdmin4...
+ Setup complete. Database, schemas, and pgAdmin4 are ready.
+[1407:0403/094840.538010:ERROR:viz_main_impl.cc(181)] Exiting GPU process due to errors during initialization
+[1471:0403/094841.454449:ERROR:viz_main_impl.cc(181)] Exiting GPU process due to errors during initialization
+[1463:0403/094843.327862:ERROR:command_buffer_proxy_impl.cc(131)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+
+(pgadmin4:1241): IBUS-WARNING **: 09:49:01.674: Failed to mkdir /home/mani/snap/pgadmin4/16/.config/ibus/bus: Not a directory
+Starting setup...
+ PostgreSQL is running.
+ Creating database 'apicloud' and user 'microapi'...
+DO
+DO
+ Database and user verified.
+ Creating schemas 'public' and 'apicloud' in database 'apicloud'...
+NOTICE:  schema "public" already exists, skipping
+CREATE SCHEMA
+NOTICE:  schema "apicloud" already exists, skipping
+CREATE SCHEMA
+ Schemas created.
+ Checking pgAdmin4 installation...
+ pgAdmin4 is already installed.
+ pgAdmin4 installed successfully.
+Opening pgAdmin4...
+ Setup complete. Database, schemas, and pgAdmin4 are ready.
+libpxbackend-1.0.so: cannot open shared object file: No such file or directory
+Failed to load module: /home/mani/snap/pgadmin4/common/.cache/gio-modules/libgiolibproxy.so
+[1644:0404/094808.456218:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+[1706:0404/094809.627798:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+[1700:0404/094811.533329:ERROR:command_buffer_proxy_impl.cc(125)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+
+(pgadmin4:1420): IBUS-WARNING **: 09:48:32.890: Failed to mkdir /home/mani/snap/pgadmin4/17/.config/ibus/bus: Not a directory
+Starting setup...
+ PostgreSQL is running.
+ Creating database 'apicloud' and user 'microapi'...
+DO
+DO
+ Database and user verified.
+ Creating schemas 'public' and 'apicloud' in database 'apicloud'...
+NOTICE:  schema "public" already exists, skipping
+CREATE SCHEMA
+NOTICE:  schema "apicloud" already exists, skipping
+CREATE SCHEMA
+ Schemas created.
+ Checking pgAdmin4 installation...
+ pgAdmin4 is already installed.
+ pgAdmin4 installed successfully.
+Opening pgAdmin4...
+ Setup complete. Database, schemas, and pgAdmin4 are ready.
+
+(pgadmin4:2256): IBUS-WARNING **: 09:56:47.224: Failed to mkdir /home/mani/snap/pgadmin4/17/.config/ibus/bus: Not a directory
+[2395:0404/095647.258098:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization

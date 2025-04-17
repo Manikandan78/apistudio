@@ -15,12 +15,6 @@ if [ ! -f "$REQ_FILE" ]; then
     exit 1
 fi
 
-# Remove existing virtual environment if it exists
-if [ -d "$VENV_DIR" ]; then
-    echo "Existing virtual environment found. Removing..."
-    rm -rf "$VENV_DIR"
-fi
-
 echo "Creating a new virtual environment..."
 python3 -m venv "$VENV_DIR"
 source "$VENV_DIR/bin/activate"

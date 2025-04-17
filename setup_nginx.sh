@@ -1,106 +1,165 @@
 #!/bin/bash
 
-# Define domain name
-DOMAIN="api.nanoxstudio.com"
+# Exit on error
+set -e
+
+# Define variables
+PROJECT_NAME="ApiStudio"
+PROJECT_DIR="/home/mani/API-STUDIO/ApiStudio"
+VENV_PATH="$PROJECT_DIR/venv"
+GUNICORN_SOCKET="/run/$PROJECT_NAME.sock"
+GUNICORN_SERVICE="/etc/systemd/system/gunicorn-$PROJECT_NAME.service"
+NGINX_SITE="/etc/nginx/sites-available/$PROJECT_NAME"
+NGINX_LINK="/etc/nginx/sites-enabled/$PROJECT_NAME"
+
+echo "Checking and installing required packages..."
 
 # Install Nginx if not installed
-echo "Installing Nginx..."
-sudo apt update
-sudo apt install -y nginx
-
-# Start and enable Nginx service
-sudo systemctl start nginx
-sudo systemctl enable nginx
-
-# Create Nginx configuration file
-echo "Configuring Nginx for $DOMAIN..."
-
-NGINX_CONF="/etc/nginx/sites-available/nanox-api-studio"
-
-sudo bash -c "cat > $NGINX_CONF" <<EOL
-server {
-    listen 80;
-    server_name $DOMAIN;
-
-    location / {
-        proxy_pass http://127.0.0.1:8000;
-        proxy_set_header Host \$host;
-        proxy_set_header X-Real-IP \$remote_addr;
-        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto \$scheme;
-    }
-
-    location /core {
-        proxy_pass http://127.0.0.1:8007;
-    }
-
-    location /datamigration {
-        proxy_pass http://127.0.0.1:8002;
-    }
-
-    location /getapi {
-        proxy_pass http://127.0.0.1:8001;
-    }
-
-    location /authentication {
-        proxy_pass http://127.0.0.1:8011;
-    }
-
-    location /crudapp {
-        proxy_pass http://127.0.0.1:8000;
-    }
-
-    location /deleteapi {
-        proxy_pass http://127.0.0.1:8004;
-    }
-
-    location /postapi {
-        proxy_pass http://127.0.0.1:8002;
-    }
-
-    location /sqlviews {
-        proxy_pass http://127.0.0.1:8009;
-    }
-
-    location /cmspage { 
-        proxy_pass http://127.0.0.1:8008;
-    }
-
-    location /dbschemaapi {
-        proxy_pass http://127.0.0.1:8006;
-    }
-
-    location /updateapi {
-        proxy_pass http://127.0.0.1:8003;
-    }
-
-    error_page 500 502 503 504 /50x.html;
-    location = /50x.html {
-        root /usr/share/nginx/html;
-    }
-}
-EOL
-
-# Enable Nginx configuration
-echo "Enabling Nginx configuration..."
-sudo ln -sf $NGINX_CONF /etc/nginx/sites-enabled/
-
-# Test Nginx configuration
-echo "Testing Nginx configuration..."
-sudo nginx -t
-
-# Restart Nginx to apply changes
-echo "Restarting Nginx..."
-sudo systemctl restart nginx
-
-echo "Nginx setup completed successfully!"
-
-# Optional: Setup SSL with Let's Encrypt
-read -p "Do you want to enable SSL with Certbot? (y/n): " SSL_CHOICE
-if [[ "$SSL_CHOICE" == "y" ]]; then
-    sudo apt install -y certbot python3-certbot-nginx
-    sudo certbot --nginx -d $DOMAIN
-    echo "SSL setup completed!"
+if ! command -v nginx >/dev/null 2>&1; then
+  echo "Installing Nginx..."
+  sudo apt update
+  sudo apt install -y nginx
+else
+  echo " Nginx is already installed"
 fi
 
-echo "All done! Your APIs are now running through Nginx."
+# Install Gunicorn if not installed in virtualenv
+if [ ! -f "$VENV_PATH/bin/gunicorn" ]; then
+  echo "Installing Gunicorn in virtual environment..."
+  source "$VENV_PATH/bin/activate"
+  pip install gunicorn
+  sudo apt install gunicorn
+  deactivate
+else
+  echo " Gunicorn is already installed in virtualenv"
+fi
+
+# Create Gunicorn systemd service
+echo "Setting up Gunicorn systemd service..."
+sudo tee "$GUNICORN_SERVICE" > /dev/null <<EOF
+[Unit]
+Description=gunicorn daemon for $PROJECT_NAME
+After=network.target
+
+[Service]
+User=mani
+Group=www-data
+WorkingDirectory=$PROJECT_DIR
+ExecStart=$VENV_PATH/bin/gunicorn --workers 3 --bind unix:$GUNICORN_SOCKET $PROJECT_NAME.wsgi:application
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+sudo systemctl daemon-reexec
+sudo systemctl daemon-reload
+sudo systemctl enable gunicorn-$PROJECT_NAME
+sudo systemctl restart gunicorn-$PROJECT_NAME
+
+# Setup Nginx config
+echo " Configuring Nginx..."
+sudo tee "$NGINX_SITE" > /dev/null <<EOF
+server {
+#!/bin/bash
+
+# Exit on error
+set -e
+
+# Define variables
+PROJECT_NAME="apistudio"
+PROJECT_DIR="/home/mani/API-STUDIO/ApiStudio"
+VENV_PATH="$PROJECT_DIR/venv"
+GUNICORN_SOCKET="/run/$PROJECT_NAME.sock"
+GUNICORN_SERVICE="/etc/systemd/system/gunicorn-$PROJECT_NAME.service"
+NGINX_SITE="/etc/nginx/sites-available/$PROJECT_NAME"
+NGINX_LINK="/etc/nginx/sites-enabled/$PROJECT_NAME"
+
+echo "Checking and installing required packages..."
+
+# Install Nginx if not installed
+if ! command -v nginx >/dev/null 2>&1; then
+  echo "Installing Nginx..."
+  sudo apt update
+  sudo apt install -y nginx
+else
+  echo " Nginx is already installed"
+fi
+
+# Install Gunicorn if not installed in virtualenv
+if [ ! -f "$VENV_PATH/bin/gunicorn" ]; then
+  echo "Installing Gunicorn in virtual environment..."
+  source "$VENV_PATH/bin/activate"
+  pip install gunicorn
+  deactivate
+else
+  echo " Gunicorn is already installed in virtualenv"
+fi
+
+# Create Gunicorn systemd service
+echo " Setting up Gunicorn systemd service..."
+sudo tee "$GUNICORN_SERVICE" > /dev/null <<EOF
+[Unit]
+Description=gunicorn daemon for $PROJECT_NAME
+After=Network.target
+
+[Service]
+User=mani
+Group=www-data
+WorkingDirectory=$PROJECT_DIR
+ExecStart=$VENV_PATH/bin/gunicorn --workers 3 --bind unix:$GUNICORN_SOCKET $PROJECT_NAME.wsgi:application
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+sudo systemctl daemon-reexec
+sudo systemctl daemon-reload
+sudo systemctl enable gunicorn-$PROJECT_NAME
+sudo systemctl restart gunicorn-$PROJECT_NAME
+
+# Setup Nginx config
+echo "➡️ Configuring Nginx..."
+sudo tee "$NGINX_SITE" > /dev/null <<EOF
+server {
+    listen 80;
+    server_name _;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        root $PROJECT_DIR;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:$GUNICORN_SOCKET;
+    }
+}
+EOF
+
+# Enable site and restart Nginx
+sudo ln -sf "$NGINX_SITE" "$NGINX_LINK"
+sudo nginx -t && sudo systemctl restart nginx
+
+echo " Nginx and Gunicorn are now configured and running for $PROJECT_NAME"
+    listen 80;
+    server_name _;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        root $PROJECT_DIR;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:$GUNICORN_SOCKET;
+    }
+}
+EOF
+
+# Enable site and restart Nginx
+sudo ln -sf "$NGINX_SITE" "$NGINX_LINK"
+sudo nginx -t && sudo systemctl restart nginx
+
+echo " Nginx and Gunicorn are now configured and running for $PROJECT_NAME"

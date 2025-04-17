@@ -36,3 +36,42 @@
   # Open required firewall ports
   networking.firewall.allowedTCPPorts = [ 5432 80 443 ];
 }
+
+{
+  imports = [ ];
+
+  services.nginx.enable = true;
+
+  networking.firewall.allowedTCPPorts = [ 80 443 ];
+
+  services.nginx.virtualHosts."studio.colleges91.com" = {
+    forceSSL = true;
+    enableACME = true;
+    locations."/".proxyPass = "http://127.0.0.1:8005";
+    locations."/etlstudio".proxyPass = "http://127.0.0.1:5035";
+    locations."/data-migs".proxyPass = "http://127.0.0.1:8012";
+  };
+
+  security.acme = {
+    acceptTerms = true;
+    email = "you@example.com";
+    certs."studio.colleges91.com" = {
+      webroot = "/var/www/html";
+    };
+  };
+
+  services.certbot.enable = true;
+
+  systemd.services.gunicorn-api = {
+    enable = true;
+    description = "Gunicorn instance to serve API";
+    after = [ "network.target" ];
+    wantedBy = [ "multi-user.target" ];
+    serviceConfig = {
+      ExecStart = "${pkgs.python3}/bin/gunicorn -w 4 -b 127.0.0.1:8005 app:app";
+      WorkingDirectory = "/path/to/your/project";
+      Restart = "always";
+      User = "nginx";
+    };
+  };
+}

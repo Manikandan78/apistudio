@@ -1,0 +1,12 @@
+[Unit]
+Description=Run crudapp on port 8000
+After=network.target
+
+[Service]
+ExecStart=/home/mani/.venv/crudapp/bin/python /home/mani/project-root/apps/crudapp/main.py
+Restart=always
+User=mani
+WorkingDirectory=/home/mani/project-root/apps/crudapp
+
+[Install]
+WantedBy=multi-user.target

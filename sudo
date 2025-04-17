@@ -1,0 +1,27 @@
+#!/bin/bash
+
+DOMAIN="studio.colleges91.com"
+CERT_PATH="/etc/letsencrypt/live/$DOMAIN/fullchain.pem"
+
+echo "[INFO] Checking if SSL cert exists for $DOMAIN..."
+
+if [ ! -f "$CERT_PATH" ]; then
+    echo "[ERROR] SSL cert not found. Attempting auto-fix with Certbot using standalone..."
+
+    echo "[INFO] Stopping Nginx temporarily to free up port 80..."
+    sudo systemctl stop nginx
+
+    echo "[INFO] Requesting new SSL certificate..."
+    sudo certbot certonly --standalone -d $DOMAIN --agree-tos --non-interactive --register-unsafely-without-email
+
+    if [ -f "$CERT_PATH" ]; then
+        echo "[SUCCESS] Certificate created. Restarting Nginx..."
+        sudo systemctl start nginx
+    else
+        echo "[FAIL] Certificate creation failed. Manual intervention needed."
+        exit 1
+    fi
+else
+    echo "[OK] SSL cert already exists. No action needed."
+fi
+

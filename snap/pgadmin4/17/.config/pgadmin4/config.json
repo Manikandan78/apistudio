@@ -1,0 +1,12 @@
+{
+	"fixedPort": false,
+	"portNo": 5050,
+	"connectionTimeout": 180,
+	"openDocsInBrowser": true,
+	"bounds": {
+		"x": 12,
+		"y": 54,
+		"width": 1024,
+		"height": 773
+	}
+}

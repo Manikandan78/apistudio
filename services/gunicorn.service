@@ -1,0 +1,12 @@
+[Unit]
+Description=Gunicorn for Django
+After=network.target
+
+[Service]
+User=%u
+WorkingDirectory=%h/myproject/backend
+ExecStart=%h/myproject/venv/bin/gunicorn --workers 3 --bind unix:%h/myproject/gunicorn.sock myproject.wsgi:application
+Restart=always
+
+[Install]
+WantedBy=default.target

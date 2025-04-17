@@ -1,16 +1,36 @@
 {
-  description = "Ubuntu/Linux server setup with Nix, Home Manager, PostgreSQL, and Python";
+  description = "API Studio full deployment environment with Python, PostgreSQL, pgAdmin, Nginx, and Certbot";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, home-manager }: {
-    nixosConfigurations.my-system = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      modules = [ ./configuration.nix home-manager.nixosModules.home-manager ];
-    };
-  };
+  outputs = { self, nixpkgs, flake-utils }:
+    flake-utils.lib.eachDefaultSystem (system:
+      let
+        pkgs = import nixpkgs { inherit system; };
+      in {
+        devShell = pkgs.mkShell {
+          name = "apistudio-env";
+
+buildInputs = with pkgs; [
+  python3
+  python3Packages.virtualenv
+
+  postgresql
+  pgadmin4
+
+  nginx
+
+  (certbot.override {
+    plugins = [ certbotPlugins.nginx ];
+  })
+
+  bash
+  git
+  curl
+          ];
+        };
+      });
 }

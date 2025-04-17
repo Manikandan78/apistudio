@@ -2,9 +2,11 @@
 
 set -e  # Exit on error
 
-PROJECT_DIR="$HOME/nix_project/NANOX-API-STUDIO-master/PostApi"
+PROJECT_DIR="$HOME/API-STUDIO/PostApi"
 REQ_FILE="req.txt"
-VENV_DIR="venv"
+VENV_DIR="$PROJECT_DIR/venv"
+SERVICE_NAME="postapi"
+SERVICE_FILE="/etc/systemd/system/$SERVICE_NAME.service"
 
 # Navigate to project directory
 cd "$PROJECT_DIR" || { echo "Project directory not found! Exiting..."; exit 1; }
@@ -50,4 +52,30 @@ fi
 
 pip install -r "$REQ_FILE"
 
-echo "Installation complete!"
+# Create a systemd service
+echo "Creating systemd service..."
+
+sudo bash -c "cat > $SERVICE_FILE" <<EOF
+[Unit]
+Description=PostApi FastAPI Service
+After=network.target
+
+[Service]
+User=$USER
+WorkingDirectory=$PROJECT_DIR
+ExecStart=$VENV_DIR/bin/uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+# Reload systemd and enable the service
+echo "Enabling and starting the service..."
+sudo systemctl daemon-reload
+sudo systemctl enable $SERVICE_NAME
+sudo systemctl restart $SERVICE_NAME
+
+echo "Installation and service setup complete! API running at http://localhost:8000"
+
+exit 0
