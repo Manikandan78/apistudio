@@ -1,0 +1,1251 @@
+pgAdmin Runtime Environment
+--------------------------------------------------------
+Python Path: "/snap/pgadmin4/18/usr/pgadmin4/venv/bin/python3"
+Runtime Config File: "/home/mani/snap/pgadmin4/18/.config/pgadmin4/config.json"
+Webapp Path: "/snap/pgadmin4/18/usr/pgadmin4/web/pgAdmin4.py"
+pgAdmin Command: "/snap/pgadmin4/18/usr/pgadmin4/venv/bin/python3 -s /snap/pgadmin4/18/usr/pgadmin4/web/pgAdmin4.py"
+Environment: 
+  - SHELL: /bin/bash
+  - __EGL_EXTERNAL_PLATFORM_CONFIG_DIRS: /snap/pgadmin4/18/gpu-2404/usr/share/egl/egl_external_platform.d
+  - __EGL_VENDOR_LIBRARY_DIRS: /snap/pgadmin4/18/gpu-2404/usr/share/glvnd/egl_vendor.d
+  - SNAP_REVISION: 18
+  - __HM_SESS_VARS_SOURCED: 1
+  - XDG_CONFIG_DIRS: /snap/pgadmin4/18/gnome-platform/etc/xdg
+  - WSL2_GUI_APPS_ENABLED: 1
+  - WSL_DISTRO_NAME: Ubuntu
+  - SNAP_REAL_HOME: /home/mani
+  - VK_LAYER_PATH: /snap/pgadmin4/18/gpu-2404/usr/share/vulkan/implicit_layer.d/:/snap/pgadmin4/18/gpu-2404/usr/share/vulkan/explicit_layer.d/
+  - SNAP_USER_COMMON: /home/mani/snap/pgadmin4/common
+  - WT_SESSION: 98cc2b5f-d059-4680-871a-57a9806ad408
+  - FONTCONFIG_PATH: /snap/pgadmin4/18/gnome-platform/etc/fonts
+  - XDG_DATA_HOME: /home/mani/snap/pgadmin4/18/.local/share
+  - GNOTIFICATION_BACKEND: freedesktop
+  - PIPEWIRE_MODULE_DIR: /snap/pgadmin4/18/gnome-platform/usr/lib/x86_64-linux-gnu/pipewire-0.3
+  - XDG_CONFIG_HOME: /home/mani/snap/pgadmin4/18/.config
+  - XCURSOR_PATH: /snap/pgadmin4/18/data-dir/icons:/snap/pgadmin4/18/gnome-platform/usr/share/icons
+  - SNAP_INSTANCE_KEY: 
+  - LOCALE_ARCHIVE_2_27: /nix/store/xm5ndd2gvn197cspw2gfj4z3vkyalrpq-glibc-locales-2.40-66/lib/locale/locale-archive
+  - GDK_PIXBUF_MODULE_FILE: /home/mani/snap/pgadmin4/common/.cache/gdk-pixbuf-loaders.cache
+  - NAME: MSI
+  - SNAP_EUID: 1000
+  - PWD: /home/mani
+  - NIX_PROFILES: /nix/var/nix/profiles/default /home/mani/.nix-profile
+  - LOGNAME: mani
+  - SPA_PLUGIN_DIR: /snap/pgadmin4/18/gnome-platform/usr/lib/x86_64-linux-gnu/spa-0.2
+  - TEMPDIR: /tmp
+  - SNAP_CONTEXT: F-QmWrwIcUpel-BPWE4nVdmNOjWdWXDu0DvionvTzCK-eB6x1agq
+  - GST_PLUGIN_SCANNER: /snap/pgadmin4/18/gnome-platform/usr/lib/x86_64-linux-gnu/gstreamer1.0/gstreamer-1.0/gst-plugin-scanner
+  - LD_PRELOAD: :/snap/pgadmin4/18/gnome-platform/$LIB/bindtextdomain.so
+  - GI_TYPELIB_PATH: /snap/pgadmin4/18/gnome-platform/usr/lib/girepository-1.0:/snap/pgadmin4/18/gnome-platform/usr/lib/x86_64-linux-gnu/girepository-1.0
+  - HOME: /home/mani/snap/pgadmin4/18
+  - LANG: C.UTF-8
+  - WSL_INTEROP: /run/WSL/793_interop
+  - STARSHIP_SHELL: bash
+  - WAYLAND_DISPLAY: wayland-0
+  - NOTIFY_IGNORE_PORTAL: 1
+  - NIX_SSL_CERT_FILE: /etc/ssl/certs/ca-certificates.crt
+  - SNAP_ARCH: amd64
+  - SNAP_INSTANCE_NAME: pgadmin4
+  - SNAP_USER_DATA: /home/mani/snap/pgadmin4/18
+  - TMPDIR: /tmp
+  - DRIRC_CONFIGDIR: /snap/pgadmin4/18/gpu-2404/drirc.d
+  - SNAP_DESKTOP_RUNTIME: /snap/pgadmin4/18/gnome-platform
+  - SNAP_LAUNCHER_ARCH_TRIPLET: x86_64-linux-gnu
+  - SNAP_REEXEC: 
+  - SNAP_UID: 1000
+  - PIPEWIRE_CONFIG_DIR: /snap/pgadmin4/18/gnome-platform/usr/share/pipewire
+  - STARSHIP_SESSION_KEY: 3045910991151172
+  - XDG_CACHE_HOME: /home/mani/snap/pgadmin4/common/.cache
+  - LIBGWEATHER_LOCATIONS_PATH: /snap/pgadmin4/18/gnome-platform/usr/lib/x86_64-linux-gnu/libgweather-4/Locations.bin
+  - PYTHONPATH: /snap/pgadmin4/18/gnome-platform/usr/lib/python3/dist-packages
+  - TERM: xterm-256color
+  - GTK_PATH: /snap/pgadmin4/18/gnome-platform/usr/lib/x86_64-linux-gnu/gtk-2.0:/snap/pgadmin4/18/gnome-platform/usr/lib/x86_64-linux-gnu/gtk-3.0:/snap/pgadmin4/18/gnome-platform/usr/lib/gtk-3.0:/snap/pgadmin4/18/gnome-platform/usr/lib/x86_64-linux-gnu/gtk-4.0
+  - XLOCALEDIR: /snap/pgadmin4/18/gpu-2404/X11/locale
+  - LIBTHAI_DICTDIR: /snap/pgadmin4/18/gnome-platform/usr/share/libthai/
+  - USER: mani
+  - SNAP: /snap/pgadmin4/18
+  - SNAP_COMMON: /var/snap/pgadmin4/common
+  - SNAP_VERSION: 9.3
+  - DISPLAY: :0
+  - SHLVL: 1
+  - GDK_PIXBUF_MODULEDIR: /snap/pgadmin4/18/gnome-platform/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+  - LOCPATH: /snap/pgadmin4/18/gnome-platform/usr/lib/locale
+  - SNAP_LIBRARY_PATH: /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+  - SNAP_COOKIE: F-QmWrwIcUpel-BPWE4nVdmNOjWdWXDu0DvionvTzCK-eB6x1agq
+  - LIBGL_DRIVERS_PATH: /snap/pgadmin4/18/gpu-2404/usr/lib/x86_64-linux-gnu/dri/:/snap/pgadmin4/18/gpu-2404/usr/lib/i386-linux-gnu/dri/
+  - SNAP_DATA: /var/snap/pgadmin4/18
+  - GST_PLUGIN_PATH: /snap/pgadmin4/18/usr/lib/x86_64-linux-gnu/gstreamer-1.0
+  - LD_LIBRARY_PATH: /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void:/snap/pgadmin4/18/usr/lib:/snap/pgadmin4/18/usr/lib/x86_64-linux-gnu:/snap/pgadmin4/18/gpu-2404/usr/lib/x86_64-linux-gnu:/snap/pgadmin4/18/gpu-2404/usr/lib/x86_64-linux-gnu/vdpau:/snap/pgadmin4/18/gpu-2404/usr/lib/i386-linux-gnu:/snap/pgadmin4/18/gpu-2404/usr/lib/i386-linux-gnu/vdpau:/snap/pgadmin4/18/gnome-platform/lib/x86_64-linux-gnu:/snap/pgadmin4/18/gnome-platform/usr/lib/x86_64-linux-gnu:/snap/pgadmin4/18/gnome-platform/usr/lib:/snap/pgadmin4/18/gnome-platform/lib:/snap/pgadmin4/18/gnome-platform/usr/lib/x86_64-linux-gnu/libunity:/snap/pgadmin4/18/gnome-platform/usr/lib/x86_64-linux-gnu/pulseaudio:/snap/pgadmin4/18/gnome-platform/usr/lib/x86_64-linux-gnu/libproxy
+  - XDG_RUNTIME_DIR: /run/user/1000/snap.pgadmin4
+  - LIBVA_DRIVERS_PATH: /snap/pgadmin4/18/gpu-2404/usr/lib/x86_64-linux-gnu/dri/:/snap/pgadmin4/18/gpu-2404/usr/lib/i386-linux-gnu/dri/
+  - WSLENV: WT_SESSION:WT_PROFILE_ID:
+  - GST_PLUGIN_SYSTEM_PATH: /snap/pgadmin4/18/gnome-platform/usr/lib/x86_64-linux-gnu/gstreamer-1.0
+  - FONTCONFIG_FILE: /snap/pgadmin4/18/gnome-platform/etc/fonts/fonts.conf
+  - SNAP_NAME: pgadmin4
+  - GBM_BACKENDS_PATH: /snap/pgadmin4/18/gpu-2404/usr/lib/x86_64-linux-gnu/gbm:/snap/pgadmin4/18/gpu-2404/usr/lib/i386-linux-gnu/gbm
+  - XDG_DATA_DIRS: /home/mani/snap/pgadmin4/18/.local/share:/home/mani/snap/pgadmin4/18:/snap/pgadmin4/18/data-dir:/snap/pgadmin4/18/usr/share:/snap/pgadmin4/18/gnome-platform/usr/share:/usr/local/share:/usr/share:/home/mani/.nix-profile/share:/nix/var/nix/profiles/default/share:/var/lib/snapd/desktop:/snap/pgadmin4/18/gpu-2404/usr/share
+  - PATH: /snap/pgadmin4/18/usr/sbin:/snap/pgadmin4/18/usr/bin:/snap/pgadmin4/18/sbin:/snap/pgadmin4/18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/pgadmin4/18/gnome-platform/usr/bin
+  - GTK_USE_PORTAL: 1
+  - GTK_IM_MODULE_FILE: /home/mani/snap/pgadmin4/common/.cache/immodules/immodules.cache
+  - DBUS_SESSION_BUS_ADDRESS: unix:path=/run/user/1000/bus
+  - HOSTTYPE: x86_64
+  - GIO_MODULE_DIR: /home/mani/snap/pgadmin4/common/.cache/gio-modules
+  - PULSE_SERVER: unix:/mnt/wslg/PulseServer
+  - WT_PROFILE_ID: {2556c0de-98fd-561c-a7a6-0b4cd6975264}
+  - XKB_CONFIG_ROOT: /snap/pgadmin4/18/gnome-platform/usr/share/X11/xkb
+  - CHROME_DESKTOP: pgadmin4.desktop
+  - ORIGINAL_XDG_CURRENT_DESKTOP: undefined
+  - ELECTRON_ENABLE_SECURITY_WARNINGS: false
+  - GDK_BACKEND: x11
+  - NO_AT_BRIDGE: 1
+  - PGADMIN_INT_PORT: 43303
+  - PGADMIN_INT_KEY: f3615520-8e66-4adc-b346-b1bba21b3a7c
+  - PGADMIN_SERVER_MODE: OFF
+--------------------------------------------------------
+
+Total spawn time to start the pgAdmin4 server: 0.028 Sec
+2025-05-02 10:18:57,123: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+
+ * Serving Flask app 'pgadmin'
+ * Debug mode: off
+
+------------------------------------------
+Total time taken to ping pgAdmin4 server: 26.21 Sec
+------------------------------------------
+Total launch time of pgAdmin4: 30.601 Sec
+------------------------------------------
+Application Server URL: http://127.0.0.1:43303/?key=f3615520-8e66-4adc-b346-b1bba21b3a7c
+2025-05-02 10:19:03,182: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 251, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
+
+2025-05-02 10:19:03,208: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 251, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
+
+2025-05-02 10:19:03,516: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 251, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
+
+2025-05-02 10:19:03,530: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 251, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
+
+2025-05-02 11:07:30,953: ERROR	pgadmin:	Could not connect to server(#3) - '172.27.226.245'.
+Error: connection failed: connection to server at "172.27.226.245", port 5432 failed: FATAL:  no pg_hba.conf entry for host "172.27.226.245", user "postgres", database "postgres", SSL encryption
+connection to server at "172.27.226.245", port 5432 failed: FATAL:  no pg_hba.conf entry for host "172.27.226.245", user "postgres", database "postgres", no encryption
+
+2025-05-02 11:08:23,386: ERROR	pgadmin:	Could not connect to server(#3) - '172.27.226.245'.
+Error: connection failed: connection to server at "172.27.226.245", port 5432 failed: FATAL:  no pg_hba.conf entry for host "172.27.226.245", user "postgres", database "postgres", SSL encryption
+connection to server at "172.27.226.245", port 5432 failed: FATAL:  no pg_hba.conf entry for host "172.27.226.245", user "postgres", database "postgres", no encryption
+
+2025-05-02 11:08:29,683: ERROR	pgadmin:	Could not connect to server(#3) - '172.27.226.245'.
+Error: connection failed: connection to server at "172.27.226.245", port 5432 failed: FATAL:  no pg_hba.conf entry for host "172.27.226.245", user "postgres", database "postgres", SSL encryption
+connection to server at "172.27.226.245", port 5432 failed: FATAL:  no pg_hba.conf entry for host "172.27.226.245", user "postgres", database "postgres", no encryption
+
+2025-05-02 11:08:45,873: ERROR	pgadmin:	Could not connect to server(#3) - '172.27.226.245'.
+Error: connection failed: connection to server at "172.27.226.245", port 5432 failed: FATAL:  no pg_hba.conf entry for host "172.27.226.245", user "postgres", database "postgres", SSL encryption
+connection to server at "172.27.226.245", port 5432 failed: FATAL:  no pg_hba.conf entry for host "172.27.226.245", user "postgres", database "postgres", no encryption
+
+2025-05-02 11:09:30,381: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:09:58,333: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:10:26,330: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:10:54,321: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:11:22,303: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:11:50,275: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:12:18,254: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:12:46,253: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:13:14,230: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:13:42,199: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:14:10,152: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:14:38,150: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:15:08,152: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:15:36,157: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:16:04,157: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:16:32,118: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:17:00,115: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:17:28,095: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:17:56,204: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:18:24,108: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:18:52,119: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:19:20,071: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:19:48,106: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:20:16,103: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:20:44,104: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:21:12,015: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:21:42,050: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:22:09,975: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:22:37,930: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:23:05,931: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:23:33,899: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:24:01,839: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:24:29,829: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:24:57,797: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:25:25,750: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:25:53,721: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:26:21,698: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:26:49,649: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:27:17,629: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:27:45,590: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:28:13,570: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:28:43,572: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:29:11,524: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:29:39,453: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:30:07,391: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:30:35,382: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:31:03,310: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:31:31,284: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:31:59,237: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:32:27,217: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:32:55,172: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:33:23,130: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:33:51,112: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:34:19,028: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:34:46,998: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:35:17,000: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:35:44,948: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:36:12,924: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:36:40,879: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:37:08,830: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:37:36,721: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:38:04,726: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:38:32,674: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:39:00,643: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:39:28,558: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:39:56,466: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:40:24,382: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:40:52,362: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:41:20,334: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:41:50,356: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:42:18,242: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:42:46,179: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:43:14,058: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:43:42,048: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:44:09,996: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:44:37,913: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:45:05,856: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:45:33,765: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:46:01,585: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:46:29,563: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:46:57,534: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:47:25,446: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:47:53,326: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:48:21,272: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:48:51,286: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:49:19,183: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:49:47,022: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:50:14,972: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:50:42,941: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:51:10,791: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:51:38,658: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:52:06,567: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:52:34,548: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:53:02,412: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:53:30,322: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:53:58,203: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:54:26,083: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:54:53,946: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:55:23,920: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:55:51,894: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:56:19,836: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:56:47,730: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:57:15,607: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:57:43,515: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:58:11,459: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:58:39,345: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:59:07,204: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 11:59:34,966: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:00:02,933: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:00:30,753: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:00:58,667: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:01:26,666: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:01:56,631: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:02:24,463: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:02:52,358: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:03:20,182: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:03:48,112: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:04:16,037: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:04:43,979: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:05:11,842: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:05:39,760: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:06:07,668: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:06:35,564: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:07:03,459: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:07:31,400: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:07:59,344: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:08:29,343: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:08:57,111: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:09:25,007: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:09:52,965: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:10:20,836: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:10:48,750: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:11:16,692: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:11:44,583: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:12:12,403: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:12:40,298: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:13:08,220: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:13:36,110: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:14:04,011: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:14:31,933: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:14:59,817: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:15:29,854: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:15:57,737: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:16:25,661: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:16:53,592: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:17:21,488: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:17:49,321: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:18:17,308: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:18:45,146: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:19:12,942: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:19:40,925: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:20:08,802: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:20:36,726: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:21:04,612: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:21:32,492: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:22:02,470: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:22:30,347: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:22:58,288: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:23:26,205: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:23:54,100: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:24:21,962: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:24:49,841: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:25:17,732: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:25:45,620: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:26:13,564: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:26:41,407: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:27:09,333: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:27:37,222: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:28:05,069: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:28:35,106: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:29:03,009: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:29:30,903: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:29:58,762: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:30:26,638: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:30:54,495: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:31:22,478: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:31:50,300: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:32:18,126: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:32:46,109: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:33:13,953: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:33:41,823: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:34:09,688: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:34:37,571: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:35:05,385: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:35:35,359: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:36:03,249: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:36:31,095: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:36:58,941: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:37:26,833: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:37:54,713: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:38:22,585: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:38:51,373: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:39:19,158: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:39:46,912: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:40:14,764: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:40:42,621: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:41:10,402: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:41:38,266: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:42:08,247: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:42:36,153: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:43:03,908: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:43:31,770: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:43:59,695: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:44:27,495: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:44:55,279: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:45:23,023: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:45:50,886: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:46:18,706: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:46:46,587: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:47:16,594: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:47:46,578: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-02 12:48:16,550: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:16:49,469: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:17:16,681: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:17:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:18:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:18:46,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:19:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:19:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:20:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:20:46,680: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:21:16,680: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:21:46,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:22:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:22:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:23:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:23:46,680: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:24:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:24:46,680: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:25:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:25:46,680: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:26:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:26:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:27:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:27:46,676: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:28:16,676: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:28:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:29:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:29:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:30:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:30:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:31:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:31:46,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:32:16,681: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:32:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:33:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:33:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:34:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:34:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:35:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:35:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:36:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:36:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:37:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:37:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:38:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:38:46,680: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:39:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:39:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:40:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:40:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:41:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:41:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:42:16,685: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:42:46,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:43:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:43:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:44:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:44:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:45:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:45:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:46:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:46:46,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:47:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:47:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:48:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:48:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:49:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:49:46,676: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:50:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:50:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:51:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:51:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:52:16,680: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:52:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:53:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:53:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:54:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:54:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:55:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:55:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:56:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:56:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:57:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:57:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:58:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:58:46,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:59:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 06:59:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:00:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:00:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:01:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:01:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:02:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:02:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:03:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:03:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:04:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:04:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:05:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:05:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:06:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:06:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:07:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:07:46,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:08:16,676: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:08:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:09:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:09:46,681: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:10:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:10:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:11:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:11:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:12:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:12:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:13:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:13:46,676: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:14:16,676: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:14:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:15:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:15:46,676: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:16:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:16:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:17:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:17:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:18:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:18:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:19:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:19:46,676: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:20:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:20:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:21:16,676: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:21:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:22:16,680: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:22:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:23:16,680: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:23:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:24:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:24:46,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:25:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:25:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:26:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:26:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:27:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:27:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:28:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:28:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:29:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:29:46,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:30:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:30:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:31:16,681: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:31:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:32:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:32:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:33:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:33:46,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:34:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:34:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:35:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:35:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:36:16,680: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:36:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:37:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:37:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:38:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:38:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:39:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:39:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:40:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:40:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:41:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:41:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:42:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:42:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:43:16,676: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:43:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:44:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:44:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:45:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:45:46,707: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:46:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:46:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:47:16,676: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:47:46,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:48:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:48:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:49:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:49:46,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:50:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:50:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:51:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:51:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:52:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:52:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:53:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:53:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:54:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:54:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:55:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:55:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:56:16,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:56:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:57:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:57:46,676: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:58:16,681: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:58:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:59:16,676: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 07:59:46,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:00:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:00:46,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:01:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:01:46,676: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:02:16,680: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:02:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:03:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:03:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:04:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:04:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:05:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:05:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:06:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:06:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:07:16,677: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:07:46,679: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:08:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:08:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:09:16,681: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:09:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:10:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:10:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:11:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:11:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:12:16,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:12:46,678: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 08:13:16,676: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:00:22,057: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:00:52,051: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:01:22,048: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:01:52,050: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:02:22,051: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:02:52,051: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:03:22,049: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:03:52,051: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:04:22,052: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:04:52,052: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:05:22,052: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:05:52,051: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:06:22,063: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:06:52,051: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:07:22,058: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:07:52,051: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:08:22,051: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:08:52,051: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:09:22,053: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:09:52,050: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:10:22,053: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:10:51,411: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:11:20,662: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:11:49,798: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:12:18,920: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:12:48,358: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:13:17,589: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:13:47,592: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:14:15,750: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:14:45,131: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:15:14,099: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:15:43,521: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:16:13,517: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:16:42,703: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:17:11,395: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:17:41,390: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:18:10,219: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:18:39,280: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:19:08,627: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:19:38,621: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:20:08,601: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:20:37,917: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:21:07,928: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:21:37,440: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:22:06,606: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:22:36,191: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:23:05,213: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:23:34,040: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:24:03,079: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:24:32,202: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:25:01,204: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:25:31,205: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:25:59,636: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:26:28,697: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:26:58,687: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:27:27,631: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:27:57,133: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:28:26,316: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:28:55,674: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:29:24,832: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:29:54,835: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:30:23,936: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:30:53,462: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:31:22,575: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:31:51,792: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:32:20,815: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:32:50,813: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:33:19,916: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:33:48,548: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:34:18,067: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:34:47,043: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:35:17,035: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:35:46,341: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:36:15,656: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:36:44,589: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:37:13,801: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:37:43,036: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:38:13,034: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:38:42,212: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:39:11,349: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:39:40,521: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:40:10,521: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:40:39,432: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:41:08,243: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:41:36,980: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:42:05,933: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:42:34,761: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:43:03,670: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:43:33,664: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:44:02,184: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:44:31,448: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:45:00,378: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:45:29,328: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:45:58,245: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+
+2025-05-04 11:46:26,725: ERROR	pgadmin:	Manager not found. Stopped Heartbeat logging for the session id: bc3fed2e-8a9e-4a2c-94f9-356c561abb84 and server id: 3
+

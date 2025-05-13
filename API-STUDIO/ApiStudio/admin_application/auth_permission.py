@@ -153,6 +153,7 @@ def auth_edit_per_form(request, app_id: str, username: str, record_id: int):
             selected_permissions = _list_value
 
         edit_obj.role = role
+        edit_obj.type = _type
         edit_obj.group_name = selected_permissions
 
         edit_obj.save()

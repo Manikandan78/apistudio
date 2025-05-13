@@ -1,0 +1,30 @@
+{
+    "injected_packages": {},
+    "main_package": {
+        "app_paths": [
+            {
+                "__Path__": "/home/mani/.local/share/pipx/venvs/markdown/bin/markdown_py",
+                "__type__": "Path"
+            }
+        ],
+        "app_paths_of_dependencies": {},
+        "apps": [
+            "markdown_py"
+        ],
+        "apps_of_dependencies": [],
+        "include_apps": true,
+        "include_dependencies": false,
+        "man_pages": [],
+        "man_pages_of_dependencies": [],
+        "man_paths": [],
+        "man_paths_of_dependencies": {},
+        "package": "markdown",
+        "package_or_url": "markdown",
+        "package_version": "3.8",
+        "pip_args": [],
+        "suffix": ""
+    },
+    "pipx_metadata_version": "0.3",
+    "python_version": "Python 3.12.3",
+    "venv_args": []
+}

@@ -42,9 +42,9 @@ def get_db():
         db.close()
 
 
+
 @app.post('/db_schema_api/db-engine', tags=['Database'])
 def create(request: schemas.EngineSchema, db: Session = Depends(get_db)):
-    hashed_password = hashlib.md5(request.db_password.encode()).hexdigest()
 
     engine_value = request.db_engine
 
@@ -53,7 +53,7 @@ def create(request: schemas.EngineSchema, db: Session = Depends(get_db)):
         new_db = models.Engine(
             db_engine=request.db_engine,
             db_user=request.db_user,
-            db_password=hashed_password,  # Fix here
+            db_password=request.db_password,  # Fix here
             db_host=request.db_host,
             db_port=request.db_port,
             db_name=request.db_name,
@@ -78,6 +78,44 @@ def create(request: schemas.EngineSchema, db: Session = Depends(get_db)):
         db.commit()
         db.refresh(new_db)
         return new_db
+
+
+# @app.post('/db_schema_api/db-engine', tags=['Database'])
+# def create(request: schemas.EngineSchema, db: Session = Depends(get_db)):
+#     hashed_password = hashlib.md5(request.db_password.encode()).hexdigest()
+#
+#     engine_value = request.db_engine
+#
+#     if engine_value == 'postgresql':
+#
+#         new_db = models.Engine(
+#             db_engine=request.db_engine,
+#             db_user=request.db_user,
+#             db_password=hashed_password,  # Fix here
+#             db_host=request.db_host,
+#             db_port=request.db_port,
+#             db_name=request.db_name,
+#             db_connection=request.db_connection,
+#         )
+#         db.add(new_db)
+#         db.commit()
+#         db.refresh(new_db)
+#         return new_db
+#
+#     else:
+#         new_db = models.Engine(
+#             db_engine=request.db_engine,
+#             db_user=request.db_user,
+#             db_password=request.db_password,
+#             db_host=request.db_host,
+#             db_port=request.db_port,
+#             db_name=request.db_name,
+#             db_connection=request.db_connection,
+#         )
+#         db.add(new_db)
+#         db.commit()
+#         db.refresh(new_db)
+#         return new_db
 
 
 @app.get('/db_schema_api/db-engine', tags=['Database'])
@@ -109,9 +147,9 @@ def update(id, request: schemas.EngineSchema, db: Session = Depends(get_db)):
 
     if engine_value == 'postgresql' or request.db_engine == 'postgresql':
 
-        if request.db_password:
-            hashed_password = hashlib.md5(request.db_password.encode()).hexdigest()
-            request.db_password = hashed_password
+        # if request.db_password:
+        #     hashed_password = hashlib.md5(request.db_password.encode()).hexdigest()
+        #     request.db_password = hashed_password
 
         data.update(request.dict())
         db.commit()

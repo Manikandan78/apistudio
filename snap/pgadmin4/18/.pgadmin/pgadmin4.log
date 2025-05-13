@@ -1,0 +1,33 @@
+2025-05-08 11:11:45,876: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-05-08 11:11:52,079: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 251, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
+2025-05-08 11:11:52,111: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 251, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
+2025-05-08 11:11:52,434: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 251, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
+2025-05-08 11:11:52,447: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 251, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.

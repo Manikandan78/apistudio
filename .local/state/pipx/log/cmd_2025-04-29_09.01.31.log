@@ -1,0 +1,43 @@
+   315.6ms (setup:858): 2025-04-29 09:01:31
+   315.8ms (setup:859): /usr/bin/pipx install markdown
+   315.9ms (setup:860): pipx version is 1.4.3
+   316.0ms (setup:861): Default python interpreter is '/usr/bin/python3'
+   317.3ms (package_name_from_spec:370): Determined package name: markdown
+   317.4ms (package_name_from_spec:371): Package name determined in 0.0s
+   318.4ms (run_subprocess:168): running /usr/bin/python3 -m venv --without-pip /home/mani/.local/share/pipx/venvs/markdown
+   413.6ms (run_subprocess:190): stdout:
+   413.7ms (run_subprocess:192): stderr:
+   413.8ms (run_subprocess:193): returncode: 0
+   414.5ms (run_subprocess:168): running <checking pip's availability>
+   445.7ms (run_subprocess:190): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x7f980b6cbec0>, origin='/home/mani/.local/share/pipx/shared/lib/python3.12/site-packages/pip/__init__.py', submodule_search_locations=['/home/mani/.local/share/pipx/shared/lib/python3.12/site-packages/pip'])
+   445.9ms (run_subprocess:193): returncode: 0
+   446.3ms (run_subprocess:168): running /home/mani/.local/share/pipx/venvs/markdown/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+   478.4ms (run_subprocess:190): stdout: /home/mani/.local/share/pipx/venvs/markdown/lib/python3.12/site-packages
+   478.5ms (run_subprocess:193): returncode: 0
+   478.8ms (run_subprocess:168): running /home/mani/.local/share/pipx/shared/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+   507.4ms (run_subprocess:190): stdout: /home/mani/.local/share/pipx/shared/lib/python3.12/site-packages
+   507.5ms (run_subprocess:193): returncode: 0
+   508.0ms (run_subprocess:168): running /home/mani/.local/share/pipx/venvs/markdown/bin/python --version
+   510.6ms (run_subprocess:190): stdout: Python 3.12.3
+   510.7ms (run_subprocess:192): stderr:
+   510.7ms (run_subprocess:193): returncode: 0
+   511.1ms (_parsed_package_to_package_or_url:137): cleaned package spec: markdown
+   511.7ms (run_subprocess:168): running /home/mani/.local/share/pipx/venvs/markdown/bin/python -m pip --no-input install markdown
+  2179.3ms (run_subprocess:193): returncode: 0
+  2180.5ms (run_subprocess:168): running <fetch_info_in_venv commands>
+  2222.3ms (run_subprocess:190): stdout: {"sys_path": ["/usr/lib/python312.zip", "/usr/lib/python3.12", "/usr/lib/python3.12/lib-dynload", "/home/mani/.local/share/pipx/venvs/markdown/lib/python3.12/site-packages", "/home/mani/.local/share/pipx/shared/lib/python3.12/site-packages"], "python_version": "3.12.3", "environment": {"implementation_name": "cpython", "implementation_version": "3.12.3", "os_name": "posix", "platform_machine": "x86_64", "platform_release": "5.15.167.4-microsoft-standard-WSL2", "platform_system": "Linux", "platform_version": "#1 SMP Tue Nov 5 00:21:55 UTC 2024", "python_full_version": "3.12.3", "platform_python_implementation": "CPython", "python_version": "3.12", "sys_platform": "linux"}}
+  2222.5ms (run_subprocess:193): returncode: 0
+  2232.2ms (get_venv_metadata_for_package:339): get_venv_metadata_for_package: 52ms
+  2232.4ms (_parsed_package_to_package_or_url:137): cleaned package spec: markdown
+  2234.0ms (_symlink_package_resource:168): ⚠️  Note: markdown_py was already on your PATH at /home/mani/API-STUDIO/ApiStudio/myenv/bin/markdown_py
+  2235.2ms (run_subprocess:168): running <checking pip's availability>
+  2269.1ms (run_subprocess:190): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x7f9f11583f20>, origin='/home/mani/.local/share/pipx/shared/lib/python3.12/site-packages/pip/__init__.py', submodule_search_locations=['/home/mani/.local/share/pipx/shared/lib/python3.12/site-packages/pip'])
+  2269.3ms (run_subprocess:193): returncode: 0
+  2269.4ms (needs_upgrade:78): Time since last upgrade of shared libs, in seconds: 2321994. Upgrade will be run by pipx if greater than 2592000.
+  2269.6ms (run_subprocess:168): running <checking pip's availability>
+  2303.6ms (run_subprocess:190): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x7f1d8d563ec0>, origin='/home/mani/.local/share/pipx/shared/lib/python3.12/site-packages/pip/__init__.py', submodule_search_locations=['/home/mani/.local/share/pipx/shared/lib/python3.12/site-packages/pip'])
+  2303.8ms (run_subprocess:193): returncode: 0
+  2635.7ms (warn_if_not_on_path:466): ⚠️  Note: '/home/mani/.local/bin' is not on your PATH environment variable. These apps will not be globally accessible
+    until your PATH is updated. Run `pipx ensurepath` to automatically add it, or manually modify your PATH in your
+    shell's config file (i.e. ~/.bashrc).
+  2636.1ms (cli:932): pipx finished.

@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-b7@jh9$r!nnnrwc!3(wnq9fbm$kh2y!p@u%smf*f_uru^&jnwv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["172.27.226.245"]
 
 # Application definition
 
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'database_schema.apps.DatabaseSchemaConfig',
     'cms_page.apps.CmsPageConfig',
     'views_app.apps.ViewsAppConfig',
+    'api_jobs.apps.ApiJobsConfig',
 ]
 
 MIDDLEWARE = [
@@ -111,7 +112,7 @@ DATABASES = {
         'OPTIONS': {'options': '-c search_path=api_studio'},
         'USER': 'microapi',
         'PASSWORD': 'M!cr0ap!*C$E*',
-        'HOST': 'localhost'
+        'HOST': '172.27.226.245'
 
     }
 }
@@ -151,15 +152,16 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 LOGIN_URL = 'login_view'  # or '/login/'
 
+
+
 # settings.py
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['https://studio.nanox.app']
+#CSRF_TRUSTED_ORIGINS = ['https://studio.colleges91.com']

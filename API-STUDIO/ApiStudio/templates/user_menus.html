@@ -79,19 +79,19 @@
         <li class="menu-item" id="{{ menu.menu_ui_code }}">
                   {% if menu.menu_href == "/etlstudio" %}
 
-                  <a href="/etlstudio" class="menu-link">
+                  <a href="{% url 'api_jobs_list' %}" class="menu-link">
                     <i class='menu-icon bx {{ menu.icon_class }}'></i>
-                    <div data-i18n="Scheduled Jobs">{{ menu.menu_name }}</div>
+                    <div>{{ menu.menu_name }}</div>
                 </a>
          {% elif menu.menu_href %}
                       <a href="{% url menu.menu_href %}" class="menu-link">
                     <i class='menu-icon bx {{ menu.icon_class }}'></i>
-                    <div data-i18n="Scheduled Jobs">{{ menu.menu_name }}</div>
+                    <div>{{ menu.menu_name }}</div>
                 </a>
             {% else %}
                 <a href="#" class="menu-link">
                     <i class='menu-icon bx {{ menu.icon_class }}'></i>
-                    <div data-i18n="Scheduled Jobs">{{ menu.menu_name }}</div>
+                    <div>{{ menu.menu_name }}</div>
                 </a>
             {% endif %}
         </li>

@@ -4,8 +4,8 @@
 	"connectionTimeout": 180,
 	"openDocsInBrowser": true,
 	"bounds": {
-		"x": 12,
-		"y": 54,
+		"x": 6,
+		"y": 27,
 		"width": 1024,
 		"height": 773
 	}

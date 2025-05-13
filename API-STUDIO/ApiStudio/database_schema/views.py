@@ -286,8 +286,10 @@ def mysql_get_records(request, id: int, table_name: str):
 @login_required
 def permision_schema(request, id, connection):
     db = id
+
     db_connection = connection
     schema_list = rq.get(f"{DB_SCHEMA_API_URL}get-schemas/{db}/")
+
     schema_list_values = schema_list.json()
 
     api_connection_id = id

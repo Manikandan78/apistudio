@@ -8,7 +8,7 @@ DB_NAME="apicloud"
 DB_USER="microapi"
 DB_PASSWORD="M!cr0ap!*C$E*"  # Replace with a secure password
 SCHEMA1="public"
-SCHEMA2="apicloud"
+SCHEMA2="api_studio"
 LOG_FILE="./install.log"
 
 # Redirect output to a log file for troubleshooting

@@ -277,6 +277,8 @@ def join_creator_permission(request, uid: str):
 
 @login_required
 def homepage(request):
+    print(request.user)
+    print("home page work")
     # this is every menus use
     app_id = "asa0103"
     permission = platform_permission(request, app_id)

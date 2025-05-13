@@ -1,0 +1,98 @@
+{% extends 'phdbase.html' %}
+{% load static %} 
+{% block content %}
+
+<div class="row">
+  <!-- Timeline Basic-->
+  <div class="col-xl-12 mb-6 mb-xl-0">
+    <div class="card">
+      <h5 class="card-header">Application Status</h5>
+      <div class="card-body">
+        <ul class="timeline mb-0">
+          <li class="timeline-item timeline-item-transparent">
+            <span class="timeline-point timeline-point-success"></span>
+            <div class="timeline-event">
+              <div class="timeline-header mb-3">
+                <h6 class="mb-0">Registered On</h6>
+                <small class="text-muted">4 Day Ago</small>
+                
+              </div>
+              <p class="mb-2">Applicant Registered for applying with PHC</p>
+            </div>
+          </li>
+          <li class="timeline-item timeline-item-transparent">
+            <span class="timeline-point timeline-point-success"></span>
+            <div class="timeline-event">
+              <div class="timeline-header mb-3">
+                <h6 class="mb-0">Document Upload</h6>
+                <small class="text-muted">2 Day Ago</small>
+                
+              </div>
+              <p class="mb-2">Application Documents & Fill up Details Submitted</p>
+            </div>
+          </li>
+          <li class="timeline-item timeline-item-transparent">
+            <span class="timeline-point timeline-point-success"></span>
+            <div class="timeline-event">
+              <div class="timeline-header mb-3">
+                <h6 class="mb-0">Documents Download</h6>
+                <small class="text-muted">45 min ago</small>
+              </div>
+              <p class="mb-2">Upload Document Download For Institute Ceal & Signature</p>
+              <div class="d-flex align-items-center mb-2">
+                <div class="badge bg-lighter rounded d-flex align-items-center">
+                 
+                  <img src="{% static 'assets/img/icons/misc/pdf.png' %}" alt="img" width="15" class="me-2">
+                  <span class="h6 mb-0 text-body">PHD202501170141.pdf</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-item timeline-item-transparent">
+            <span class="timeline-point timeline-point-success"></span>
+            <div class="timeline-event">
+              <div class="timeline-header mb-3">
+                <h6 class="mb-0">Download Doc Upload</h6>
+                <small class="text-muted">12 min ago</small>
+              </div>
+              <p class="mb-2">Upload Successfully Document Download For Institute Ceal & Signature</p>
+            </div>
+          </li>
+          <li class="timeline-item timeline-item-transparent">
+            <span class="timeline-point timeline-point-danger"></span>
+            <div class="timeline-event">
+              <div class="timeline-header mb-3">
+                <h6 class="mb-0">Verified By PHD Officer</h6>
+                <small class="text-muted">-</small>
+              </div>
+              <p class="mb-2"></p>
+            </div>
+          </li>
+          <li class="timeline-item timeline-item-transparent">
+            <span class="timeline-point timeline-point-danger"></span>
+            <div class="timeline-event">
+              <div class="timeline-header mb-3">
+                <h6 class="mb-0">Approved</h6>
+                <small class="text-muted"> - </small>
+              </div>
+              <p class="mb-2"></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Timeline Basic -->
+
+</div>
+
+  <!-- Content wrapper -->
+<!-- Overlay -->
+<div class="layout-overlay layout-menu-toggle"></div>
+
+<!-- Drag Target Area To SlideIn Menu On Small Screens -->
+<div class="drag-target"></div>
+
+
+
+{% endblock content %}

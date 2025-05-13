@@ -32,4 +32,5 @@ urlpatterns = [
     path('', include('database_schema.urls')),
     path('', include('cms_page.urls')),
     path('', include('views_app.urls')),
+    path('', include('api_jobs.urls')),
 ]

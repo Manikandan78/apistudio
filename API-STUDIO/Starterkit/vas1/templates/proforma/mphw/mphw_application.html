@@ -1,0 +1,291 @@
+{% extends 'phdbase.html' %}
+{% load static %} 
+{% block content %}
+
+   <h5 class="mt-2">Application / MBHW (M)/HI/SI Proforma Details</h5>
+   <div class="card mb-6">
+      <div class="card-header p-0 nav-align-top">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#form-tabs-personal" role="tab" aria-selected="true">
+              Institute Details
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+{#            <button class="nav-link" data-bs-toggle="tab" id="phc-tab" data-bs-target="#form-tabs-student" role="tab" aria-selected="false" tabindex="-1">#}
+{#              Student Details#}
+{#            </button>#}
+                <a class="nav-link" href="{% url 'mphw_student' 2 %}">
+              Student Details
+            </a>
+
+          </li>
+{#          <li class="nav-item" role="presentation">#}
+{#            <button class="nav-link" data-bs-toggle="tab" id="phc-tab" data-bs-target="#form-tabs-phc" role="tab" aria-selected="false" tabindex="-1">#}
+{#            PHC Details#}
+{#            </button>#}
+            <li>   <a class="nav-link" href="{% url 'mphw_phc_form' 2 %}">
+             PHC Details
+            </a></li>
+
+
+
+            <li class="nav-item" role="presentation">
+            <a class="nav-link" href="{% url 'mphw_check_list' 2 %}">
+           Final Submission
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="tab-content">
+        <!-- Personal Info -->
+        <div class="tab-pane fade active show" id="form-tabs-personal" role="tabpanel">
+          <form method="POST" action="#" enctype="multipart/form-data">
+            {% csrf_token %}
+              <div class="card shadow">
+                  <!-- Row 1 -->
+                  <div class="row">
+                      <!-- Column 1 -->
+                      <div class="mb-3 col-md-6">
+                          <label for="institute_name">Institute Name</label>
+                          <input value="{{ obj.institution_name }}" type="text" name="institution_name"
+                                 class="form-control" placeholder="Enter Institute Name">
+                      </div>
+
+                      <!-- Column 2 -->
+                      <div class="mb-3 col-md-6">
+                          <label for="year_established">Year Established</label>
+                          <input value="{{ obj.year_of_established }}" type="number" name="year_of_establishment"
+                                 class="form-control" placeholder="Enter Year Established">
+                      </div>
+                  </div>
+
+                  <!-- Row 2 -->
+                  <div class="row">
+                      <!-- Column 3 -->
+
+                      <div class="mb-3 col-md-6">
+                          <label for="facility_type">Course</label>
+                          <select class="select2 form-select" data-allow-clear="true" name="course_type_psk_id"
+                                  required>
+                              <option value="MBBS">MBBS</option>
+                              <option value="MD">MD</option>
+                          </select>
+                      </div>
+
+
+                      <div class="mb-3 col-md-6">
+                          <label for="financial_year">Academic Year</label>
+                          <input class="form-control" name="accademic_year" type="text" value="2025-2026">
+                      </div>
+
+                      <!-- Column 4 -->
+
+                  </div>
+
+                  <!-- Row 3 -->
+                  <div class="row">
+                      <!-- Column 5 -->
+                      <div class="mb-3 col-md-6">
+                          <label for="application_date">Application ID</label>
+                          <input type="text" name="document_id" class="form-control" readonly>
+                      </div>
+                      <div class="mb-3 col-md-6">
+                          <label for="application_date">Application Date</label>
+                          <input type="date" name="document_date" class="form-control"
+                                 placeholder="DD/MM/YYYY" required>
+                      </div>
+
+                  </div>
+              </div>
+<hr>
+                <div class="row g-6 mt-4">
+
+                 <div class="col-md-12">
+                      <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-last-name">1.Copy of G.O in which the institution was permitted to start Para Medical Course <span class="text-danger fs-4">*</span></label>
+                     <div class="row">
+
+                         <div class="col">
+                             <input type="text" name="gov_order_number" class="form-control" placeholder="G.O.NO" required>
+                         </div>
+
+                         <div class="col">
+                             <input type="date" name="gov_order_date" class="form-control" required>
+                         </div>
+
+                           <div class="col">
+                             <input type="file" name="gov_order_upload_file" class="form-control" required>
+                         </div>
+
+                     </div>
+                 </div>
+
+
+                 <div class="col-md-12">
+                     <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-last-name">2.	Whether the students of the institution were already permitted for practical training in PHC. If so, copies enclosed <span class="text-danger fs-4">*</span></label>
+
+                     <div class="row">
+
+                           <div class="col" id="go1">
+                             <input type="text" name="gov_order_date" class="form-control" placeholder="G.O.NO" required>
+                         </div>
+
+                         <div class="col" id="go2" >
+                             <input type="date" name="gov_order_date" class="form-control" required>
+                         </div>
+
+                         <div class="col" id="go3" >
+                             <input type="file" name="permitted_in_phc" class="form-control" required>
+                         </div>
+                     </div>
+                 </div>
+
+
+
+
+
+
+              <div class="col-md-12">
+                  <label>3.Whether the Management is willing to pay the fees prescribed by the Government to impart training to their Medical students <span class="text-danger fs-4">*</span></label>
+                   <input class="form-control" type="file">
+              </div>
+
+
+                    <div class="col-md-12">
+                      <label class="col-sm-3 col-form-label" for="formtabs-last-name">4.Own Hospital Detail (copy of Memorandum of Understanding [MOU]) <span class="text-danger fs-4">*</span></label>
+                     <div class="row">
+                           <div class="col">
+                             <input type="file" name="gov_order_date" class="form-control" required>
+                         </div>
+
+                     </div>
+                 </div>
+
+
+                    <div class="col-md-12">
+                      <label class="col-sm-3 col-form-label" for="formtabs-last-name">5.	Own Hospital Detail (Certificate of Registration of Clinical Establishment Act.,) <span class="text-danger fs-4">*</span></label>
+                     <div class="row">
+                           <div class="col">
+                             <input type="file" name="gov_order_date" class="form-control" required>
+                         </div>
+
+                     </div>
+                 </div>
+
+
+                    <div class="col-md-12">
+                      <label class="col-sm-3 col-form-label" for="formtabs-last-name">6.Previous Tie-Up with Public Health Department G.O and G.O date <span class="text-danger fs-4">*</span></label>
+                      <div class="row">
+
+                         <div class="col">
+                             <input type="text" name="gov_order_date" class="form-control" placeholder="G.O.NO" required>
+                         </div>
+
+                         <div class="col">
+                             <input type="date" name="gov_order_date" class="form-control" required>
+                         </div>
+
+                           <div class="col">
+                             <input type="file" name="gov_order_date" class="form-control" required>
+                         </div>
+
+                     </div>
+                 </div>
+
+
+                    <div class="col-md-12">
+                      <label>7.No due certificate of your previous batch of the internship training fees payment (Model Enclosed) along with a copy of the challan duly authenticated by the Chairman of the Trust <span class="text-danger fs-4">*</span></label>
+                     <div class="row">
+                           <div class="col">
+                             <input type="file" name="gov_order_date" class="form-control" required>
+                         </div>
+                     </div>
+                 </div>
+
+
+                    <div class="col-md-12">
+                      <label class="col-sm-3 col-form-label" for="formtabs-last-name">8.Consent Letter for 1000 Sq.Ft building</label>
+                     <div class="row">
+                           <div class="col">
+                             <input type="file" name="gov_order_date" class="form-control">
+                         </div>
+                     </div>
+                 </div>
+
+
+
+            </div>
+
+            <div class="row mt-6">
+              <div class="col-md-6">
+
+                  <div class="col-sm-9">
+{#                    <button type="reset" class="btn btn-label-secondary">Cancel</button>#}
+                            <button type="submit" class="btn btn-primary me-3">Save</button>
+                  </div>
+
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+
+          <div class="tab-pane fade" id="form-tabs-student" role="tabpanel">
+              <div class="card-body pt-0 px-0">
+                  <h6>Please first register the institute details.</h6>
+                  <p>After that, add the Student details.</p>
+
+              </div>
+          </div>
+
+               <div class="tab-pane fade" id="form-tabs-phc" role="tabpanel">
+              <div class="card-body pt-0 px-0">
+                  <h6>Please first register the institute details.</h6>
+                  <p>After that, add the PHC details.</p>
+
+              </div>
+          </div>
+
+      </div>
+    </div>
+
+
+    <script>
+        function myFunction(selectElement) {
+            let gO = selectElement.value
+            if (gO === "No") {
+                document.getElementById('go1').style.display = 'none';
+                document.getElementById('go2').style.display = 'none';
+                document.getElementById('go3').style.display = 'none';
+            } else {
+                document.getElementById('go1').style.display = 'block';
+                document.getElementById('go2').style.display = 'block';
+                document.getElementById('go3').style.display = 'block';
+            }
+
+        }
+    </script>
+
+
+
+        <script>
+        function myFunction2(selectElement) {
+            let gO = selectElement.value
+            if (gO === "No") {
+                document.getElementById('inm1').style.display = 'none';
+                document.getElementById('inm2').style.display = 'none';
+                document.getElementById('inm3').style.display = 'none';
+            } else {
+                document.getElementById('inm1').style.display = 'block';
+                document.getElementById('inm2').style.display = 'block';
+                document.getElementById('inm3').style.display = 'block';
+            }
+
+        }
+    </script>
+
+
+{% endblock content %}

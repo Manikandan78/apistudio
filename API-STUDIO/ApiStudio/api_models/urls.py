@@ -4,6 +4,7 @@ from . import views
 urlpatterns = [
     path('gp_insert/', views.group_value_insert, name="group_value_insert"),
     path('model_list/', views.homepage, name="home"),
+    
     path('get_model_uids/', views.get_model_uids, name="get_model_uids"),
     path('clone_model_uids/<int:id>/', views.clone_model_uids, name="clone_model_uids"),
     path('clone_table_form/<int:table_id>/<str:uid>/<str:table_name_public>/', views.clone_table_form, name="clone_table_form"),

@@ -1,0 +1,60 @@
+2025-04-17 11:17:02,055:DEBUG:certbot._internal.main:certbot version: 2.9.0
+2025-04-17 11:17:02,055:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2025-04-17 11:17:02,055:DEBUG:certbot._internal.main:Arguments: ['--nginx', '-d', 'studio.colleges91.com', '--config-dir', '/home/mani/certbot/config', '--work-dir', '/home/mani/certbot/work', '--logs-dir', '/home/mani/certbot/logs']
+2025-04-17 11:17:02,056:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#nginx,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2025-04-17 11:17:02,073:DEBUG:certbot._internal.log:Root logging level set at 30
+2025-04-17 11:17:02,077:DEBUG:certbot._internal.plugins.selection:Requested authenticator nginx and installer nginx
+2025-04-17 11:17:02,087:ERROR:certbot.util:Error while running nginx -c /etc/nginx/nginx.conf -t.
+
+2025/04/17 11:17:02 [warn] 65480#65480: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+2025/04/17 11:17:02 [emerg] 65480#65480: open() "/run/nginx.pid" failed (13: Permission denied)
+nginx: configuration file /etc/nginx/nginx.conf test failed
+
+2025-04-17 11:17:02,088:DEBUG:certbot._internal.plugins.disco:Misconfigured PluginEntryPoint#nginx: Error while running nginx -c /etc/nginx/nginx.conf -t.
+
+2025/04/17 11:17:02 [warn] 65480#65480: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+2025/04/17 11:17:02 [emerg] 65480#65480: open() "/run/nginx.pid" failed (13: Permission denied)
+nginx: configuration file /etc/nginx/nginx.conf test failed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/certbot_nginx/_internal/configurator.py", line 1013, in config_test
+    util.run_script([self.conf('ctl'), "-c", self.nginx_conf, "-t"])
+  File "/usr/lib/python3/dist-packages/certbot/util.py", line 199, in run_script
+    raise errors.SubprocessError(msg)
+certbot.errors.SubprocessError: Error while running nginx -c /etc/nginx/nginx.conf -t.
+
+2025/04/17 11:17:02 [warn] 65480#65480: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+2025/04/17 11:17:02 [emerg] 65480#65480: open() "/run/nginx.pid" failed (13: Permission denied)
+nginx: configuration file /etc/nginx/nginx.conf test failed
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/certbot/_internal/plugins/disco.py", line 112, in prepare
+    self._initialized.prepare()
+  File "/usr/lib/python3/dist-packages/certbot_nginx/_internal/configurator.py", line 209, in prepare
+    self.config_test()
+  File "/usr/lib/python3/dist-packages/certbot_nginx/_internal/configurator.py", line 1015, in config_test
+    raise errors.MisconfigurationError(str(err))
+certbot.errors.MisconfigurationError: Error while running nginx -c /etc/nginx/nginx.conf -t.
+
+2025/04/17 11:17:02 [warn] 65480#65480: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+2025/04/17 11:17:02 [emerg] 65480#65480: open() "/run/nginx.pid" failed (13: Permission denied)
+nginx: configuration file /etc/nginx/nginx.conf test failed
+
+2025-04-17 11:17:02,123:DEBUG:certbot._internal.plugins.selection:Single candidate plugin: * nginx
+Description: Nginx Web Server plugin
+Interfaces: Authenticator, Installer, Plugin
+Entry point: EntryPoint(name='nginx', value='certbot_nginx._internal.configurator:NginxConfigurator', group='certbot.plugins')
+Initialized: <certbot_nginx._internal.configurator.NginxConfigurator object at 0x7fad059e8b90>
+Prep: Error while running nginx -c /etc/nginx/nginx.conf -t.
+
+2025/04/17 11:17:02 [warn] 65480#65480: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+2025/04/17 11:17:02 [emerg] 65480#65480: open() "/run/nginx.pid" failed (13: Permission denied)
+nginx: configuration file /etc/nginx/nginx.conf test failed
+

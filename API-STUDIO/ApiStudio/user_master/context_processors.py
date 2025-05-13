@@ -1,4 +1,4 @@
-from .models import UserProfile, AppPermission, AppPermissionGroup
+from .models import UserProfile, AppPermission, AppPermissionGroup, StudioMenus
 
 
 def studio_menus_processor(request):
@@ -8,7 +8,7 @@ def studio_menus_processor(request):
             # studio_menus = user_profile.studio_menus.all()
             studio_menus = user_profile.studio_menus.filter(active=True).order_by('menu_order')
         except UserProfile.DoesNotExist:
-            studio_menus = []
+            studio_menus = StudioMenus.objects.filter(active=True).order_by('menu_order')
     else:
         studio_menus = []
     # print(studio_menus)

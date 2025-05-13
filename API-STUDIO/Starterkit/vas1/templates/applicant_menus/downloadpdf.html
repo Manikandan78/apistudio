@@ -1,0 +1,46 @@
+{% extends 'phdbase.html' %}
+
+{% block content %}
+
+
+  <!-- Content -->
+  <div class="container-xxl flex-grow-1 container-p-y">
+    <div class="card">
+        <h5 class="card-header pb-0 text-md-start text-center">Download Submitted PDF</h5>
+        <div class="card-datatable text-nowrap">
+            <table class="datatables-ajax table">
+                <thead>
+                <tr>
+
+                    <th>Application ID</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                {% for obj in application_status_download %}
+                    <tr>
+                      <td>
+
+
+
+                                    {{ obj.document_id }}
+
+                    </td>
+
+                        <td>  <a href="{% url 'download_pdf' obj.psk_id %}" class="btn btn-sm btn-icon btn-danger">
+                      <span class="tf-icons bx bx-download"></span>
+                  </a></td>
+
+                    </tr>
+                {% endfor %}
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+  </div>
+
+{% endblock content %}

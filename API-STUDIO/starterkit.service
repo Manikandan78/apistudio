@@ -1,0 +1,12 @@
+[Unit]
+Description=STARTER KIT Service
+After=network.target
+
+[Service]
+Type=idle
+Restart=always
+User=root
+ExecStart=/bin/bash -c 'cd /Apistudio/Starterkit/ && source venv/bin/activate && python manage.py runserver 127.0.0.1:8050'
+
+[Install]
+WantedBy=multi-user.target

@@ -43,6 +43,7 @@ APPLICATION_TYPES = (
     ("html", "HTML"),
     ("markdown", "Markdown"),
     ("platform", "Platform"),
+    ("job", "Job"),
 )
 
 

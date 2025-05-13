@@ -400,10 +400,6 @@ def test(request: schemas.GetDataSchema, db: Session = Depends(get_db)):
             # print(password_encoded)
             connection_string = f"mysql+mysqlconnector://{db_user}:{password_encoded}@{db_host}:{db_port}/{db_name}"
 
-        elif db_engine == "mssql":
-            password_encoded = quote_plus(db_password)
-            connection_string = f"mssql+pymssql://{db_user}:{password_encoded}@{db_host}:{db_port}/{db_name}"
-
         else:
             raise HTTPException(status_code=404, detail="Wong Db")
 
@@ -555,14 +551,13 @@ def auth_get_response_data(request: schemas.GetDataSchema,
                     # print(password_encoded)
                     connection_string = f"mysql+mysqlconnector://{db_user}:{password_encoded}@{db_host}:{db_port}/{db_name}"
 
-                elif db_engine == "mssql":
-                    password_encoded = quote_plus(db_password)
-                    connection_string = f"mssql+pymssql://{db_user}:{password_encoded}@{db_host}:{db_port}/{db_name}"
-
                 else:
                     raise HTTPException(status_code=404, detail="Wong Db")
 
+                # connection_string = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}?options=-csearch_path%3D{schema_name}"
+
                 if obj:
+
                     engine = create_engine(connection_string)
 
                     with Session(engine) as session:

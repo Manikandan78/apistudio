@@ -1,4 +1,4 @@
-from backports import configparser
+import configparser
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
@@ -14,7 +14,7 @@ from user_master.views import permission_menu
 config = configparser.ConfigParser()
 config.read(os.path.join(os.getcwd(), 'config.ini'))
 
-DOMAIN = "127.0.0.1:8005"
+DOMAIN = "172.27.226.245:8005"
 
 CRUD_API_URL = config['DEFAULT']['CRUD_API_URL']
 GET_API_URL = config['DEFAULT']['GET_API_URL']
@@ -438,7 +438,7 @@ def default_insert_menus(request):
             "menu_name": "Scheduled Jobs",
             "menu_uid": "asa0112",
             "menu_href": "/etlstudio",
-            "menu_ui_code": "",
+            "menu_ui_code": "menu-jobs",
             "icon_class": "bxs-timer",
             "menu_order": 12
         },

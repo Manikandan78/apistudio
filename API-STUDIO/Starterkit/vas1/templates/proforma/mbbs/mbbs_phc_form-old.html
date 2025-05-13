@@ -1,0 +1,153 @@
+{% extends 'phdbase.html' %}
+{% load static %} 
+{% block content %}
+
+ <h5 class="mt-2">Application / MBBS Proforma Details / <span class="badge bg-label-danger">{{ application_obj.application_status }}</span></h5>
+<div class="card mb-6">
+  <div class="card-header p-0 nav-align-top">
+    <ul class="nav nav-tabs" role="tablist">
+{##}
+{#      <li class="nav-item" role="presentation">#}
+{#        <a class="nav-link">#}
+{#          Institute Details#}
+{#        </a>#}
+{#      </li>#}
+{#      <li class="nav-item" role="presentation">#}
+{#        <!-- Change to proper tab link format -->#}
+{#        <a class="nav-link" >#}
+{#          Student Details#}
+{#        </a>#}
+{#      </li>#}
+
+            <li class="nav-item" role="presentation">
+                     <a class="nav-link" href="{% url 'mbbspplication_update' rec_parent_id %}">
+
+              Institute Details
+            </a>
+
+          </li>
+
+          <li class="nav-item" role="presentation">
+                <a class="nav-link" href="{% url 'mbbs_student' rec_parent_id %}">
+              Student Details
+            </a>
+
+          </li>
+
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="student-details-tab" data-bs-toggle="tab" href="#form-tabs-account" role="tab" aria-selected="true">
+          PHC Details
+        </a>
+      </li>
+
+    <li class="nav-item" role="presentation">
+            <a class="nav-link" href="{% url 'mbbs_check_list' rec_parent_id %}">
+           Final Submission
+            </a>
+          </li>
+
+    </ul>
+  </div>
+
+   <div class="tab-content">
+    <div class="tab-pane fade show active" id="form-tabs-account" role="tabpanel" aria-labelledby="student-details-tab">
+
+
+        <form class="form-control" method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="mb-4">
+            <div class="repeater-wrapper" data-repeater-item>
+              <div class="d-flex border rounded position-relative pe-0">
+                <div class="row w-100 p-6 g-6">
+
+
+
+                      <div class="col-md-5 col-12 mb-md-0 mb-4">
+                    <p class="h6 repeater-title">Name of the PHC</p>
+                   <select name="name_of_phc_pskid" class="selectpicker w-100" data-style="btn-default" data-live-search="true" tabindex="null" placeholder="Select PHC" required>
+                      {% for phc in phc_data %}
+                          <option value="{{ phc.psk_id }}">{{ phc.phc_name }}</option>
+                      {% endfor %}
+                  </select>
+                  </div>
+
+
+
+
+
+
+                  <div class="col-md-5 col-12 mb-md-0 mb-4">
+                    <p class="h6 repeater-title">No of Student</p>
+                    <input type="number" name="academic_no_of_student" class="form-control" placeholder="No of Student">
+                  </div>
+
+
+                      <div class="col-md-1 col-12 mb-md-0 mb-4">
+                        <p class="h6 repeater-title" style="visibility:hidden;">No of </p>
+                       <button type="submit" class="btn btn-label-success">
+                      <i class="bx bx-check-square bx-xs me-1_5"></i>Save
+                      </button>
+                    </div>
+
+                </div>
+
+{#                <div class="d-flex flex-column align-items-center justify-content-between border-start p-2">#}
+{#                  <i class="bx bx-x bx-lg cursor-pointer" data-repeater-delete></i>#}
+{#                </div>#}
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+
+
+           <table class="table mt-5">
+            <thead>
+            <tr>
+
+                <th>Name of the PHC</th>
+                <th>No of Student</th>
+
+                <th>Action</th> <!-- For the save button -->
+            </tr>
+            </thead>
+            <tbody>
+    {% for obj in app_phc_data %}
+            <tr>
+
+                <td>{% for phc in phc_data %}
+                    {% if phc.psk_id == obj.name_of_phc_pskid %}
+                        {{ phc.phc_name }}
+                    {% endif %}
+                {% endfor %}
+                </td>
+                <td>{{ obj.academic_no_of_student }}</td>
+                <td>
+                    <a href="{% url 'delete_mbbs_phc' obj.psk_id rec_parent_id %}" class="btn btn-icon btn-outline-danger"><i class="bx bx-trash bx-xs me-1_5"></i></a>
+                </td>
+
+            </tr>
+{% endfor %}
+            </tbody>
+        </table>
+
+      </div>
+
+
+<hr>
+     <div class="col-12 d-flex justify-content-between">
+                  <a class="btn btn-label-secondary btn-prev" href="{% url 'mbbs_student' rec_parent_id %}">
+                    <i class="icon-base bx bx-left-arrow-alt scaleX-n1-rtl icon-sm ms-sm-n2 me-sm-2"></i>
+                    <span class="align-middle d-sm-inline-block d-none">Previous</span>
+                  </a>
+                  <a class="btn btn-primary btn-next" href="{% url 'mbbs_check_list' rec_parent_id %}">
+                    <span class="align-middle d-sm-inline-block d-none me-sm-2">Next</span>
+                    <i class="icon-base bx bx-right-arrow-alt scaleX-n1-rtl icon-sm me-sm-n2"></i>
+                  </a>
+                </div>
+
+    </div>
+</div>
+
+{% endblock content %}

@@ -13,6 +13,7 @@ from . import db_models as dbm
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 
+
 config = configparser.ConfigParser()
 config.read(os.path.join(os.getcwd(), 'config.ini'))
 
@@ -46,14 +47,11 @@ def model_export_list(request):
         tables = response.json()
     if request.method == 'POST':
         data = dict(request.POST)
-
         try:
             _selected_action = list(map(int, data['_selected_action']))
             gtl_url = f"{CRUD_API_URL}tables/list"
             payload = json.dumps({"data": _selected_action})
-
             gtl = rq.post(gtl_url, data=payload, headers={'Content-Type': 'application/json'})
-
             if gtl.status_code == 200:
                 gtl_data = gtl.json()
                 gtl_schema = TableExportSchema(**gtl_data)
@@ -114,13 +112,10 @@ def import_list(request):
 
 
 def model_import(request):
-    print("modeksdjdfhv")
     form = DBImportForm()
     if request.method == 'POST':
-        print(request)
         form = DBImportForm(request.POST, request.FILES)
         if form.is_valid():
-            print(form.cleaned_data)
             form.save()
             # print(form.instance.id)
             # model_import_list(form.instance.id)
@@ -137,7 +132,7 @@ def publish_api_request(api_url):
     url = f"{api_url}tables/publish/"
     payload = json.dumps({})
     headers = {
-        'Content-Type': 'application/json'
+    'Content-Type': 'application/json'
     }
     response = rq.post(url, headers=headers, data=payload)
     # if response.status_code == 200:
@@ -147,10 +142,8 @@ def publish_api_request(api_url):
 
 
 def model_import_list(request, import_id):
-    print("working this function")
     db = DBImport.objects.get(pk=import_id)
     engine = create_engine(f"sqlite:///{db.file.path}")
-    print(engine)
     imp_errors = []
     suc_msg = ""
 
@@ -163,7 +156,6 @@ def model_import_list(request, import_id):
             # table.fields
             tb['fields'] = [field.__dict__ for field in table.fields]
             _tables.append(tb)
-            print(_tables)
         api_metas = session.query(dbm.ApiMeta).all()
         for api_meta in api_metas:
             _api_meta.append(api_meta.__dict__)
@@ -174,7 +166,6 @@ def model_import_list(request, import_id):
         }
         url = f"{CRUD_API_URL}tables/import"
         response = rq.request("POST", url, headers=headers, data=table_export_schema.json())
-        print(table_export_schema.json())
         if response.status_code == 200:
             suc_msg += "Import Successful. "
             publish_api_request(CRUD_API_URL)

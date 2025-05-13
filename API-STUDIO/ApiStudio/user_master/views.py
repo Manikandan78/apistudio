@@ -377,34 +377,65 @@ def delete_user(request, psk_id):
         messages.error(request, "Could not perform the action")
         return redirect('user_master_view')
 
-
 def login_view(request):
+    print("function working")
+
     if request.method == "POST":
         form = LoginForm(request.POST)
         if form.is_valid():
             user_name = form.cleaned_data['username']
             password = form.cleaned_data['password']
 
-            user = auth.authenticate(username=user_name, password=password, user=request.user)
+            user = auth.authenticate(username=user_name, password=password)
+            print(user)
 
             if user is not None:
-                # print(user)
                 auth.login(request, user)
-                # print(user.username)
-                username = user.username
-                if user.is_staff:
-                    if username == "admin":
-                        return redirect('home')
-                    else:
-                        messages.error(request, message="invalid user name or password")
-                else:
-                    permission_menu(request, username)
+                if user.username == "admin" and user.is_staff:
+                    print("redirecting admin...")
                     return redirect('home')
-
+                elif not user.is_staff:
+                    permission_menu(request, user.username)
+                    return redirect('home')
+                else:
+                    messages.error(request, "Invalid username or password")
             else:
-                messages.error(request, message='invalid user name or password')
+                messages.error(request, "Invalid username or password")
+    else:
+        form = LoginForm()
 
-    return render(request, 'login.html')
+    return render(request, 'login.html', {'form': form})
+
+
+# def login_view(request):
+#     print("function working")
+#     if request.method == "POST":
+#         form = LoginForm(request.POST)
+#         if form.is_valid():
+#             user_name = form.cleaned_data['username']
+#             password = form.cleaned_data['password']
+
+#             user = auth.authenticate(username=user_name, password=password, user=request.user)
+
+#             if user is not None:
+#                 # print(user)
+#                 auth.login(request, user)
+#                 # print(user.username)
+#                 username = user.username
+#                 if user.is_staff:
+#                     if username == "admin":
+#                         print("redirect")
+#                         return redirect('api_meta_list')
+#                     else:
+#                         messages.error(request, message="invalid user name or password")
+#                 else:
+#                     permission_menu(request, username)
+#                     return redirect('api_meta_list')
+
+#             else:
+#                 messages.error(request, message='invalid user name or password')
+
+#     return render(request, 'login.html')
 
 
 @login_required

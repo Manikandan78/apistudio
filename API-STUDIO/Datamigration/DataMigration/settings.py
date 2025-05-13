@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = ['https://studio.nanox.app']
+CSRF_TRUSTED_ORIGINS = ['https://studio.colleges91.com']
 
 # Application definition
 

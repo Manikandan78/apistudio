@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load base_temp_tags %}
+{% block custom_menus %}
+  {% include "user_menus.html" %}
+{% endblock custom_menus %}
+
+{% block content %}
+<h4 class="fw-bold py-3">Select Core API</h4>
+
+{% if not coreapi_records %}
+    <div class="alert alert-danger" role="alert">
+        No Coreapi. Contact Administrator
+    </div>
+{% endif %}
+
+<div class="card mt-4">
+    <div class="table-responsive text-nowrap mt-2">
+        <table class="table" id="example">
+            <thead>
+                <tr>
+                    <th>Api Name</th>
+                    <th>uid</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="table-border-bottom-0">
+                {% for app in coreapi_records %}
+                    <tr>
+                        <td>{{app.api_name}}</td>
+                        <td>{{app.uid}}</td>
+
+                        <td>
+
+                              <a class="btn btn-sm btn-primary" href="{% url 'create_job' app_id app.uid app_name %}">Select</a>
+
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock content %}
