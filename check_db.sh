@@ -6,10 +6,10 @@ PROJECT_DIR="$HOME/API-STUDIO/ApiStudio"  # 🔁 CHANGE THIS IF NEEDED
 # === Configuration Variables ===
 export DB_NAME="apicloud"
 export DB_USER="microapi"
-export DB_PASSWORD="M!cr0ap!*C$E*"
-export DB_HOST="10.255.255.254"  # 🔁 Use your updated host here
+export DB_PASSWORD="M!cr0ap!*CSE*"
+export DB_HOST="127.0.0.1"  # 🔁 Use your updated host here
 export DB_PORT="5432"
-export DB_SCHEMA="api_studio"
+export DB_SCHEMA="apistudio"
 VENV_PATH="$PROJECT_DIR/venv"
 PORT=8005
 
@@ -40,7 +40,7 @@ try:
         dbname="apicloud",
         user="microapi",
         password="M!cr0ap!*C$E*",
-        host="10.255.255.254",
+        host="127.0.0.1",
         port="5432"
     )
     print("✅ Connected to database.")
@@ -75,7 +75,6 @@ EOF
 echo "🏗 Ensuring schema '$DB_SCHEMA' exists..."
 PGPASSWORD="$DB_PASSWORD" psql -U "$DB_USER" -d "$DB_NAME" -h "$DB_HOST" --no-password --command="CREATE SCHEMA IF NOT EXISTS $DB_SCHEMA AUTHORIZATION $DB_USER;"
 
-# === Apply Django Migrations ===
 echo "🚀 Applying Django migrations..."
 python "$PROJECT_DIR/manage.py" migrate
 
@@ -90,6 +89,3 @@ else
     echo "Port $PORT is free."
 fi
 
-# === Start Django Server ===
-echo "🎯 Starting Django server on http://$DB_HOST:$PORT ..."
-python "$PROJECT_DIR/manage.py" runserver 0.0.0.0:$PORT
