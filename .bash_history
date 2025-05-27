@@ -2890,3 +2890,60 @@ nano check_db.sh
 nano setup_pgadmin.sh
 nano setup_postgres.sh
 ./setup_postgres.sh
+ls
+git -v remote
+git remote
+git remote -v
+git add .
+nano setup_nginx_config.sh
+nano setup_nginx_config.sh
+git commit push
+git commit push origin
+git commit
+git commit "new update"
+git status
+git add /
+git add .
+git status
+git comit push origin
+git commit push origin
+git commit -m "new update"
+git push origin main
+git remove -v
+git remote -v
+git push origin main
+ls ~/.ssh/id_rsa.pub
+ssh -T git@github.com
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+ssh -T git@github.com
+ls ~/.ssh/id_rsa.publs ~/.ssh/id_rsa.pub
+ls ~/.ssh/id_rsa.pub
+ssh-keygen -t rsa -b 4096 -C "manikandanperumal00.com"
+ssh-keygen -t rsa -b 4096 -C "manikandanperumal00@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+ssh -T git@github.com
+git push origin main
+ls
+rm -rf setup_nginx.sh
+rm -rf nginx.nix
+rm -rf configuration.nix
+rm -rf nginx
+rm -rf 
+rm -rf flake.nix
+rm -rf flake.lock
+ls
+rm -rf setup_nginx_certbot.sh
+rm -rf setup_django_env.sh
+rm -rf setup_services.sh
+ls
+nano setup_postgres.sh
+./setup_postgres.sh
+
+nano setup_postgres_pgadmin.sh
+chmod +x setup_postgres_pgadmin.sh
+./setup_postgres_pgadmin.sh
+./setup_postgres_pgadmin.sh
