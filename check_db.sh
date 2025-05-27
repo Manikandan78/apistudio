@@ -6,7 +6,7 @@ PROJECT_DIR="$HOME/API-STUDIO/ApiStudio"  # 🔁 CHANGE THIS IF NEEDED
 # === Configuration Variables ===
 export DB_NAME="apicloud"
 export DB_USER="microapi"
-export DB_PASSWORD="M!cr0ap!*CSE*"
+export DB_PASSWORD="M!cr0ap!*C*"
 export DB_HOST="127.0.0.1"  # 🔁 Use your updated host here
 export DB_PORT="5432"
 export DB_SCHEMA="apistudio"
@@ -39,7 +39,7 @@ try:
     conn = psycopg2.connect(
         dbname="apicloud",
         user="microapi",
-        password="M!cr0ap!*C$E*",
+        password="M!cr0ap!*C*",
         host="127.0.0.1",
         port="5432"
     )
