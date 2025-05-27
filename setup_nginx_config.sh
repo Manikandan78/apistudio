@@ -1,11 +1,25 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Define file paths
-APISTUDIO_CONF="/etc/nginx/conf.d/apistudio.conf"
-MICROAPI_CONF="/etc/nginx/conf.d/microapi.conf"
+set -e
 
-# Create apistudio.conf
-cat <<EOF | sudo tee "$APISTUDIO_CONF"
+# === 1. Check and install Nginx if not installed ===
+echo "🔍 Checking for Nginx..."
+if ! command -v nginx &> /dev/null; then
+  echo "📦 Nginx not found. Installing..."
+  sudo apt update
+  sudo apt install -y nginx
+else
+  echo "✅ Nginx is already installed."
+fi
+
+# === 2. Define config directory and file paths ===
+NGINX_CONF_DIR="/etc/nginx/conf.d"
+APISTUDIO_CONF="${NGINX_CONF_DIR}/apistudio.conf"
+MICROAPI_CONF="${NGINX_CONF_DIR}/microapi.conf"
+
+# === 3. Create apistudio.conf ===
+echo "📝 Creating apistudio.conf..."
+sudo tee "$APISTUDIO_CONF" > /dev/null <<EOF
 server {
     listen 80;
 
@@ -35,8 +49,9 @@ server {
 }
 EOF
 
-# Create microapi.conf
-cat <<EOF | sudo tee "$MICROAPI_CONF"
+# === 4. Create microapi.conf ===
+echo "📝 Creating microapi.conf..."
+sudo tee "$MICROAPI_CONF" > /dev/null <<EOF
 server {
     listen 80;
 
@@ -100,14 +115,15 @@ server {
 }
 EOF
 
-# Test and reload nginx
-echo "Testing Nginx configuration..."
+# === 5. Test and restart Nginx ===
+echo "🔍 Testing Nginx configuration..."
 sudo nginx -t
 
-if [ $? -eq 0 ]; then
-    echo "Reloading Nginx..."
-    sudo systemctl reload nginx
-    echo "✅ Nginx configuration successfully applied!"
-else
-    echo "❌ Nginx configuration test failed. Please check the configs."
-fi
+echo "🔄 Restarting Nginx..."
+sudo systemctl restart nginx
+
+echo ""
+echo "✅ Nginx setup and configuration complete!"
+echo "🗂️  Config files:"
+echo " - $APISTUDIO_CONF"
+echo " - $MICROAPI_CONF"

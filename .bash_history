@@ -2595,3 +2595,298 @@ ls
 ./Crudapp.sh
 where wsl
 exit
+git init
+git add .
+git commit -m "Initial commit"
+git add
+git add .
+git reset
+nano .gitignore
+git rm -r --cached .cache
+git add .
+git commit -m "Removed .cache and re-added files"
+git push origin main
+ssh-keygen -t ed25519 -C "manikandanperumal00@gmail.com"
+cat ~/.ssh/id_ed25519_git_new.pub
+ssh-keygen -t ed25519 -C "manikandanperumal00@gmail.com" -f ~/.ssh/id_ed25519_git_new
+cat ~/.ssh/id_ed25519_git_new.pub
+nano ~/.ssh/config
+git remote set-url origin git@github.com:Manikandan78/apistudio.git
+ssh -T git@github.com-new
+git push origin main
+cat ~/.ssh/config
+git remote -v
+git remote set-url origin git@github.com:Manikandan78/apistudio.git
+ssh -T git@github.com-new
+git push origin main
+git add .
+git status
+ssh -vT git@github.com-new
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519_git_new
+ssh -T git@github.com-new
+git remote -v
+git push origin main
+ssh-add -l
+ls
+nano ApiStudio.sh
+nano Crudapp.sh
+nano ApiStudio.sh
+./ApiStudio.sh
+nano ApiStudio.sh
+nano
+nano ApiStudio.sh
+cd API-STUDIO/ApiStudio
+ls
+nano q.txt
+nano 1.txt
+nano reqiuirements.txt
+nano requirements.txt
+cd
+nano crudapp.sh
+nano Crudapp.sh
+ls
+cd
+ls
+./Crudapp.sh
+cd API-STUDIO/CrudApp
+ls
+rm -rf venv
+rm -rf venv
+lsof +D venv
+ls
+wsl --shutdown
+wsl
+rm -rf venv
+ls
+rm -rf venv
+find venv -type f -exec rm -f {} \;
+find venv -type d -exec rmdir {} + 2>/dev/null
+rmdir venv
+ls
+./setup_postgres.sh
+ls
+nano ApiStudio.sh
+./ApiStudio.sh
+./Crudapp.sh
+cd API-STUDIO/ApiStudio
+ls
+rm rf- venv
+rm rf- venv/
+rm -rf venv/
+python3 -m venv venv
+ls
+source venv/bin/activate
+pip requirements.txt
+pip install -r requirements.txt
+python manage.py runserver 172.27.226.245:8005
+cd
+nano ApiStudio.sh
+chmod +x ApiStudio.sh
+./ApiStudio.sh
+nano ApiStudio.sh
+nano ApiStudio.sh
+chmod +x ApiStudio.sh
+./ApiStudio.sh
+nano ApiStudio.sh
+chmod +x ApiStudio.sh
+./ApiStudio.sh
+nano ApiStudio.sh
+chmod +x ApiStudio.sh
+./ApiStudio.sh
+ls
+./Crudapp.sh
+nano Crudapp.sh
+chmod +x Crudapp.sh
+nano Crudapp.sh
+nano Crudapp.sh
+./Crudapp.sh
+nano
+nano Crudapp.sh
+nano Crudapp.sh
+chmod +x Crudapp.sh
+./Crudapp.sh
+nano GetApi.sh
+./GetApi.sh
+./PostApi.sh
+systemctl status nginx.service
+sudo systemctl restart nginx.service
+systemctl status nginx.service
+./PostApi.sh
+ls
+./UpdateApi.sh
+./DBSchemaApi.sh
+sudo apt-get update
+sudo apt-get install -y libgpgme-dev
+nano
+nano DBSchemaApi.sh
+cd API-STUDIO/DBSchemaApi
+ls
+source venv/bin/activate
+pip install -r 1.txt
+nano 1.txt
+nano req.txt
+nano req.txt
+pip install -r req.txt
+sudo apt-get update
+sudo apt-get install -y libgpgme-dev
+pip install python-magic
+systemctl reload postfix
+systemctl status postfix.service
+sudo systemctl start postfix
+sudo systemctl enable postfix
+systemctl status postfix
+pip install python-magic
+sudo systemctl enable postfixsystemctl reload postfix
+systemctl reload postfix
+systemctl status postfix
+sudo systemctl reload postfix
+sudo postfix status
+systemctl status postfix
+pip install python-magic
+sudo apt-get install -y libgpgme-dev
+sudo nano /etc/postfix/main.cf
+mydomain = localdomain
+sudo systemctl restart postfix
+sudo newaliases
+sudo apt-get install -f
+sudo nano /etc/postfix/main.cf
+sudo newaliases
+sudo systemctl restart postfix
+sudo newaliases
+sudo apt-get install -f
+pip install -r req.txt
+nano req.txt
+pip install -r req.txt
+nano req.txt
+pip install -r req.txt
+nano req.txt
+pip install -r req.txt
+nano req.txt
+pip install -r req.txt
+nano req.txt
+pip install -r req.txt
+nano req.txt
+pip install -r req.txt
+nano req.txt
+pip freeze > requi.txt
+nano requi.txt
+pip install -r requi.txt
+uvicorn main:app --reload --port 8006
+cd
+nano DBSchemaApi.sh
+./DBSchemaApi.sh
+nano DBSchemaApi.sh
+nano Crudapp.sh
+nano DBSchemaApi.sh
+chmod +x DbSchemaApi.sh
+chmod +x DBSchemaApi.sh
+./DBSchemaApi.sh
+sudo systemctl restart DBSchemaApi.service
+systemctl status DBSchemaApi.service
+sudo nano /etc/systemd/system/DBSchemaApi.service
+sudo nano /etc/systemd/system/CrudApp.service
+sudo nano /etc/systemd/system/DBSchemaApi.service
+sudo systemctl daemon-reexec
+sudo systemctl daemon-reload
+sudo systemctl restart DBSchemaApi.service
+sudo systemctl status DBSchemaApi.service
+sudo systemctl status DBSchemaApi.service
+cd /API-STUDIO/DBSchemaApi/
+source venv/bin/activate
+uvicorn main:app --reload
+cd API-STUDIO/DBSchemaApi/
+source venv/bin/activate
+uvicorn main:app --reload
+sudo nano /etc/systemd/system/DBSchemaApi.service
+sudo systemctl daemon-reload
+sudo systemctl restart DBSchemaApi.service
+sudo systemctl status DBSchemaApi.service
+cd
+./DBSchemaApi.sh
+cd API-STUDIO/DBSchemaApi/
+deactivate
+rm rf- venv
+rm venv
+rm -rf venv/
+ls
+python -m venv venv
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requi.txt
+sudo nano /etc/systemd/system/DBSchemaApi.service
+pip install -r requi.txtsudo systemctl daemon-reload
+sudo systemctl restart DBSchemaApi.service
+sudo systemctl status DBSchemaApi.service
+sudo systemctl daemon-reload
+sudo systemctl restart DBSchemaApi.service
+l status DBSchemaApi.service
+cd
+                                                                                                                                                                                                                                                                                                                                                                                                                                     ls
+./ApiStudio.sh
+nano ApiStudio.sh
+ls
+./ApiStudio.sh
+ls
+./ApiStudio.sh
+./ApiStudio.sh
+cd API-STUDIO
+cd ApiStudio
+ls
+rm -rf venv/
+ls
+python -m venv venv
+pip install apt_pkg
+sudo apt update
+sudo apt install --reinstall python3-apt
+python -m venv venv
+python3 -m venv venv
+ls
+pip install -r \requirements.txt
+pip install -r requirements.txt
+python manage.py runserver 8005
+python3 manage.py runserver 8005
+pip install corsheaders
+pip install django-cors-headers
+python3 manage.py runserver 8005
+pip install --force-reinstall cffi
+sudo apt update
+sudo apt install build-essential libffi-dev python3-dev
+pip uninstall cryptography
+pip install cryptography
+pip install "cryptography<42"
+find . -name "*.pyc" -delete
+pip cache purge
+python3 manage.py runserver 8005
+python3 manage.py runserver 172.27.226.245:8005
+./Crudapi.sh
+./CrudApp.sh
+./Cruapp.sh
+./Crudapp.sh
+nano Crudapp.sh
+./Crudapp.sh
+cd API-STUDIO/CrudApp
+ls
+rm -rf venv
+ls
+python3 -m venv venv
+pip install -r 1.txt
+uvicorn main:app --host 172.27.226.245 --port 8000 --reload
+nano Crudapp
+nano Crudapp.sh
+cd
+ls
+nano ApiStudio.sh
+nano CoreApi.sh
+ls
+  nano setup_depend.sh
+nano setup.sh
+nano setup_postgres.sh
+nano setup.sh
+nano nginx_file.sh
+nano nginx_file.sh
+chmod +x nginx_file.sh
+nano check_db.sh
+nano setup_pgadmin.sh
+nano setup_postgres.sh
+./setup_postgres.sh

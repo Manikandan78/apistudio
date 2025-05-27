@@ -1,5 +1,7 @@
-2025-05-08 11:11:45,876: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
-2025-05-08 11:11:52,079: ERROR	pgadmin:	Crypt key is missing.
+2025-05-26 10:13:42,206: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-05-26 10:13:42,208: ERROR	pgadmin:	Error starting the app server: (<class 'BrokenPipeError'>, BrokenPipeError(32, 'Broken pipe'), <traceback object at 0x7f9075ff4c00>)
+2025-05-27 05:10:10,509: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-05-27 05:10:16,883: ERROR	pgadmin:	Crypt key is missing.
 Traceback (most recent call last):
   File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
     conn = manager.connection()
@@ -7,7 +9,7 @@ Traceback (most recent call last):
   File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 251, in connection
     raise CryptKeyMissing()
 pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
-2025-05-08 11:11:52,111: ERROR	pgadmin:	Crypt key is missing.
+2025-05-27 05:10:16,919: ERROR	pgadmin:	Crypt key is missing.
 Traceback (most recent call last):
   File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
     conn = manager.connection()
@@ -15,7 +17,7 @@ Traceback (most recent call last):
   File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 251, in connection
     raise CryptKeyMissing()
 pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
-2025-05-08 11:11:52,434: ERROR	pgadmin:	Crypt key is missing.
+2025-05-27 05:10:17,308: ERROR	pgadmin:	Crypt key is missing.
 Traceback (most recent call last):
   File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
     conn = manager.connection()
@@ -23,7 +25,42 @@ Traceback (most recent call last):
   File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 251, in connection
     raise CryptKeyMissing()
 pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
-2025-05-08 11:11:52,447: ERROR	pgadmin:	Crypt key is missing.
+2025-05-27 05:10:17,324: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 251, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
+2025-05-27 05:22:56,080: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-05-27 05:22:56,081: ERROR	pgadmin:	Error starting the app server: (<class 'BrokenPipeError'>, BrokenPipeError(32, 'Broken pipe'), <traceback object at 0x7f971bb04ac0>)
+2025-05-27 05:38:19,595: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-05-27 05:38:24,461: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 251, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
+2025-05-27 05:38:24,484: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 251, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
+2025-05-27 05:38:24,785: ERROR	pgadmin:	Crypt key is missing.
+Traceback (most recent call last):
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
+    conn = manager.connection()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/utils/driver/psycopg3/server_manager.py", line 251, in connection
+    raise CryptKeyMissing()
+pgadmin.utils.exception.CryptKeyMissing: Crypt key is missing.
+2025-05-27 05:38:24,810: ERROR	pgadmin:	Crypt key is missing.
 Traceback (most recent call last):
   File "/snap/pgadmin4/18/usr/pgadmin4/web/pgadmin/tools/sqleditor/__init__.py", line 2346, in get_new_connection_data
     conn = manager.connection()

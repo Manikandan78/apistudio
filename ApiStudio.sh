@@ -30,7 +30,7 @@ echo "📦 Creating new virtual environment..."
 $PYTHON_BIN -m venv "$VENV_DIR" || { echo "❌ Failed to create virtual environment."; exit 1; }
 
 # === Step 3: Activate and Install Dependencies ===
-if [ ! -f "1.txt" ]; then
+if [ ! -f "requirements.txt" ]; then
     echo "❌ Error: req.txt not found!"
     exit 1
 fi
@@ -38,7 +38,7 @@ fi
 echo "📥 Installing dependencies..."
 source "$VENV_DIR/bin/activate"
 pip install --upgrade pip
-pip install -r 1.txt || { echo "❌ Dependency installation failed."; deactivate; exit 1; }
+pip install -r requirements.txt || { echo "❌ Dependency installation failed."; deactivate; exit 1; }
 deactivate
 
 # === Step 4: Create Gunicorn Systemd Service (Skip if exists) ===
@@ -69,7 +69,6 @@ EOF
 else
     echo "✅ Gunicorn service file already exists. Skipping creation."
 fi
-
 # === Step 5: Start/Restart Gunicorn Service ===
 echo "🚀 Starting or restarting Gunicorn..."
 sudo systemctl daemon-reload

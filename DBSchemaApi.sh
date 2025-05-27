@@ -2,7 +2,7 @@
 
 PROJECT_NAME="DBSchemaApi"
 PROJECT_DIR="$HOME/API-STUDIO/$PROJECT_NAME"
-REQ_FILE="req.txt"
+REQ_FILE="requi.txt"
 VENV_DIR="venv"
 PORT=8006
 IP_ADDR="172.27.226.245"
@@ -119,7 +119,7 @@ EOF
     sudo systemctl status nginx
 else
     echo "✅ Nginx config already exists. Reloading..."
-    sudo nginx -t && sudo systemctl reload nginx
+    sudo nginx -t && sudo systemctl restart nginx
 fi
 
 

@@ -368,3 +368,72 @@ Opening pgAdmin4...
 [84218:0508/111122.322478:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
 [84282:0508/111123.525037:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
 [84275:0508/111125.562464:ERROR:command_buffer_proxy_impl.cc(125)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+Starting setup...
+ PostgreSQL is running.
+ Creating database 'apicloud' and user 'microapi'...
+DO
+DO
+ Database and user verified.
+ Creating schemas 'public' and 'api_studio' in database 'apicloud'...
+NOTICE:  schema "public" already exists, skipping
+CREATE SCHEMA
+NOTICE:  schema "api_studio" already exists, skipping
+CREATE SCHEMA
+ Schemas created.
+ Checking pgAdmin4 installation...
+ pgAdmin4 is already installed.
+ pgAdmin4 installed successfully.
+Opening pgAdmin4...
+ Setup complete. Database, schemas, and pgAdmin4 are ready.
+
+(pgadmin4:25737): IBUS-WARNING **: 11:45:09.393: Failed to mkdir /home/mani/snap/pgadmin4/18/.config/ibus/bus: Not a directory
+[25926:0515/114509.477349:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+[25991:0515/114511.026951:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+[25983:0515/114513.356814:ERROR:command_buffer_proxy_impl.cc(125)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+Starting setup...
+ PostgreSQL is running.
+ Creating database 'apicloud' and user 'microapi'...
+DO
+DO
+ Database and user verified.
+ Creating schemas 'public' and 'api_studio' in database 'apicloud'...
+NOTICE:  schema "public" already exists, skipping
+CREATE SCHEMA
+NOTICE:  schema "api_studio" already exists, skipping
+CREATE SCHEMA
+ Schemas created.
+ Checking pgAdmin4 installation...
+ pgAdmin4 is already installed.
+ pgAdmin4 installed successfully.
+Opening pgAdmin4...
+ Setup complete. Database, schemas, and pgAdmin4 are ready.
+
+(pgadmin4:86768): IBUS-WARNING **: 10:13:16.002: Failed to mkdir /home/mani/snap/pgadmin4/18/.config/ibus/bus: Not a directory
+[87049:0526/101316.050391:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+[87141:0526/101317.501012:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+[87132:0526/101317.730108:ERROR:command_buffer_proxy_impl.cc(125)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+Starting setup...
+ PostgreSQL is running.
+ Creating database 'apicloud' and user 'microapi'...
+Starting setup...
+ PostgreSQL is running.
+ Creating database 'apicloud' and user 'microapi'...
+DO
+DO
+ Database and user verified.
+ Creating schemas 'public' and 'api_studio' in database 'apicloud'...
+NOTICE:  schema "public" already exists, skipping
+CREATE SCHEMA
+NOTICE:  schema "api_studio" already exists, skipping
+CREATE SCHEMA
+ Schemas created.
+ Checking pgAdmin4 installation...
+ pgAdmin4 is already installed.
+ pgAdmin4 installed successfully.
+Opening pgAdmin4...
+ Setup complete. Database, schemas, and pgAdmin4 are ready.
+
+(pgadmin4:4342): IBUS-WARNING **: 05:09:44.257: Failed to mkdir /home/mani/snap/pgadmin4/18/.config/ibus/bus: Not a directory
+[4618:0527/050944.348048:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+[4691:0527/050945.724015:ERROR:viz_main_impl.cc(183)] Exiting GPU process due to errors during initialization
+[4683:0527/050946.992723:ERROR:command_buffer_proxy_impl.cc(125)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.

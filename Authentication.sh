@@ -1,61 +1,133 @@
 #!/bin/bash
 
-set -e  # Exit on error
+PROJECT_NAME="Authentication"
+PROJECT_DIR="$HOME/API-STUDIO/$PROJECT_NAME"
+REQ_FILE="new_req.txt"
+VENV_DIR="venv"
+PORT=8011
+IP_ADDR="172.27.226.245"
 
-# Define project directory
-PROJECT_DIR="$HOME/nix_project/NANOX-API-STUDIO-master/Authentication"
-REQ_FILE="$PROJECT_DIR/req.txt"
-VENV_DIR="$PROJECT_DIR/venv"
+echo "🔧 Starting setup for $PROJECT_NAME..."
 
-# Navigate to project directory
-if [ ! -d "$PROJECT_DIR" ]; then
-    echo "❌ Project directory not found: $PROJECT_DIR"
-    exit 1
-fi
-cd "$PROJECT_DIR"
+# === Step 1: Navigate to project directory
+cd "$PROJECT_DIR" || { echo "❌ Project directory not found! Exiting..."; exit 1; }
 
-# Check if requirements.txt exists
+# === Step 2: Ensure requirements file exists
+echo "📁 Checking for requirements file: $REQ_FILE..."
 if [ ! -f "$REQ_FILE" ]; then
     echo "❌ $REQ_FILE not found! Exiting..."
     exit 1
 fi
-echo "✅ requirements.txt found."
 
-# Install system dependencies (PostgreSQL, Python headers, GCC, etc.)
-echo "🔄 Installing system dependencies..."
-if command -v apt &>/dev/null; then
-    sudo apt update && sudo apt install -y libpq-dev python3-dev build-essential
-elif command -v dnf &>/dev/null; then
-    sudo dnf install -y postgresql-devel python3-devel gcc
-elif command -v pacman &>/dev/null; then
-    sudo pacman -Sy postgresql-libs
-else
-    echo "❌ Unsupported package manager. Please install libpq-dev manually."
-    exit 1
-fi
-
-# Remove existing virtual environment if present
+# === Step 3: Forcefully remove existing virtual environment
 if [ -d "$VENV_DIR" ]; then
     echo "🧹 Removing existing virtual environment..."
     rm -rf "$VENV_DIR"
+    if [ -d "$VENV_DIR" ]; then
+        echo "❌ Failed to remove virtual environment. Check permissions."
+        exit 1
+    fi
 fi
 
-# Create a new virtual environment
-echo "🌱 Creating a new virtual environment..."
+# === Step 4: Create and activate virtual environment
+echo "🐍 Creating new virtual environment..."
 python3 -m venv "$VENV_DIR"
 source "$VENV_DIR/bin/activate"
 
-# Upgrade pip and install dependencies
-echo "📦 Installing dependencies from $REQ_FILE..."
+# === Step 5: Install requirements
+echo "📦 Installing dependencies..."
 pip install --upgrade pip
 
-# Check if python-magic-bin exists in requirements and fix the issue
+# Remove problematic python-magic-bin (if present)
 if grep -q "python-magic-bin==0.4.14" "$REQ_FILE"; then
-    echo "⚠️ Fixing python-magic-bin issue..."
+    echo "⚙️ Removing python-magic-bin==0.4.14 from requirements..."
     sed -i '/python-magic-bin==0.4.14/d' "$REQ_FILE"
-    pip install python-magic
 fi
 
+# Install main requirements
 pip install -r "$REQ_FILE"
 
-echo "✅ Installation complete! 🎉"
+# Explicitly ensure python-magic is installed
+if ! python -c "import magic" &> /dev/null; then
+    echo "🔮 Installing python-magic explicitly..."
+    pip install python-magic
+else
+    echo "✅ python-magic already available."
+fi
+
+# === Step 6: Create Uvicorn systemd service file
+echo "📝 Creating Uvicorn service for $PROJECT_NAME..."
+
+UVICORN_SERVICE="/etc/systemd/system/$PROJECT_NAME.service"
+
+if [ ! -f "$UVICORN_SERVICE" ]; then
+    sudo tee "$UVICORN_SERVICE" > /dev/null <<EOF
+[Unit]
+Description=Uvicorn instance to serve $PROJECT_NAME
+After=network.target
+
+[Service]
+User=mani
+Group=www-data
+WorkingDirectory=$PROJECT_DIR
+Environment="PATH=$PROJECT_DIR/$VENV_DIR/bin"
+ExecStart=$PROJECT_DIR/$VENV_DIR/bin/uvicorn main:app --host 0.0.0.0 --port $PORT --reload
+
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+    echo "🔧 Enabling and starting Uvicorn service..."
+    sudo systemctl daemon-reload
+    sudo systemctl enable "$PROJECT_NAME"
+    sudo systemctl start "$PROJECT_NAME"
+else
+    echo "✅ Uvicorn service file already exists. Restarting service..."
+    sudo systemctl restart "$PROJECT_NAME"
+fi
+
+# === Step 7: Check Uvicorn service status
+echo "🧪 Checking Uvicorn service status..."
+sudo systemctl status "$PROJECT_NAME" --no-pager
+
+# === Step 8: Configure Nginx reverse proxy
+NGINX_CONF="/etc/nginx/conf.d/microapi.conf"
+
+if [ ! -f "$NGINX_CONF" ]; then
+    echo "🔧 Creating Nginx config for /crudapp/ path..."
+    sudo tee "$NGINX_CONF" > /dev/null <<EOF
+server {
+    listen 80;
+    server_name $IP_ADDR;
+
+    location /crudapp/ {
+        proxy_pass http://172.27.226.245:$PORT/;
+        proxy_set_header Host \$host;
+        proxy_set_header X-Real-IP \$remote_addr;
+        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto \$scheme;
+    }
+}
+EOF
+
+    echo "🔗 Enabling site and reloading Nginx..."
+    sudo ln -sf "$NGINX_CONF" /etc/nginx/sites-enabled/$PROJECT_NAME
+    sudo nginx -t && sudo systemctl reload nginx
+    sudo systemctl status nginx
+else
+    echo "✅ Nginx config already exists. Reloading..."
+    sudo nginx -t && sudo systemctl restart nginx
+fi
+
+
+echo "✅ Setup complete!"
+echo "🌐 Access your app here: http://$IP_ADDR:$PORT/auth/"
+
+
+
+
+
+
