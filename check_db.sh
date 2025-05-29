@@ -1,23 +1,23 @@
 #!/bin/bash
 
 # === Set the full path to your Django project directory ===
-PROJECT_DIR="$HOME/API-STUDIO/ApiStudio"  # 🔁 CHANGE THIS IF NEEDED
+PROJECT_DIR="$HOME/API-STUDIO/ApiStudio"  #  CHANGE THIS IF NEEDED
 
 # === Configuration Variables ===
 export DB_NAME="apicloud"
 export DB_USER="microapi"
 export DB_PASSWORD="M!cr0ap!*C*"
-export DB_HOST="127.0.0.1"  # 🔁 Use your updated host here
+export DB_HOST="127.0.0.1"  #  Use your updated host here
 export DB_PORT="5432"
 export DB_SCHEMA="apistudio"
 VENV_PATH="$PROJECT_DIR/venv"
 PORT=8005
 
 # === Change to project directory ===
-cd "$PROJECT_DIR" || { echo "❌ Project directory not found: $PROJECT_DIR"; exit 1; }
+cd "$PROJECT_DIR" || { echo " Project directory not found: $PROJECT_DIR"; exit 1; }
 
 # === Create Virtual Environment If Not Exists ===
-echo "🐍 Setting up virtual environment..."
+echo " Setting up virtual environment..."
 if [ ! -d "$VENV_PATH" ]; then
     python3 -m venv "$VENV_PATH"
 fi
@@ -26,12 +26,12 @@ fi
 source "$VENV_PATH/bin/activate"
 
 # === Install dependencies ===
-echo "📦 Installing required Python packages..."
+echo " Installing required Python packages..."
 pip install --upgrade pip
 pip install -r "$PROJECT_DIR/requirements.txt" || pip install psycopg2-binary
 
 # === PostgreSQL Connection Test with psycopg2 ===
-echo "🧪 Testing PostgreSQL connection with psycopg2..."
+echo " Testing PostgreSQL connection with psycopg2..."
 python<<END
 import psycopg2
 
@@ -43,10 +43,10 @@ try:
         host="127.0.0.1",
         port="5432"
     )
-    print("✅ Connected to database.")
+    print(" Connected to database.")
     conn.close()
 except Exception as e:
-    print("❌ Connection failed:", e)
+    print(" Connection failed:", e)
 END
 
 # === Ensure Database and User Exist ===
@@ -72,11 +72,11 @@ GRANT ALL PRIVILEGES ON DATABASE $DB_NAME TO $DB_USER;
 EOF
 
 # === Ensure Schema Exists ===
-echo "🏗 Ensuring schema '$DB_SCHEMA' exists..."
+echo "Ensuring schema '$DB_SCHEMA' exists..."
 PGPASSWORD="$DB_PASSWORD" psql -U "$DB_USER" -d "$DB_NAME" -h "$DB_HOST" --no-password --command="CREATE SCHEMA IF NOT EXISTS $DB_SCHEMA AUTHORIZATION $DB_USER;"
 
-echo "🚀 Applying Django migrations..."
-python "$PROJECT_DIR/manage.py" migrate
+echo " Applying Django migrations..."
+python3 "$PROJECT_DIR/manage.py" migrate
 
 # === Kill existing process on port if running ===
 PID=$(lsof -t -i:$PORT)
