@@ -3,13 +3,13 @@
 set -e
 
 # === 1. Check and install Nginx if not installed ===
-echo "🔍 Checking for Nginx..."
+echo "Checking for Nginx..."
 if ! command -v nginx &> /dev/null; then
-  echo "📦 Nginx not found. Installing..."
+  echo " Nginx not found. Installing..."
   sudo apt update
   sudo apt install -y nginx
 else
-  echo "✅ Nginx is already installed."
+  echo " Nginx is already installed."
 fi
 
 # === 2. Define config directory and file paths ===
@@ -18,7 +18,7 @@ APISTUDIO_CONF="${NGINX_CONF_DIR}/apistudio.conf"
 MICROAPI_CONF="${NGINX_CONF_DIR}/microapi.conf"
 
 # === 3. Create apistudio.conf ===
-echo "📝 Creating apistudio.conf..."
+echo " Creating apistudio.conf..."
 sudo tee "$APISTUDIO_CONF" > /dev/null <<EOF
 server {
     listen 80;
@@ -116,14 +116,14 @@ server {
 EOF
 
 # === 5. Test and restart Nginx ===
-echo "🔍 Testing Nginx configuration..."
+echo " Testing Nginx configuration..."
 sudo nginx -t
 
-echo "🔄 Restarting Nginx..."
+echo " Restarting Nginx..."
 sudo systemctl restart nginx
 
 echo ""
-echo "✅ Nginx setup and configuration complete!"
-echo "🗂️  Config files:"
+echo " Nginx setup and configuration complete!"
+echo "🗂️ Config files:"
 echo " - $APISTUDIO_CONF"
 echo " - $MICROAPI_CONF"

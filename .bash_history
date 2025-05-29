@@ -2947,3 +2947,93 @@ nano setup_postgres_pgadmin.sh
 chmod +x setup_postgres_pgadmin.sh
 ./setup_postgres_pgadmin.sh
 ./setup_postgres_pgadmin.sh
+nano superuser_creation.sh
+chmod +x ssuperuser_creation.sh
+chmod +x superuser_creation.sh
+./superuser_creation.sh
+nano superuser_creation.sh
+chmod +x superuser_creation.sh
+./superuser_creation.sh
+nano superuser_creation.sh
+chmod +x superuser_creation.sh
+./superuser_creation.sh
+ls
+rm -rf CmsPage.sh.save
+rm -rf 
+rm -rf CoreApi.sh.save
+rm -rf UpdateApi.shy
+rm -rf 
+rm -rf GetApi.sh.save
+rm -rf home-manager-backups-20250401-161740
+rm -rf full_setup.sh
+rm -rf crudapp.service
+rm -rf 
+rm -rf check.py
+certbot-nginx-gunicorn.nix
+rm -rf certbot-nginx-gunicorn.nix
+rm -rf certbot.sh
+rm -rf chevk
+rm -rf check
+rm -rf certbot
+ls
+rm -rf 
+rm -rf microapi.conf
+rm -rf myenv nginx_file.sh
+ls
+rm -rf home-manager-backups-20250402-053808 home.nix
+ls
+rm -rf 
+rm -rf apistudio_all.sh  install_nix.sh nohup.out run_api.sh run_app.sh services setup_apistudio.sh
+ls
+rm -rf setup_apistudio_nginx.sh setup_apistudio_pre.sh setup_postgres.sh setup_pgadmin.sh snap venv
+ls
+ls
+nano CmsPage.sh
+nano Cmspage.sh
+rm -rf CmsPage.sh
+ls
+git add .
+git commit "new"
+git comit push origin
+cat ~/.ssh/id_rsa.pub
+ssh -T git@github.com
+git commit push origin
+git status
+git push origin main
+git commit "new one"
+git commit -m "new one"
+git push -u origin main
+ls
+nano check_db.sh
+chmod +x check_db.sh
+./check_db.sh
+nano check_db.sh
+chmod +x check_db.sh
+./check_db.sh
+nano check_db.sh
+nano setup_pgadmin.sh
+chmod +x setup_pgadmin.sh
+./setup_pgadmin.sh
+git push origin main
+git add .
+git commit -m "new "
+git push origin main
+ls
+nano superuser_creation.sh
+nano superuser_creation.sh
+chmod +x superuser_creation.sh
+nano check_db.sh
+chmod +x check_db.sh
+nano ApiStudio.sh
+chmod +x ApiStudio.sh
+nano Crudapp.sh
+chmod +x Crudapp.sh
+git add .
+git commit -m "new "
+git push origin main
+git status
+clear
+ls
+nano setup_pgadmin.sh
+chmod +x setup_pgadmin.sh
+./setup_pgadmin.sh

@@ -55,7 +55,7 @@ After=network.target
 User=$USER
 Group=www-data
 WorkingDirectory=$PROJECT_DIR
-ExecStart=$HOME/Apistudio/ApiStudio/venv/bin/python manage.py runserver 0.0.0.0:8005
+ExecStart=$HOME/API-STUDIO/ApiStudio/venv/bin/python manage.py runserver 0.0.0.0:8005
 Restart=always
 
 [Install]

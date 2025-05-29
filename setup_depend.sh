@@ -17,6 +17,8 @@ else
     sudo add-apt-repository -y ppa:deadsnakes/ppa
     sudo apt update
     sudo apt install -y python3.11 python3.11-venv python3.11-dev
+    sudo apt install python3-pip
+    sudo apt install python3.12-venv
     echo " Python 3.11 installation completed."
 fi
 

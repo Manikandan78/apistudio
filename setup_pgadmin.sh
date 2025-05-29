@@ -1,32 +1,34 @@
 #!/bin/bash
 
-set -e
+set -e  # Exit on any error
 
-echo "🔄 Updating system packages..."
-sudo apt update -y && sudo apt upgrade -y
+echo "🔧 Installing pgAdmin 4 Desktop version..."
 
-echo "🔐 Installing required tools..."
-sudo apt install curl ca-certificates gnupg -y
+# Step 1: Update system and install dependencies
+sudo apt update -y
+sudo apt install -y curl ca-certificates gnupg lsb-release
 
-echo "📥 Adding pgAdmin APT repository..."
-curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | gpg --dearmor | sudo tee /usr/share/keyrings/pgadmin-keyring.gpg >/dev/null
+# Step 2: Add the pgAdmin public GPG key
+curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | \
+    sudo gpg --dearmor -o /usr/share/keyrings/pgadmin-keyring.gpg
 
-echo "deb [signed-by=/usr/share/keyrings/pgadmin-keyring.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/ubuntu $(lsb_release -cs) pgadmin4" | sudo tee /etc/apt/sources.list.d/pgadmin4.list
+# Step 3: Add pgAdmin repository
+echo "deb [signed-by=/usr/share/keyrings/pgadmin-keyring.gpg] \
+https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" \
+| sudo tee /etc/apt/sources.list.d/pgadmin4.list
 
-echo "🔄 Refreshing package index..."
-sudo apt update
+# Step 4: Update package list again
+sudo apt update -y
 
-echo "💻 Installing pgAdmin4 Desktop mode..."
-sudo apt install pgadmin4-desktop -y
+# Step 5: Install pgAdmin desktop mode
+sudo apt install -y pgadmin4-desktop
 
-echo "🌐 Installing pgAdmin4 Web mode..."
-sudo apt install pgadmin4-web -y
+echo "✅ pgAdmin 4 Desktop installed successfully."
 
-echo "⚙️ Running pgAdmin4 Web setup..."
-sudo /usr/pgadmin4/bin/setup-web.sh
+# Optional: Launch immediately
+# pgadmin4 &
 
-echo "✅ pgAdmin 4 (web + desktop) installation complete!"
-
-echo ""
-echo "📍 Access pgAdmin Web: http://localhost/pgadmin4"
-echo "📍 Launch pgAdmin Desktop from your app menu"
+# Info for user
+echo "📦 You can now launch pgAdmin by:"
+echo "   - Typing 'pgadmin4' in terminal"
+echo "   - Searching 'pgAdmin 4' in your application menu"
