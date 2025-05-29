@@ -103,7 +103,7 @@ server {
     listen 80;
     server_name $IP_ADDR;
 
-    location /crudapp/ {
+    location /db_schema/ {
         proxy_pass http://$IP_ADDR:$PORT/;
         proxy_set_header Host \$host;
         proxy_set_header X-Real-IP \$remote_addr;
@@ -118,10 +118,10 @@ EOF
     sudo nginx -t && sudo systemctl reload nginx
     sudo systemctl status nginx
 else
-    echo "✅ Nginx config already exists. Reloading..."
+    echo " Nginx config already exists. Reloading..."
     sudo nginx -t && sudo systemctl restart nginx
 fi
 
 
-echo "✅ Setup complete!"
-echo "🌐 Access your app here: http://$IP_ADDR:$PORT/db_schema_api/"
+echo " Setup complete!"
+echo " Access your app here: http://$IP_ADDR:$PORT/db_schema_api/"
