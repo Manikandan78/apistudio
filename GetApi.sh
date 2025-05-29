@@ -9,10 +9,10 @@ VENV_DIR="venv"
 PORT=8001
 IP_ADDR="127.0.0.1"
 
-echo "🔧 Starting setup for $PROJECT_NAME..."
+echo " Starting setup for $PROJECT_NAME..."
 
 # === Step 1: Navigate to project directory
-cd "$PROJECT_DIR" || { echo "❌ Project directory not found! Exiting..."; exit 1; }
+cd "$PROJECT_DIR" || { echo " Project directory not found! Exiting..."; exit 1; }
 
 # === Step 2: Ensure requirements file exists
 echo " Checking for requirements file: $REQ_FILE..."
@@ -37,12 +37,12 @@ python3 -m venv "$VENV_DIR"
 source "$VENV_DIR/bin/activate"
 
 # === Step 5: Install requirements
-echo "📦 Installing dependencies..."
+echo " Installing dependencies..."
 pip install --upgrade pip
 
 # Remove problematic python-magic-bin (if present)
 if grep -q "python-magic-bin==0.4.14" "$REQ_FILE"; then
-    echo "⚙️ Removing python-magic-bin==0.4.14 from requirements..."
+    echo " Removing python-magic-bin==0.4.14 from requirements..."
     sed -i '/python-magic-bin==0.4.14/d' "$REQ_FILE"
 fi
 
@@ -51,14 +51,14 @@ pip install -r "$REQ_FILE"
 
 # Explicitly ensure python-magic is installed
 if ! python -c "import magic" &> /dev/null; then
-    echo "🔮 Installing python-magic explicitly..."
+    echo " Installing python-magic explicitly..."
     pip install python-magic
 else
-    echo "✅ python-magic already available."
+    echo "python-magic already available."
 fi
 
 # === Step 6: Create Uvicorn systemd service file
-echo "📝 Creating Uvicorn service for $PROJECT_NAME..."
+echo "Creating Uvicorn service for $PROJECT_NAME..."
 
 UVICORN_SERVICE="/etc/systemd/system/$PROJECT_NAME.service"
 
@@ -69,7 +69,7 @@ Description=Uvicorn instance to serve $PROJECT_NAME
 After=network.target
 
 [Service]
-User=mani
+User=ubuntu
 Group=www-data
 WorkingDirectory=$PROJECT_DIR
 Environment="PATH=$PROJECT_DIR/$VENV_DIR/bin"
@@ -115,7 +115,7 @@ server {
 }
 EOF
 
-    echo "🔗 Enabling site and reloading Nginx..."
+    echo " Enabling site and reloading Nginx..."
     sudo ln -sf "$NGINX_CONF" /etc/nginx/sites-enabled/$PROJECT_NAME
     sudo nginx -t && sudo systemctl reload nginx
     sudo systemctl status nginx
