@@ -7,40 +7,40 @@ VENV_DIR="venv"
 PORT=8007
 IP_ADDR="127.0.0.1"
 
-echo "🔧 Starting setup for $PROJECT_NAME..."
+echo " Starting setup for $PROJECT_NAME..."
 
 # === Step 1: Navigate to project directory
-cd "$PROJECT_DIR" || { echo "❌ Project directory not found! Exiting..."; exit 1; }
+cd "$PROJECT_DIR" || { echo " Project directory not found! Exiting..."; exit 1; }
 
 # === Step 2: Ensure requirements file exists
-echo "📁 Checking for requirements file: $REQ_FILE..."
+echo " Checking for requirements file: $REQ_FILE..."
 if [ ! -f "$REQ_FILE" ]; then
-    echo "❌ $REQ_FILE not found! Exiting..."
+    echo " $REQ_FILE not found! Exiting..."
     exit 1
 fi
 
 # === Step 3: Forcefully remove existing virtual environment
 if [ -d "$VENV_DIR" ]; then
-    echo "🧹 Removing existing virtual environment..."
+    echo " Removing existing virtual environment..."
     rm -rf "$VENV_DIR"
     if [ -d "$VENV_DIR" ]; then
-        echo "❌ Failed to remove virtual environment. Check permissions."
+        echo " Failed to remove virtual environment. Check permissions."
         exit 1
     fi
 fi
 
 # === Step 4: Create and activate virtual environment
-echo "🐍 Creating new virtual environment..."
+echo " Creating new virtual environment..."
 python3 -m venv "$VENV_DIR"
 source "$VENV_DIR/bin/activate"
 
 # === Step 5: Install requirements
-echo "📦 Installing dependencies..."
+echo " Installing dependencies..."
 pip install --upgrade pip
 
 # Remove problematic python-magic-bin (if present)
 if grep -q "python-magic-bin==0.4.14" "$REQ_FILE"; then
-    echo "⚙️ Removing python-magic-bin==0.4.14 from requirements..."
+    echo " Removing python-magic-bin==0.4.14 from requirements..."
     sed -i '/python-magic-bin==0.4.14/d' "$REQ_FILE"
 fi
 
@@ -49,14 +49,14 @@ pip install -r "$REQ_FILE"
 
 # Explicitly ensure python-magic is installed
 if ! python -c "import magic" &> /dev/null; then
-    echo "🔮 Installing python-magic explicitly..."
+    echo " Installing python-magic explicitly..."
     pip install python-magic
 else
-    echo "✅ python-magic already available."
+    echo " python-magic already available."
 fi
 
 # === Step 6: Create Uvicorn systemd service file
-echo "📝 Creating Uvicorn service for $PROJECT_NAME..."
+echo " Creating Uvicorn service for $PROJECT_NAME..."
 
 UVICORN_SERVICE="/etc/systemd/system/$PROJECT_NAME.service"
 
@@ -80,24 +80,24 @@ RestartSec=3
 WantedBy=multi-user.target
 EOF
 
-    echo "🔧 Enabling and starting Uvicorn service..."
+    echo " Enabling and starting Uvicorn service..."
     sudo systemctl daemon-reload
     sudo systemctl enable "$PROJECT_NAME"
     sudo systemctl start "$PROJECT_NAME"
 else
-    echo "✅ Uvicorn service file already exists. Restarting service..."
+    echo " Uvicorn service file already exists. Restarting service..."
     sudo systemctl restart "$PROJECT_NAME"
 fi
 
 # === Step 7: Check Uvicorn service status
-echo "🧪 Checking Uvicorn service status..."
+echo " Checking Uvicorn service status..."
 sudo systemctl status "$PROJECT_NAME" --no-pager
 
 # === Step 8: Configure Nginx reverse proxy
 NGINX_CONF="/etc/nginx/conf.d/microapi.conf"
 
 if [ ! -f "$NGINX_CONF" ]; then
-    echo "🔧 Creating Nginx config for /crudapp/ path..."
+    echo " Creating Nginx config for /crudapp/ path..."
     sudo tee "$NGINX_CONF" > /dev/null <<EOF
 server {
     listen 80;
@@ -113,16 +113,16 @@ server {
 }
 EOF
 
-    echo "🔗 Enabling site and reloading Nginx..."
+    echo " Enabling site and reloading Nginx..."
     sudo ln -sf "$NGINX_CONF" /etc/nginx/sites-enabled/$PROJECT_NAME
     sudo nginx -t && sudo systemctl reload nginx
     sudo systemctl status nginx
 else
-    echo "✅ Nginx config already exists. Reloading..."
+    echo "Nginx config already exists. Reloading..."
     sudo nginx -t && sudo systemctl restart nginx
     sudo systemctl status nginx
 fi
 
 
-echo "✅ Setup complete!"
-echo "🌐 Access your app here: http://$IP_ADDR:$PORT/coreapi/"
+echo " Setup complete!"
+echo " Access your app here: http://$IP_ADDR:$PORT/coreapi/"
