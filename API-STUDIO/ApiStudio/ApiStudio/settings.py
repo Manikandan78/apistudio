@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-b7@jh9$r!nnnrwc!3(wnq9fbm$kh2y!p@u%smf*f_uru^&jnwv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["172.27.226.245"]
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -109,10 +109,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'apicloud',
-        'OPTIONS': {'options': '-c search_path=api_studio'},
+        'OPTIONS': {'options': '-c search_path=apistudio'},
         'USER': 'microapi',
-        'PASSWORD': 'M!cr0ap!*C$E*',
-        'HOST': '172.27.226.245'
+        'PASSWORD': 'M!cr0ap!*C*',
+        'HOST': '127.0.0.1'
 
     }
 }
