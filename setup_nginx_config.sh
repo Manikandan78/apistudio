@@ -50,7 +50,7 @@ server {
 EOF
 
 # === 4. Create microapi.conf ===
-echo "📝 Creating microapi.conf..."
+echo " Creating microapi.conf..."
 sudo tee "$MICROAPI_CONF" > /dev/null <<EOF
 server {
     listen 80;
@@ -124,6 +124,6 @@ sudo systemctl restart nginx
 
 echo ""
 echo " Nginx setup and configuration complete!"
-echo "🗂️ Config files:"
+echo " Config files:"
 echo " - $APISTUDIO_CONF"
 echo " - $MICROAPI_CONF"
