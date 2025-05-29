@@ -3,7 +3,7 @@
 # === CONFIGURATION ===
 USERNAME="admin"
 EMAIL="admin123@gmail.com"
-PASSWORD="admin123"
+PASSWORD="admin"
 PROJECT_DIR=$HOME/API-STUDIO/ApiStudio 
 
 echo " Current directory: $PROJECT_DIR"
@@ -41,14 +41,14 @@ fi
 # === STEP 4: Run migrations ===
 if [ -f "manage.py" ]; then
     echo " Running migrations..."
-    python manage.py migrate
+    python3 manage.py migrate
 else
     echo " manage.py not found. Are you in a Django project root?"
     exit 1
 fi
 
 # === STEP 5: Create superuser if not exists ===
-echo "👤 Checking for superuser '$USERNAME'..."
+echo " Checking for superuser '$USERNAME'..."
 
 cat <<EOF > create_superuser.py
 from django.contrib.auth import get_user_model
