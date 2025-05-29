@@ -7,7 +7,7 @@ PROJECT_DIR="$HOME/API-STUDIO/$PROJECT_NAME"
 REQ_FILE="req.txt"
 VENV_DIR="venv"
 PORT=8001
-IP_ADDR="172.27.226.245"
+IP_ADDR="127.0.0.1"
 
 echo "🔧 Starting setup for $PROJECT_NAME..."
 
@@ -15,24 +15,24 @@ echo "🔧 Starting setup for $PROJECT_NAME..."
 cd "$PROJECT_DIR" || { echo "❌ Project directory not found! Exiting..."; exit 1; }
 
 # === Step 2: Ensure requirements file exists
-echo "📁 Checking for requirements file: $REQ_FILE..."
+echo " Checking for requirements file: $REQ_FILE..."
 if [ ! -f "$REQ_FILE" ]; then
-    echo "❌ $REQ_FILE not found! Exiting..."
+    echo " $REQ_FILE not found! Exiting..."
     exit 1
 fi
 
 # === Step 3: Forcefully remove existing virtual environment
 if [ -d "$VENV_DIR" ]; then
-    echo "🧹 Removing existing virtual environment..."
+    echo " Removing existing virtual environment..."
     rm -rf "$VENV_DIR"
     if [ -d "$VENV_DIR" ]; then
-        echo "❌ Failed to remove virtual environment. Check permissions."
+        echo " Failed to remove virtual environment. Check permissions."
         exit 1
     fi
 fi
 
 # === Step 4: Create and activate virtual environment
-echo "🐍 Creating new virtual environment..."
+echo " Creating new virtual environment..."
 python3 -m venv "$VENV_DIR"
 source "$VENV_DIR/bin/activate"
 
@@ -82,31 +82,31 @@ RestartSec=3
 WantedBy=multi-user.target
 EOF
 
-    echo "🔧 Enabling and starting Uvicorn service..."
+    echo " Enabling and starting Uvicorn service..."
     sudo systemctl daemon-reload
     sudo systemctl enable "$PROJECT_NAME"
     sudo systemctl start "$PROJECT_NAME"
 else
-    echo "✅ Uvicorn service file already exists. Restarting service..."
+    echo " Uvicorn service file already exists. Restarting service..."
     sudo systemctl restart "$PROJECT_NAME"
 fi
 
 # === Step 7: Check Uvicorn service status
-echo "🧪 Checking Uvicorn service status..."
+echo " Checking Uvicorn service status..."
 sudo systemctl status "$PROJECT_NAME" --no-pager
 
 # === Step 8: Configure Nginx reverse proxy
 NGINX_CONF="/etc/nginx/conf.d/microapi.conf"
 
 if [ ! -f "$NGINX_CONF" ]; then
-    echo "🔧 Creating Nginx config for /crudapp/ path..."
+    echo " Creating Nginx config for /crudapp/ path..."
     sudo tee "$NGINX_CONF" > /dev/null <<EOF
 server {
     listen 80;
     server_name $IP_ADDR;
 
     location /crudapp/ {
-        proxy_pass http://172.27.226.245:$PORT/;
+        proxy_pass http://IP_ADDR:$PORT/;
         proxy_set_header Host \$host;
         proxy_set_header X-Real-IP \$remote_addr;
         proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
@@ -120,10 +120,10 @@ EOF
     sudo nginx -t && sudo systemctl reload nginx
     sudo systemctl status nginx
 else
-    echo "✅ Nginx config already exists. Reloading..."
+    echo " Nginx config already exists. Reloading..."
     sudo nginx -t && sudo systemctl restart nginx
 fi
 
 
-echo "✅ Setup complete!"
-echo "🌐 Access your app here: http://$IP_ADDR:$PORT/getapi/"
+echo " Setup complete!"
+echo " Access your app here: http://$IP_ADDR:$PORT/getapi/"
