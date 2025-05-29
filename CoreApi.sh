@@ -5,7 +5,7 @@ PROJECT_DIR="$HOME/API-STUDIO/$PROJECT_NAME"
 REQ_FILE="1.txt"
 VENV_DIR="venv"
 PORT=8007
-IP_ADDR="172.27.226.245"
+IP_ADDR="127.0.0.1"
 
 echo "🔧 Starting setup for $PROJECT_NAME..."
 
@@ -67,7 +67,7 @@ Description=Uvicorn instance to serve $PROJECT_NAME
 After=network.target
 
 [Service]
-User=mani
+User=ubuntu
 Group=www-data
 WorkingDirectory=$PROJECT_DIR
 Environment="PATH=$PROJECT_DIR/$VENV_DIR/bin"
@@ -104,7 +104,7 @@ server {
     server_name $IP_ADDR;
 
     location /crudapp/ {
-        proxy_pass http://172.27.226.245:$PORT/;
+        proxy_pass http://$IP_ADDR:$PORT/;
         proxy_set_header Host \$host;
         proxy_set_header X-Real-IP \$remote_addr;
         proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
